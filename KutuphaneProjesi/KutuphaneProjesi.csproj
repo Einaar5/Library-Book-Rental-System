@@ -53,21 +53,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="kutuphaneProjesiDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>kutuphaneProjesiDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="kutuphaneProjesiDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>kutuphaneProjesiDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="kutuphaneProjesiDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>kutuphaneProjesiDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="kutuphaneProjesiDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -87,39 +72,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="kutuphaneProjesiDataSet.xsc">
-      <DependentUpon>kutuphaneProjesiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="kutuphaneProjesiDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kutuphaneProjesiDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="kutuphaneProjesiDataSet.xss">
-      <DependentUpon>kutuphaneProjesiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="kutuphaneProjesiDataSet1.xsc">
-      <DependentUpon>kutuphaneProjesiDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="kutuphaneProjesiDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kutuphaneProjesiDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="kutuphaneProjesiDataSet1.xss">
-      <DependentUpon>kutuphaneProjesiDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="kutuphaneProjesiDataSet2.xsc">
-      <DependentUpon>kutuphaneProjesiDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="kutuphaneProjesiDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>kutuphaneProjesiDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="kutuphaneProjesiDataSet2.xss">
-      <DependentUpon>kutuphaneProjesiDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="kutuphaneProjesiDataSet3.xsc">
       <DependentUpon>kutuphaneProjesiDataSet3.xsd</DependentUpon>
     </None>
