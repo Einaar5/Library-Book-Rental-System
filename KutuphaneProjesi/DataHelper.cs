@@ -120,7 +120,7 @@ namespace KutuphaneProjesi
 				BaglantiAc();
 
 				// SQL sorgusunu hazırla
-				string sorgu = $"SELECT * FROM {tabloAdi}";
+				string sorgu = $"SELECT * FROM {tabloAdi} ";
 
 				SqlDataAdapter adaptor = new SqlDataAdapter(sorgu, baglanti);
 				DataTable tablo = new DataTable(); // Verileri tutacak tablo
@@ -137,7 +137,32 @@ namespace KutuphaneProjesi
 
 
 
-		//Kitap Verileri GEtir
+		//Kitap Türü Verileri
+
+		public DataTable EnPopulerKitap(string tabloAdi)
+		{
+			try
+			{
+				BaglantiAc();
+
+				// SQL sorgusunu hazırla
+				string sorgu = $"SELECT * FROM {tabloAdi} WHERE kitap_tur = @kitapTur";
+
+				SqlCommand komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@kitapTur", "En Popüler");
+
+				SqlDataAdapter adaptor = new SqlDataAdapter(komut); // Sorguyu ve parametreleri kullan
+				DataTable tablo = new DataTable(); // Verileri tutacak tablo
+				adaptor.Fill(tablo); // Veriyi tabloya doldur
+
+				return tablo; // Veriyi döndür
+			}
+			finally
+			{
+				BaglantiKapat();
+			}
+		}
+
 
 
 	}

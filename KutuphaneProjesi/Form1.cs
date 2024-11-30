@@ -35,7 +35,8 @@ namespace KutuphaneProjesi
         //Çıkış
         private void button5_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Hesaptan Çıkmak İstiyor Musunuz ?","Çıkış", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            
         }
 
         //Anasayfa
@@ -224,17 +225,116 @@ namespace KutuphaneProjesi
                 SepetListesiFiyat.Items.Add(Kitap8Fiyat.Text);
 
             }
-        }
+		}
+
+
+
+		private void Kitap9_Click(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi9.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+
+				}
+				SepetListesi.Items.Add(Kitapismi9.Text);
+				SepetListesiFiyat.Items.Add(Kitap9Fiyat.Text);
+
+			}
+		}
+
+		private void Kitap10_Click(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi10.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+
+				}
+				SepetListesi.Items.Add(Kitapismi10.Text);
+				SepetListesiFiyat.Items.Add(Kitap10Fiyat.Text);
+
+			}
+		}
+
+		private void Kitap11_Click(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi11.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+
+				}
+				SepetListesi.Items.Add(Kitapismi11.Text);
+				SepetListesiFiyat.Items.Add(Kitap11Fiyat.Text);
+
+			}
+		}
+
+		private void Kitap12_Click(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi12.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+
+				}
+				SepetListesi.Items.Add(Kitapismi12.Text);
+				SepetListesiFiyat.Items.Add(Kitap12Fiyat.Text);
+
+			}
+		}
+
+		private void Kitap13_Click(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi13.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+
+				}
+				SepetListesi.Items.Add(Kitapismi13.Text);
+				SepetListesiFiyat.Items.Add(Kitap13Fiyat.Text);
+
+			}
+		}
 
 
 
 
 
-        //Sepete Ekleme Sistemi
+
+
+		//Sepete Ekleme Sistemi
 
 
 
-        private void SepeteEkleButonu_Click(object sender, EventArgs e)
+		private void SepeteEkleButonu_Click(object sender, EventArgs e)
         {
             bool UrunVarmi = false;
 
@@ -318,7 +418,8 @@ namespace KutuphaneProjesi
         {
             SepetListesi.Items.Clear();
             SepetListesiFiyat.Items.Clear();
-        }
+			
+		}
 
 
         //Sepeti Temizleme Butonu
@@ -348,6 +449,11 @@ namespace KutuphaneProjesi
 			Kitapismi6.Text = kitaplar.Rows[5]["kitap_ad"].ToString();
 			Kitapismi7.Text = kitaplar.Rows[6]["kitap_ad"].ToString();
 			Kitapismi8.Text = kitaplar.Rows[7]["kitap_ad"].ToString();
+			Kitapismi9.Text = kitaplar.Rows[8]["kitap_ad"].ToString();
+			Kitapismi10.Text = kitaplar.Rows[9]["kitap_ad"].ToString();
+			Kitapismi11.Text = kitaplar.Rows[10]["kitap_ad"].ToString();
+			Kitapismi12.Text = kitaplar.Rows[11]["kitap_ad"].ToString();
+			Kitapismi13.Text = kitaplar.Rows[12]["kitap_ad"].ToString();
 		}
 		
 
@@ -361,14 +467,20 @@ namespace KutuphaneProjesi
 				DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 				// Mevcut butonlarınızı sırayla atayın
-				Kitap1Fiyat.Text = kitaplar.Rows[0]["kitap_fiyat"].ToString();
-				Kitap2Fiyat.Text = kitaplar.Rows[1]["kitap_fiyat"].ToString();
-				Kitap3Fiyat.Text = kitaplar.Rows[2]["kitap_fiyat"].ToString();
-				Kitap4Fiyat.Text = kitaplar.Rows[3]["kitap_fiyat"].ToString();
-				Kitap5Fiyat.Text = kitaplar.Rows[4]["kitap_fiyat"].ToString();
-				Kitap6Fiyat.Text = kitaplar.Rows[5]["kitap_fiyat"].ToString();
-				Kitap7Fiyat.Text = kitaplar.Rows[6]["kitap_fiyat"].ToString();
-				Kitap8Fiyat.Text = kitaplar.Rows[7]["kitap_fiyat"].ToString();
+				Kitap1Fiyat.Text = kitaplar.Rows[0]["kitap_fiyat"].ToString() ;
+				Kitap2Fiyat.Text = kitaplar.Rows[1]["kitap_fiyat"].ToString() ;
+				Kitap3Fiyat.Text = kitaplar.Rows[2]["kitap_fiyat"].ToString() ;
+				Kitap4Fiyat.Text = kitaplar.Rows[3]["kitap_fiyat"].ToString() ;
+				Kitap5Fiyat.Text = kitaplar.Rows[4]["kitap_fiyat"].ToString() ;
+				Kitap6Fiyat.Text = kitaplar.Rows[5]["kitap_fiyat"].ToString() ;
+				Kitap7Fiyat.Text = kitaplar.Rows[6]["kitap_fiyat"].ToString() ;
+				Kitap8Fiyat.Text = kitaplar.Rows[7]["kitap_fiyat"].ToString() ;
+				Kitap9Fiyat.Text = kitaplar.Rows[8]["kitap_fiyat"].ToString() ;
+				Kitap10Fiyat.Text = kitaplar.Rows[9]["kitap_fiyat"].ToString() ;
+				Kitap11Fiyat.Text = kitaplar.Rows[10]["kitap_fiyat"].ToString() ;
+				Kitap12Fiyat.Text = kitaplar.Rows[11]["kitap_fiyat"].ToString() ;
+				Kitap13Fiyat.Text = kitaplar.Rows[12]["kitap_fiyat"].ToString() ;
+				
 			}
             catch (Exception ex)
             {
@@ -404,14 +516,16 @@ namespace KutuphaneProjesi
 				Kitap7.BackgroundImageLayout = ImageLayout.Stretch;
 				Kitap8.BackgroundImage = Image.FromFile(kitaplar.Rows[7]["kitap_gorsel"].ToString());
 				Kitap8.BackgroundImageLayout = ImageLayout.Stretch;
-
-
-
-
-
-
-
-
+				Kitap9.BackgroundImage = Image.FromFile(kitaplar.Rows[8]["kitap_gorsel"].ToString());
+				Kitap9.BackgroundImageLayout = ImageLayout.Stretch;
+				Kitap10.BackgroundImage = Image.FromFile(kitaplar.Rows[9]["kitap_gorsel"].ToString());
+				Kitap10.BackgroundImageLayout = ImageLayout.Stretch;
+				Kitap11.BackgroundImage = Image.FromFile(kitaplar.Rows[10]["kitap_gorsel"].ToString());
+				Kitap11.BackgroundImageLayout = ImageLayout.Stretch;
+				Kitap12.BackgroundImage = Image.FromFile(kitaplar.Rows[11]["kitap_gorsel"].ToString());
+				Kitap12.BackgroundImageLayout = ImageLayout.Stretch;
+				Kitap13.BackgroundImage = Image.FromFile(kitaplar.Rows[12]["kitap_gorsel"].ToString());
+				Kitap13.BackgroundImageLayout = ImageLayout.Stretch;
 
 			}
 			catch (Exception ex)
@@ -420,7 +534,7 @@ namespace KutuphaneProjesi
 			}
 		}
 
-		private void Kitap5Fiyat_Click(object sender, EventArgs e)
+		private void Kitapismi9_Click(object sender, EventArgs e)
 		{
 
 		}
