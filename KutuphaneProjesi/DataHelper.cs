@@ -78,6 +78,8 @@ namespace KutuphaneProjesi
 
 
 
+
+
 		//Veri Güncelleme
 		public void VeriGuncelle(string tabloAdi, string guncellemeBilgi, string kosul)
 		{

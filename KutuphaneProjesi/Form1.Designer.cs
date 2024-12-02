@@ -47,10 +47,27 @@
 			this.Anasayfa = new System.Windows.Forms.Button();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
+			this.Hesabim = new System.Windows.Forms.Panel();
+			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.tabPage13 = new System.Windows.Forms.TabPage();
+			this.tabPage14 = new System.Windows.Forms.TabPage();
+			this.Kalangun = new System.Windows.Forms.ListBox();
+			this.kiralamaZamani = new System.Windows.Forms.ListBox();
+			this.label31 = new System.Windows.Forms.Label();
+			this.HesabimListbox = new System.Windows.Forms.ListBox();
+			this.panel11 = new System.Windows.Forms.Panel();
 			this.KitapKiralaPencere = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabControl2 = new System.Windows.Forms.TabControl();
 			this.tabPage8 = new System.Windows.Forms.TabPage();
+			this.label22 = new System.Windows.Forms.Label();
+			this.label21 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label16 = new System.Windows.Forms.Label();
+			this.label15 = new System.Windows.Forms.Label();
 			this.Kitapismi8 = new System.Windows.Forms.Label();
 			this.Kitapismi7 = new System.Windows.Forms.Label();
 			this.Kitapismi6 = new System.Windows.Forms.Label();
@@ -76,6 +93,11 @@
 			this.Kitap2 = new System.Windows.Forms.Button();
 			this.Kitap1 = new System.Windows.Forms.Button();
 			this.tabPage9 = new System.Windows.Forms.TabPage();
+			this.label30 = new System.Windows.Forms.Label();
+			this.label29 = new System.Windows.Forms.Label();
+			this.label28 = new System.Windows.Forms.Label();
+			this.label27 = new System.Windows.Forms.Label();
+			this.label25 = new System.Windows.Forms.Label();
 			this.Kitap12Fiyat = new System.Windows.Forms.Label();
 			this.Kitap11Fiyat = new System.Windows.Forms.Label();
 			this.Kitap10Fiyat = new System.Windows.Forms.Label();
@@ -126,22 +148,15 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.label15 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.label17 = new System.Windows.Forms.Label();
-			this.label18 = new System.Windows.Forms.Label();
-			this.label19 = new System.Windows.Forms.Label();
-			this.label20 = new System.Windows.Forms.Label();
-			this.label21 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label25 = new System.Windows.Forms.Label();
-			this.label27 = new System.Windows.Forms.Label();
-			this.label28 = new System.Windows.Forms.Label();
-			this.label29 = new System.Windows.Forms.Label();
-			this.label30 = new System.Windows.Forms.Label();
+			this.label32 = new System.Windows.Forms.Label();
+			this.label33 = new System.Windows.Forms.Label();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
+			this.Hesabim.SuspendLayout();
+			this.tabControl1.SuspendLayout();
+			this.tabPage14.SuspendLayout();
+			this.panel11.SuspendLayout();
 			this.KitapKiralaPencere.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabControl2.SuspendLayout();
@@ -269,6 +284,7 @@
 			this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
 			this.button4.Name = "button4";
 			this.button4.UseVisualStyleBackColor = false;
+			this.button4.Click += new System.EventHandler(this.button4_Click);
 			// 
 			// KitapKiralama
 			// 
@@ -299,6 +315,7 @@
 			// 
 			this.panel4.BackColor = System.Drawing.Color.Purple;
 			this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel4.Controls.Add(this.Hesabim);
 			this.panel4.Controls.Add(this.KitapKiralaPencere);
 			this.panel4.Controls.Add(this.SepetimPanel);
 			this.panel4.Controls.Add(this.label6);
@@ -306,6 +323,79 @@
 			this.panel4.Controls.Add(this.label5);
 			resources.ApplyResources(this.panel4, "panel4");
 			this.panel4.Name = "panel4";
+			// 
+			// Hesabim
+			// 
+			this.Hesabim.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.Hesabim.Controls.Add(this.tabControl1);
+			this.Hesabim.Controls.Add(this.panel11);
+			resources.ApplyResources(this.Hesabim, "Hesabim");
+			this.Hesabim.Name = "Hesabim";
+			// 
+			// tabControl1
+			// 
+			this.tabControl1.Controls.Add(this.tabPage13);
+			this.tabControl1.Controls.Add(this.tabPage14);
+			resources.ApplyResources(this.tabControl1, "tabControl1");
+			this.tabControl1.Name = "tabControl1";
+			this.tabControl1.SelectedIndex = 0;
+			// 
+			// tabPage13
+			// 
+			this.tabPage13.BackColor = System.Drawing.Color.Purple;
+			resources.ApplyResources(this.tabPage13, "tabPage13");
+			this.tabPage13.Name = "tabPage13";
+			// 
+			// tabPage14
+			// 
+			this.tabPage14.BackColor = System.Drawing.Color.Purple;
+			this.tabPage14.Controls.Add(this.Kalangun);
+			this.tabPage14.Controls.Add(this.kiralamaZamani);
+			this.tabPage14.Controls.Add(this.label31);
+			this.tabPage14.Controls.Add(this.HesabimListbox);
+			resources.ApplyResources(this.tabPage14, "tabPage14");
+			this.tabPage14.Name = "tabPage14";
+			// 
+			// Kalangun
+			// 
+			this.Kalangun.BackColor = System.Drawing.Color.Purple;
+			this.Kalangun.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			resources.ApplyResources(this.Kalangun, "Kalangun");
+			this.Kalangun.ForeColor = System.Drawing.Color.White;
+			this.Kalangun.FormattingEnabled = true;
+			this.Kalangun.Name = "Kalangun";
+			// 
+			// kiralamaZamani
+			// 
+			this.kiralamaZamani.BackColor = System.Drawing.Color.Purple;
+			this.kiralamaZamani.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			resources.ApplyResources(this.kiralamaZamani, "kiralamaZamani");
+			this.kiralamaZamani.ForeColor = System.Drawing.Color.White;
+			this.kiralamaZamani.FormattingEnabled = true;
+			this.kiralamaZamani.Name = "kiralamaZamani";
+			// 
+			// label31
+			// 
+			resources.ApplyResources(this.label31, "label31");
+			this.label31.ForeColor = System.Drawing.Color.White;
+			this.label31.Name = "label31";
+			// 
+			// HesabimListbox
+			// 
+			this.HesabimListbox.BackColor = System.Drawing.Color.Purple;
+			this.HesabimListbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			resources.ApplyResources(this.HesabimListbox, "HesabimListbox");
+			this.HesabimListbox.ForeColor = System.Drawing.Color.White;
+			this.HesabimListbox.FormattingEnabled = true;
+			this.HesabimListbox.Name = "HesabimListbox";
+			// 
+			// panel11
+			// 
+			this.panel11.BackColor = System.Drawing.Color.Gold;
+			this.panel11.Controls.Add(this.label33);
+			this.panel11.Controls.Add(this.label32);
+			resources.ApplyResources(this.panel11, "panel11");
+			this.panel11.Name = "panel11";
 			// 
 			// KitapKiralaPencere
 			// 
@@ -381,6 +471,54 @@
 			this.tabPage8.Controls.Add(this.Kitap1);
 			resources.ApplyResources(this.tabPage8, "tabPage8");
 			this.tabPage8.Name = "tabPage8";
+			// 
+			// label22
+			// 
+			resources.ApplyResources(this.label22, "label22");
+			this.label22.ForeColor = System.Drawing.Color.White;
+			this.label22.Name = "label22";
+			// 
+			// label21
+			// 
+			resources.ApplyResources(this.label21, "label21");
+			this.label21.ForeColor = System.Drawing.Color.White;
+			this.label21.Name = "label21";
+			// 
+			// label20
+			// 
+			resources.ApplyResources(this.label20, "label20");
+			this.label20.ForeColor = System.Drawing.Color.White;
+			this.label20.Name = "label20";
+			// 
+			// label19
+			// 
+			resources.ApplyResources(this.label19, "label19");
+			this.label19.ForeColor = System.Drawing.Color.White;
+			this.label19.Name = "label19";
+			// 
+			// label18
+			// 
+			resources.ApplyResources(this.label18, "label18");
+			this.label18.ForeColor = System.Drawing.Color.White;
+			this.label18.Name = "label18";
+			// 
+			// label17
+			// 
+			resources.ApplyResources(this.label17, "label17");
+			this.label17.ForeColor = System.Drawing.Color.White;
+			this.label17.Name = "label17";
+			// 
+			// label16
+			// 
+			resources.ApplyResources(this.label16, "label16");
+			this.label16.ForeColor = System.Drawing.Color.White;
+			this.label16.Name = "label16";
+			// 
+			// label15
+			// 
+			resources.ApplyResources(this.label15, "label15");
+			this.label15.ForeColor = System.Drawing.Color.White;
+			this.label15.Name = "label15";
 			// 
 			// Kitapismi8
 			// 
@@ -568,6 +706,36 @@
 			this.tabPage9.Controls.Add(this.Kitap9);
 			resources.ApplyResources(this.tabPage9, "tabPage9");
 			this.tabPage9.Name = "tabPage9";
+			// 
+			// label30
+			// 
+			resources.ApplyResources(this.label30, "label30");
+			this.label30.ForeColor = System.Drawing.Color.White;
+			this.label30.Name = "label30";
+			// 
+			// label29
+			// 
+			resources.ApplyResources(this.label29, "label29");
+			this.label29.ForeColor = System.Drawing.Color.White;
+			this.label29.Name = "label29";
+			// 
+			// label28
+			// 
+			resources.ApplyResources(this.label28, "label28");
+			this.label28.ForeColor = System.Drawing.Color.White;
+			this.label28.Name = "label28";
+			// 
+			// label27
+			// 
+			resources.ApplyResources(this.label27, "label27");
+			this.label27.ForeColor = System.Drawing.Color.White;
+			this.label27.Name = "label27";
+			// 
+			// label25
+			// 
+			resources.ApplyResources(this.label25, "label25");
+			this.label25.ForeColor = System.Drawing.Color.White;
+			this.label25.Name = "label25";
 			// 
 			// Kitap12Fiyat
 			// 
@@ -763,26 +931,31 @@
 			// label23
 			// 
 			resources.ApplyResources(this.label23, "label23");
+			this.label23.ForeColor = System.Drawing.Color.White;
 			this.label23.Name = "label23";
 			// 
 			// label26
 			// 
 			resources.ApplyResources(this.label26, "label26");
+			this.label26.ForeColor = System.Drawing.Color.White;
 			this.label26.Name = "label26";
 			// 
 			// ToplamFiyat
 			// 
 			resources.ApplyResources(this.ToplamFiyat, "ToplamFiyat");
+			this.ToplamFiyat.ForeColor = System.Drawing.Color.White;
 			this.ToplamFiyat.Name = "ToplamFiyat";
 			// 
 			// Vergi
 			// 
 			resources.ApplyResources(this.Vergi, "Vergi");
+			this.Vergi.ForeColor = System.Drawing.Color.White;
 			this.Vergi.Name = "Vergi";
 			// 
 			// NormalFiyat
 			// 
 			resources.ApplyResources(this.NormalFiyat, "NormalFiyat");
+			this.NormalFiyat.ForeColor = System.Drawing.Color.White;
 			this.NormalFiyat.Name = "NormalFiyat";
 			// 
 			// button2
@@ -791,20 +964,24 @@
 			resources.ApplyResources(this.button2, "button2");
 			this.button2.Name = "button2";
 			this.button2.UseVisualStyleBackColor = false;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// label10
 			// 
 			resources.ApplyResources(this.label10, "label10");
+			this.label10.ForeColor = System.Drawing.Color.White;
 			this.label10.Name = "label10";
 			// 
 			// label9
 			// 
 			resources.ApplyResources(this.label9, "label9");
+			this.label9.ForeColor = System.Drawing.Color.White;
 			this.label9.Name = "label9";
 			// 
 			// label8
 			// 
 			resources.ApplyResources(this.label8, "label8");
+			this.label8.ForeColor = System.Drawing.Color.White;
 			this.label8.Name = "label8";
 			// 
 			// panel6
@@ -844,6 +1021,7 @@
 			// label14
 			// 
 			resources.ApplyResources(this.label14, "label14");
+			this.label14.ForeColor = System.Drawing.Color.White;
 			this.label14.Name = "label14";
 			// 
 			// label12
@@ -854,6 +1032,7 @@
 			// label13
 			// 
 			resources.ApplyResources(this.label13, "label13");
+			this.label13.ForeColor = System.Drawing.Color.White;
 			this.label13.Name = "label13";
 			// 
 			// panel9
@@ -867,6 +1046,7 @@
 			this.SepetFiyat.BackColor = System.Drawing.Color.Purple;
 			this.SepetFiyat.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.SepetFiyat, "SepetFiyat");
+			this.SepetFiyat.ForeColor = System.Drawing.Color.White;
 			this.SepetFiyat.FormattingEnabled = true;
 			this.SepetFiyat.Name = "SepetFiyat";
 			// 
@@ -875,6 +1055,7 @@
 			this.Sepetİsim.BackColor = System.Drawing.Color.Purple;
 			this.Sepetİsim.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.Sepetİsim, "Sepetİsim");
+			this.Sepetİsim.ForeColor = System.Drawing.Color.White;
 			this.Sepetİsim.FormattingEnabled = true;
 			this.Sepetİsim.Name = "Sepetİsim";
 			// 
@@ -896,83 +1077,15 @@
 			this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.label5.Name = "label5";
 			// 
-			// label15
+			// label32
 			// 
-			resources.ApplyResources(this.label15, "label15");
-			this.label15.ForeColor = System.Drawing.Color.White;
-			this.label15.Name = "label15";
+			resources.ApplyResources(this.label32, "label32");
+			this.label32.Name = "label32";
 			// 
-			// label16
+			// label33
 			// 
-			resources.ApplyResources(this.label16, "label16");
-			this.label16.ForeColor = System.Drawing.Color.White;
-			this.label16.Name = "label16";
-			// 
-			// label17
-			// 
-			resources.ApplyResources(this.label17, "label17");
-			this.label17.ForeColor = System.Drawing.Color.White;
-			this.label17.Name = "label17";
-			// 
-			// label18
-			// 
-			resources.ApplyResources(this.label18, "label18");
-			this.label18.ForeColor = System.Drawing.Color.White;
-			this.label18.Name = "label18";
-			// 
-			// label19
-			// 
-			resources.ApplyResources(this.label19, "label19");
-			this.label19.ForeColor = System.Drawing.Color.White;
-			this.label19.Name = "label19";
-			// 
-			// label20
-			// 
-			resources.ApplyResources(this.label20, "label20");
-			this.label20.ForeColor = System.Drawing.Color.White;
-			this.label20.Name = "label20";
-			// 
-			// label21
-			// 
-			resources.ApplyResources(this.label21, "label21");
-			this.label21.ForeColor = System.Drawing.Color.White;
-			this.label21.Name = "label21";
-			// 
-			// label22
-			// 
-			resources.ApplyResources(this.label22, "label22");
-			this.label22.ForeColor = System.Drawing.Color.White;
-			this.label22.Name = "label22";
-			// 
-			// label25
-			// 
-			resources.ApplyResources(this.label25, "label25");
-			this.label25.ForeColor = System.Drawing.Color.White;
-			this.label25.Name = "label25";
-			// 
-			// label27
-			// 
-			resources.ApplyResources(this.label27, "label27");
-			this.label27.ForeColor = System.Drawing.Color.White;
-			this.label27.Name = "label27";
-			// 
-			// label28
-			// 
-			resources.ApplyResources(this.label28, "label28");
-			this.label28.ForeColor = System.Drawing.Color.White;
-			this.label28.Name = "label28";
-			// 
-			// label29
-			// 
-			resources.ApplyResources(this.label29, "label29");
-			this.label29.ForeColor = System.Drawing.Color.White;
-			this.label29.Name = "label29";
-			// 
-			// label30
-			// 
-			resources.ApplyResources(this.label30, "label30");
-			this.label30.ForeColor = System.Drawing.Color.White;
-			this.label30.Name = "label30";
+			resources.ApplyResources(this.label33, "label33");
+			this.label33.Name = "label33";
 			// 
 			// Form1
 			// 
@@ -992,6 +1105,12 @@
 			this.panel10.PerformLayout();
 			this.panel4.ResumeLayout(false);
 			this.panel4.PerformLayout();
+			this.Hesabim.ResumeLayout(false);
+			this.tabControl1.ResumeLayout(false);
+			this.tabPage14.ResumeLayout(false);
+			this.tabPage14.PerformLayout();
+			this.panel11.ResumeLayout(false);
+			this.panel11.PerformLayout();
 			this.KitapKiralaPencere.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabControl2.ResumeLayout(false);
@@ -1123,6 +1242,17 @@
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Label label27;
 		private System.Windows.Forms.Label label25;
+		private System.Windows.Forms.Panel Hesabim;
+		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.TabPage tabPage13;
+		private System.Windows.Forms.TabPage tabPage14;
+		private System.Windows.Forms.ListBox HesabimListbox;
+		private System.Windows.Forms.Panel panel11;
+		private System.Windows.Forms.Label label31;
+		private System.Windows.Forms.ListBox kiralamaZamani;
+		private System.Windows.Forms.ListBox Kalangun;
+		private System.Windows.Forms.Label label32;
+		private System.Windows.Forms.Label label33;
 	}
 }
 
