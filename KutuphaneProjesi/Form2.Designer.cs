@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
 			this.panel13 = new System.Windows.Forms.Panel();
 			this.kayitOl = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
 			this.sifreTextBox = new System.Windows.Forms.TextBox();
 			this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
 			this.KayitPanel = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -52,9 +54,12 @@
 			this.EmailKayitOl = new System.Windows.Forms.Label();
 			this.KullaniciAdiKayitOl = new System.Windows.Forms.Label();
 			this.İsimKayitOl = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel13.SuspendLayout();
 			this.KayitPanel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel13
@@ -175,12 +180,23 @@
 			// KayitPanel
 			// 
 			this.KayitPanel.BackColor = System.Drawing.Color.Purple;
+			this.KayitPanel.Controls.Add(this.pictureBox1);
 			this.KayitPanel.Controls.Add(this.panel2);
-			this.KayitPanel.Location = new System.Drawing.Point(13, 12);
+			this.KayitPanel.Location = new System.Drawing.Point(12, 12);
 			this.KayitPanel.Name = "KayitPanel";
-			this.KayitPanel.Size = new System.Drawing.Size(872, 537);
+			this.KayitPanel.Size = new System.Drawing.Size(886, 537);
 			this.KayitPanel.TabIndex = 1;
 			this.KayitPanel.Visible = false;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox1.Location = new System.Drawing.Point(428, 20);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(391, 478);
+			this.pictureBox1.TabIndex = 1;
+			this.pictureBox1.TabStop = false;
 			// 
 			// panel2
 			// 
@@ -331,6 +347,16 @@
 			this.İsimKayitOl.TabIndex = 0;
 			this.İsimKayitOl.Text = "İsim :";
 			// 
+			// pictureBox2
+			// 
+			this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+			this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pictureBox2.Location = new System.Drawing.Point(440, 25);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(391, 478);
+			this.pictureBox2.TabIndex = 2;
+			this.pictureBox2.TabStop = false;
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,6 +364,7 @@
 			this.BackColor = System.Drawing.Color.Purple;
 			this.ClientSize = new System.Drawing.Size(897, 562);
 			this.Controls.Add(this.KayitPanel);
+			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.panel13);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "Form2";
@@ -346,8 +373,10 @@
 			this.panel13.ResumeLayout(false);
 			this.panel13.PerformLayout();
 			this.KayitPanel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -378,5 +407,7 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button GirisYapKO;
+		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox pictureBox2;
 	}
 }
