@@ -11,6 +11,9 @@ namespace KutuphaneProjesi
 {
 	public class DataHelper
 	{
+		
+		
+
 		// Bağlantı cümlesi (Server bilgileri, Veritabanı adı ve güvenlik)
 		private string baglantiAnahtari = @"Data Source=DESKTOP-57FVTS7\SQLEXPRESS;Initial Catalog=kutuphaneProjesi;Integrated Security=True;TrustServerCertificate=True";
 
@@ -164,6 +167,82 @@ namespace KutuphaneProjesi
 				BaglantiKapat();
 			}
 		}
+
+
+		public DataTable loginKosul(string kullaniciAdi, string sifre)
+		{
+			try
+			{
+				BaglantiAc();
+
+				// SQL sorgusunu hazırla ve parametreler kullanarak güvenli sorgu oluştur
+				string sorgu = $"SELECT * FROM kullanici WHERE username = @KullaniciAdi AND sifre = @Sifre";
+
+				SqlCommand komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@KullaniciAdi", kullaniciAdi);  // Kullanıcı adı parametre olarak ekleniyor
+				komut.Parameters.AddWithValue("@Sifre", sifre);  // Şifre parametre olarak ekleniyor
+
+				SqlDataAdapter adaptor = new SqlDataAdapter(komut);
+				DataTable tablo = new DataTable();
+				adaptor.Fill(tablo);
+
+				return tablo;  // Veriyi döndür
+			}
+			finally
+			{
+				BaglantiKapat();
+			}
+		}
+
+
+
+
+		public void KayitOl(string isim, string kullaniciAdi, string email, string sifre)
+		{
+			try
+			{
+				BaglantiAc();  // Bağlantıyı açıyoruz (Bağlantı dizesini burada kullanıyoruz)
+
+				// SQL INSERT komutunu tanımlayın
+				string sorgu = "INSERT INTO kullanici (ad, username, email, sifre) VALUES (@Ad, @KullaniciAdi, @Email, @Sifre)";
+
+				// SQL komutunu oluştur
+				using (SqlCommand cmd = new SqlCommand(sorgu, baglanti))
+				{
+					// Parametreler ekle
+					cmd.Parameters.AddWithValue("@Ad", isim);
+					cmd.Parameters.AddWithValue("@KullaniciAdi", kullaniciAdi);
+					cmd.Parameters.AddWithValue("@Email", email);
+					cmd.Parameters.AddWithValue("@Sifre", sifre);
+
+					// Komutu çalıştır
+					cmd.ExecuteNonQuery();
+					
+					
+					
+					
+					MessageBox.Show("Veri başarıyla kaydedildi!");
+					
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Hata: " + ex.Message);
+				
+			}
+			finally
+			{
+				BaglantiKapat();  // Bağlantıyı kapatıyoruz
+			}
+		}
+
+		
+
+
+
+
+
+
 
 
 

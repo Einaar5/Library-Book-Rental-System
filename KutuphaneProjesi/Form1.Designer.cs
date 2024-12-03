@@ -1,4 +1,8 @@
-﻿namespace KutuphaneProjesi
+﻿using System.Drawing.Drawing2D;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace KutuphaneProjesi
 {
     partial class Form1
     {
@@ -50,12 +54,22 @@
 			this.Hesabim = new System.Windows.Forms.Panel();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage13 = new System.Windows.Forms.TabPage();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.label37 = new System.Windows.Forms.Label();
+			this.label36 = new System.Windows.Forms.Label();
+			this.label35 = new System.Windows.Forms.Label();
+			this.label34 = new System.Windows.Forms.Label();
 			this.tabPage14 = new System.Windows.Forms.TabPage();
 			this.Kalangun = new System.Windows.Forms.ListBox();
 			this.kiralamaZamani = new System.Windows.Forms.ListBox();
 			this.label31 = new System.Windows.Forms.Label();
 			this.HesabimListbox = new System.Windows.Forms.ListBox();
 			this.panel11 = new System.Windows.Forms.Panel();
+			this.label33 = new System.Windows.Forms.Label();
+			this.label32 = new System.Windows.Forms.Label();
 			this.KitapKiralaPencere = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -148,13 +162,12 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.label32 = new System.Windows.Forms.Label();
-			this.label33 = new System.Windows.Forms.Label();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
 			this.Hesabim.SuspendLayout();
 			this.tabControl1.SuspendLayout();
+			this.tabPage13.SuspendLayout();
 			this.tabPage14.SuspendLayout();
 			this.panel11.SuspendLayout();
 			this.KitapKiralaPencere.SuspendLayout();
@@ -343,8 +356,60 @@
 			// tabPage13
 			// 
 			this.tabPage13.BackColor = System.Drawing.Color.Purple;
+			this.tabPage13.Controls.Add(this.textBox4);
+			this.tabPage13.Controls.Add(this.textBox3);
+			this.tabPage13.Controls.Add(this.textBox2);
+			this.tabPage13.Controls.Add(this.textBox1);
+			this.tabPage13.Controls.Add(this.label37);
+			this.tabPage13.Controls.Add(this.label36);
+			this.tabPage13.Controls.Add(this.label35);
+			this.tabPage13.Controls.Add(this.label34);
 			resources.ApplyResources(this.tabPage13, "tabPage13");
 			this.tabPage13.Name = "tabPage13";
+			// 
+			// textBox4
+			// 
+			resources.ApplyResources(this.textBox4, "textBox4");
+			this.textBox4.Name = "textBox4";
+			// 
+			// textBox3
+			// 
+			resources.ApplyResources(this.textBox3, "textBox3");
+			this.textBox3.Name = "textBox3";
+			// 
+			// textBox2
+			// 
+			resources.ApplyResources(this.textBox2, "textBox2");
+			this.textBox2.Name = "textBox2";
+			// 
+			// textBox1
+			// 
+			resources.ApplyResources(this.textBox1, "textBox1");
+			this.textBox1.Name = "textBox1";
+			// 
+			// label37
+			// 
+			resources.ApplyResources(this.label37, "label37");
+			this.label37.ForeColor = System.Drawing.Color.White;
+			this.label37.Name = "label37";
+			// 
+			// label36
+			// 
+			resources.ApplyResources(this.label36, "label36");
+			this.label36.ForeColor = System.Drawing.Color.White;
+			this.label36.Name = "label36";
+			// 
+			// label35
+			// 
+			resources.ApplyResources(this.label35, "label35");
+			this.label35.ForeColor = System.Drawing.Color.White;
+			this.label35.Name = "label35";
+			// 
+			// label34
+			// 
+			resources.ApplyResources(this.label34, "label34");
+			this.label34.ForeColor = System.Drawing.Color.White;
+			this.label34.Name = "label34";
 			// 
 			// tabPage14
 			// 
@@ -396,6 +461,16 @@
 			this.panel11.Controls.Add(this.label32);
 			resources.ApplyResources(this.panel11, "panel11");
 			this.panel11.Name = "panel11";
+			// 
+			// label33
+			// 
+			resources.ApplyResources(this.label33, "label33");
+			this.label33.Name = "label33";
+			// 
+			// label32
+			// 
+			resources.ApplyResources(this.label32, "label32");
+			this.label32.Name = "label32";
 			// 
 			// KitapKiralaPencere
 			// 
@@ -1077,16 +1152,6 @@
 			this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.label5.Name = "label5";
 			// 
-			// label32
-			// 
-			resources.ApplyResources(this.label32, "label32");
-			this.label32.Name = "label32";
-			// 
-			// label33
-			// 
-			resources.ApplyResources(this.label33, "label33");
-			this.label33.Name = "label33";
-			// 
 			// Form1
 			// 
 			resources.ApplyResources(this, "$this");
@@ -1107,6 +1172,8 @@
 			this.panel4.PerformLayout();
 			this.Hesabim.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
+			this.tabPage13.ResumeLayout(false);
+			this.tabPage13.PerformLayout();
 			this.tabPage14.ResumeLayout(false);
 			this.tabPage14.PerformLayout();
 			this.panel11.ResumeLayout(false);
@@ -1129,10 +1196,11 @@
 			this.panel8.PerformLayout();
 			this.ResumeLayout(false);
 
-        }
+		}
+		
 
-        #endregion
-        private System.Windows.Forms.Panel panel1;
+		#endregion
+		private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -1253,6 +1321,14 @@
 		private System.Windows.Forms.ListBox Kalangun;
 		private System.Windows.Forms.Label label32;
 		private System.Windows.Forms.Label label33;
+		private System.Windows.Forms.Label label36;
+		private System.Windows.Forms.Label label35;
+		private System.Windows.Forms.Label label34;
+		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.Label label37;
 	}
 }
 

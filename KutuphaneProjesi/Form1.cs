@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,14 +23,20 @@ namespace KutuphaneProjesi
 		//Constractor
 		private void Form1_Load(object sender, EventArgs e)
 		{
+			Form2 form2 = new Form2();
 			KitapKiralaPencere.Visible = false;
 			SepetimPanel.Visible = false;
+			
+			label11.Text = form2.KullaniciAdiText;
 
 			//Fonksionlarımı formun load metoduna çağırdım
 			ButonlaraVeriEkle();
 			FiyatEkle();
 			kitapGorseliGetir();
 		}
+
+		//login ekranı için yuvarlak köşe tasasrımı
+		
 
 
 
@@ -82,6 +90,8 @@ namespace KutuphaneProjesi
 		{
 			TogglePanels(Hesabim);
 		}
+
+
 
 
 
@@ -588,6 +598,6 @@ namespace KutuphaneProjesi
 			
 		}
 
-
+		
 	}
 }
