@@ -201,6 +201,7 @@ namespace KutuphaneProjesi
 			this.label52 = new System.Windows.Forms.Label();
 			this.label53 = new System.Windows.Forms.Label();
 			this.label54 = new System.Windows.Forms.Label();
+			this.label55 = new System.Windows.Forms.Label();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -418,6 +419,7 @@ namespace KutuphaneProjesi
 			// tabPage13
 			// 
 			this.tabPage13.BackColor = System.Drawing.Color.Purple;
+			this.tabPage13.Controls.Add(this.label55);
 			this.tabPage13.Controls.Add(this.VeriGuncelle);
 			this.tabPage13.Controls.Add(this.textBox4);
 			this.tabPage13.Controls.Add(this.textBox3);
@@ -1408,9 +1410,11 @@ namespace KutuphaneProjesi
 			// 
 			// VeriGuncelle
 			// 
+			this.VeriGuncelle.BackColor = System.Drawing.Color.Purple;
 			resources.ApplyResources(this.VeriGuncelle, "VeriGuncelle");
+			this.VeriGuncelle.ForeColor = System.Drawing.Color.White;
 			this.VeriGuncelle.Name = "VeriGuncelle";
-			this.VeriGuncelle.UseVisualStyleBackColor = true;
+			this.VeriGuncelle.UseVisualStyleBackColor = false;
 			this.VeriGuncelle.Click += new System.EventHandler(this.VeriGuncelle_Click);
 			// 
 			// label45
@@ -1472,6 +1476,12 @@ namespace KutuphaneProjesi
 			resources.ApplyResources(this.label54, "label54");
 			this.label54.ForeColor = System.Drawing.Color.White;
 			this.label54.Name = "label54";
+			// 
+			// label55
+			// 
+			resources.ApplyResources(this.label55, "label55");
+			this.label55.ForeColor = System.Drawing.Color.White;
+			this.label55.Name = "label55";
 			// 
 			// Form1
 			// 
@@ -1698,6 +1708,7 @@ namespace KutuphaneProjesi
 		private Label label50;
 		private Label label54;
 		private Label label53;
+		private Label label55;
 	}
 }
 

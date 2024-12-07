@@ -85,14 +85,14 @@ namespace KutuphaneProjesi
 
 
 		//Veri Güncelleme
-		public void VeriGuncelle(string yeniAd, string yeniEmail, string yeniSifre, string kullaniciAdi)
+		public void VeriGuncelle(string yeniAd, string yeniEmail, string yeniSifre, string kullaniciAdi,string kosul)
 		{
 			try
 			{
 				BaglantiAc();
 
-				// Parametreli SQL sorgusu
-				string sorgu = "UPDATE kullanici SET ad = @YeniAd, email = @YeniEmail, sifre = @YeniSifre WHERE username = @KullaniciAdi";
+				// Sorguyu düzelttik
+				string sorgu = "UPDATE kullanici SET ad = @YeniAd, email = @YeniEmail, sifre = @YeniSifre, username = @KullaniciAdi WHERE username = @kosul";
 
 				using (SqlCommand komut = new SqlCommand(sorgu, baglanti))
 				{
@@ -101,12 +101,20 @@ namespace KutuphaneProjesi
 					komut.Parameters.AddWithValue("@YeniEmail", yeniEmail);
 					komut.Parameters.AddWithValue("@YeniSifre", yeniSifre);
 					komut.Parameters.AddWithValue("@KullaniciAdi", kullaniciAdi);
+					komut.Parameters.AddWithValue("@kosul", kosul);
 
-					// Komutu çalıştırıyoruz
-					komut.ExecuteNonQuery();
+					// Komutu çalıştırıyoruz ve etkilenen satır sayısını alıyoruz
+					int etkilenenSatir = komut.ExecuteNonQuery();
+
+					if (etkilenenSatir > 0)
+					{
+						MessageBox.Show("Veri başarıyla güncellendi!");
+					}
+					else
+					{
+						MessageBox.Show("Hiçbir veri güncellenmedi. Kullanıcı adı veritabanında bulunamayabilir.");
+					}
 				}
-
-				MessageBox.Show("Veri başarıyla güncellendi! Yenilenmesi İçin Tekrar Giriş Yapınız");
 			}
 			catch (Exception ex)
 			{
@@ -117,6 +125,7 @@ namespace KutuphaneProjesi
 				BaglantiKapat();
 			}
 		}
+
 
 
 		//Veri Silme

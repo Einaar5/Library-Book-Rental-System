@@ -20,8 +20,25 @@ namespace KutuphaneProjesi
 		{
 			InitializeComponent();
 			int radius = 25; // Yuvarlaklık derecesi
-			RoundedCorners(panel13, radius); // Metodu çağır
-			RoundedCorners(panel14, radius); // Metodu çağır
+			RoundedCorners(panel13, radius); 
+			RoundedCorners(panel14, radius); 
+			RoundedCorners(KapsayiciLogin, radius); 
+			RoundedCorners(VeriGuncelle, radius); 
+			RoundedCorners(SepetiTemizle, radius); 
+			RoundedCorners(button2, radius); 
+			RoundedCorners(Anasayfa, radius); 
+			RoundedCorners(KitapKiralama, radius); 
+			RoundedCorners(button4, radius); 
+			RoundedCorners(Sepetim, radius); 
+			RoundedCorners(cikis, radius); 
+			RoundedCorners(SepeteEkleButonu, radius); 
+			RoundedCorners(Sil, radius); 
+			RoundedCorners(KayitOlOnay, radius); 
+			RoundedCorners(GirisYapKO, radius); 
+			RoundedCorners(GirisButon, radius); 
+			RoundedCorners(kayitOl, radius); 
+			
+			
 
 		}
 
@@ -43,7 +60,7 @@ namespace KutuphaneProjesi
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			Form2 form2 = new Form2();
+			
 			KitapKiralaPencere.Visible = false;
 			SepetimPanel.Visible = false;
 
@@ -601,9 +618,14 @@ namespace KutuphaneProjesi
 
 			}
 
+			
 
-
-			// Kalangun'daki öğeleri kontrol et
+			Sepetİsim.Items.Clear();
+			SepetFiyat.Items.Clear();
+			SepetListesi.Items.Clear();
+			MessageBox.Show("Ödeme Tamamlanmıştır!");
+			NormalFiyat.Text = "";
+			ToplamFiyat.Text = "";
 
 		}
 
@@ -739,13 +761,20 @@ namespace KutuphaneProjesi
 		private void VeriGuncelle_Click(object sender, EventArgs e)
 		{
 			// Kullanıcının girdiği değerleri alıyoruz
-			string yeniAd = textBox1.Text;
-			string yeniKullaniciAdi = textBox2.Text;
-			string yeniEmail = textBox3.Text;
-			string yeniSifre = textBox4.Text;
+			string isim = textBox1.Text;
+			string kullaniciAdi = textBox2.Text;
+			string email = textBox3.Text;
+			string sifre = textBox4.Text;
+			string kosul = kullaniciAdiTextBox.Text;
+			// Kullanıcı adı, isim, email ve şifrenin boş olup olmadığını kontrol et
+			if (string.IsNullOrEmpty(kullaniciAdi) || string.IsNullOrEmpty(isim) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(sifre))
+			{
+				MessageBox.Show("Tüm alanlar doldurulmalıdır.");
+				return;
+			}
 
-			// Kullanıcı adı üzerinden güncelleme yapıyoruz
-			dataHelper.VeriGuncelle(yeniAd, yeniEmail, yeniSifre, yeniKullaniciAdi);
+			// Veri giriş metodunu çağırın
+			dataHelper.VeriGuncelle(isim, email, sifre, kullaniciAdi,kosul);
 		}
 
 	}
