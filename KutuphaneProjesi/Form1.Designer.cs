@@ -179,7 +179,6 @@ namespace KutuphaneProjesi
 			this.EmailKayitOl = new System.Windows.Forms.Label();
 			this.KullaniciAdiKayitOl = new System.Windows.Forms.Label();
 			this.İsimKayitOl = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.panel14 = new System.Windows.Forms.Panel();
 			this.kayitOl = new System.Windows.Forms.Button();
 			this.label41 = new System.Windows.Forms.Label();
@@ -202,6 +201,10 @@ namespace KutuphaneProjesi
 			this.label53 = new System.Windows.Forms.Label();
 			this.label54 = new System.Windows.Forms.Label();
 			this.label55 = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.label56 = new System.Windows.Forms.Label();
+			this.label57 = new System.Windows.Forms.Label();
+			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -224,8 +227,8 @@ namespace KutuphaneProjesi
 			this.KayitPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel13.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.panel14.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -1050,6 +1053,7 @@ namespace KutuphaneProjesi
 			this.SepetimPanel.Controls.Add(this.panel7);
 			this.SepetimPanel.Controls.Add(this.panel6);
 			this.SepetimPanel.Controls.Add(this.panel8);
+			this.SepetimPanel.Controls.Add(this.panel9);
 			resources.ApplyResources(this.SepetimPanel, "SepetimPanel");
 			this.SepetimPanel.Name = "SepetimPanel";
 			// 
@@ -1144,7 +1148,6 @@ namespace KutuphaneProjesi
 			this.panel8.Controls.Add(this.label14);
 			this.panel8.Controls.Add(this.label12);
 			this.panel8.Controls.Add(this.label13);
-			this.panel8.Controls.Add(this.panel9);
 			this.panel8.Controls.Add(this.SepetFiyat);
 			this.panel8.Controls.Add(this.Sepetİsim);
 			resources.ApplyResources(this.panel8, "panel8");
@@ -1167,6 +1170,7 @@ namespace KutuphaneProjesi
 			// label12
 			// 
 			resources.ApplyResources(this.label12, "label12");
+			this.label12.ForeColor = System.Drawing.Color.White;
 			this.label12.Name = "label12";
 			// 
 			// label13
@@ -1220,9 +1224,8 @@ namespace KutuphaneProjesi
 			// KapsayiciLogin
 			// 
 			this.KapsayiciLogin.BackColor = System.Drawing.Color.Purple;
-			this.KapsayiciLogin.Controls.Add(this.KayitPanel);
-			this.KapsayiciLogin.Controls.Add(this.panel14);
 			this.KapsayiciLogin.Controls.Add(this.pictureBox2);
+			this.KapsayiciLogin.Controls.Add(this.panel14);
 			resources.ApplyResources(this.KapsayiciLogin, "KapsayiciLogin");
 			this.KapsayiciLogin.Name = "KapsayiciLogin";
 			// 
@@ -1243,6 +1246,8 @@ namespace KutuphaneProjesi
 			// panel13
 			// 
 			this.panel13.BackColor = System.Drawing.Color.White;
+			this.panel13.Controls.Add(this.label57);
+			this.panel13.Controls.Add(this.linkLabel2);
 			this.panel13.Controls.Add(this.label39);
 			this.panel13.Controls.Add(this.label40);
 			this.panel13.Controls.Add(this.GirisYapKO);
@@ -1333,15 +1338,10 @@ namespace KutuphaneProjesi
 			this.İsimKayitOl.ForeColor = System.Drawing.Color.Black;
 			this.İsimKayitOl.Name = "İsimKayitOl";
 			// 
-			// pictureBox2
-			// 
-			resources.ApplyResources(this.pictureBox2, "pictureBox2");
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.TabStop = false;
-			// 
 			// panel14
 			// 
 			this.panel14.BackColor = System.Drawing.Color.White;
+			this.panel14.Controls.Add(this.label56);
 			this.panel14.Controls.Add(this.kayitOl);
 			this.panel14.Controls.Add(this.label41);
 			this.panel14.Controls.Add(this.linkLabel1);
@@ -1483,16 +1483,39 @@ namespace KutuphaneProjesi
 			this.label55.ForeColor = System.Drawing.Color.White;
 			this.label55.Name = "label55";
 			// 
+			// pictureBox2
+			// 
+			resources.ApplyResources(this.pictureBox2, "pictureBox2");
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.TabStop = false;
+			// 
+			// label56
+			// 
+			resources.ApplyResources(this.label56, "label56");
+			this.label56.Name = "label56";
+			// 
+			// label57
+			// 
+			resources.ApplyResources(this.label57, "label57");
+			this.label57.Name = "label57";
+			// 
+			// linkLabel2
+			// 
+			resources.ApplyResources(this.linkLabel2, "linkLabel2");
+			this.linkLabel2.Name = "linkLabel2";
+			this.linkLabel2.TabStop = true;
+			// 
 			// Form1
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DimGray;
+			this.Controls.Add(this.KayitPanel);
 			this.Controls.Add(this.KapsayiciLogin);
 			this.Controls.Add(this.panel4);
-			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.panel1);
+			this.Controls.Add(this.panel3);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
@@ -1531,9 +1554,9 @@ namespace KutuphaneProjesi
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel13.ResumeLayout(false);
 			this.panel13.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.panel14.ResumeLayout(false);
 			this.panel14.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -1686,7 +1709,6 @@ namespace KutuphaneProjesi
 		private Label EmailKayitOl;
 		private Label KullaniciAdiKayitOl;
 		private Label İsimKayitOl;
-		private PictureBox pictureBox2;
 		private Panel panel14;
 		private Button kayitOl;
 		private Label label41;
@@ -1709,6 +1731,10 @@ namespace KutuphaneProjesi
 		private Label label54;
 		private Label label53;
 		private Label label55;
+		private PictureBox pictureBox2;
+		private Label label56;
+		private Label label57;
+		private LinkLabel linkLabel2;
 	}
 }
 

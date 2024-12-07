@@ -37,6 +37,7 @@ namespace KutuphaneProjesi
 			RoundedCorners(GirisYapKO, radius); 
 			RoundedCorners(GirisButon, radius); 
 			RoundedCorners(kayitOl, radius); 
+			RoundedCorners(KayitPanel, radius); 
 			
 			
 
