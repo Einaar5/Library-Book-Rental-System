@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace KutuphaneProjesi
 {
@@ -84,20 +85,39 @@ namespace KutuphaneProjesi
 
 
 		//Veri Güncelleme
-		public void VeriGuncelle(string tabloAdi, string guncellemeBilgi, string kosul)
+		public void VeriGuncelle(string yeniAd, string yeniEmail, string yeniSifre, string kullaniciAdi)
 		{
 			try
 			{
 				BaglantiAc();
-				string sorgu = $"UPDATE {tabloAdi} SET {guncellemeBilgi} WHERE {kosul}";
-				SqlCommand komut = new SqlCommand(sorgu, baglanti); // Sorguyu komuta atıyoruz
-				komut.ExecuteNonQuery();//sorguyu çalıştır
+
+				// Parametreli SQL sorgusu
+				string sorgu = "UPDATE kullanici SET ad = @YeniAd, email = @YeniEmail, sifre = @YeniSifre WHERE username = @KullaniciAdi";
+
+				using (SqlCommand komut = new SqlCommand(sorgu, baglanti))
+				{
+					// Parametreleri ekliyoruz
+					komut.Parameters.AddWithValue("@YeniAd", yeniAd);
+					komut.Parameters.AddWithValue("@YeniEmail", yeniEmail);
+					komut.Parameters.AddWithValue("@YeniSifre", yeniSifre);
+					komut.Parameters.AddWithValue("@KullaniciAdi", kullaniciAdi);
+
+					// Komutu çalıştırıyoruz
+					komut.ExecuteNonQuery();
+				}
+
+				MessageBox.Show("Veri başarıyla güncellendi! Yenilenmesi İçin Tekrar Giriş Yapınız");
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show("Hata: " + ex.Message);
 			}
 			finally
 			{
 				BaglantiKapat();
 			}
 		}
+
 
 		//Veri Silme
 		public void VeriSil(string tabloAdi, string kosul)
@@ -236,13 +256,41 @@ namespace KutuphaneProjesi
 			}
 		}
 
-		
 
+		public DataRow KullaniciBilgileriniGetir(string username)
+		{
+			BaglantiAc();
 
+			try
+			{
+				string sorgu = "SELECT ad, username, email, sifre FROM kullanici WHERE username = @Username";
+				using (SqlCommand cmd = new SqlCommand(sorgu, baglanti))
+				{
+					cmd.Parameters.AddWithValue("@Username", username);
 
+					using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+					{
+						DataTable dt = new DataTable();
+						adapter.Fill(dt);
 
+						if (dt.Rows.Count > 0)
+						{
+							return dt.Rows[0]; // Kullanıcı bulunduysa, ilk satırı döndür
+						}
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				throw new Exception("Hata: " + ex.Message);
+			}
+			finally
+			{
+				BaglantiKapat(); // Bağlantıyı kapat
+			}
 
-
+			return null; // Kullanıcı bulunamadıysa null döndür
+		}
 
 
 

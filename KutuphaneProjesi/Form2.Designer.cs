@@ -182,7 +182,7 @@
 			this.KayitPanel.BackColor = System.Drawing.Color.Purple;
 			this.KayitPanel.Controls.Add(this.pictureBox1);
 			this.KayitPanel.Controls.Add(this.panel2);
-			this.KayitPanel.Location = new System.Drawing.Point(12, 12);
+			this.KayitPanel.Location = new System.Drawing.Point(362, 42);
 			this.KayitPanel.Name = "KayitPanel";
 			this.KayitPanel.Size = new System.Drawing.Size(886, 537);
 			this.KayitPanel.TabIndex = 1;

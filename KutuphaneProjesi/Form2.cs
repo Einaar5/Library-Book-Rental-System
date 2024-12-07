@@ -77,6 +77,10 @@ namespace KutuphaneProjesi
 				return;
 			}
 
+			
+			
+
+
 			// Kullanıcıyı doğrulama işlemi
 			DataRow kullanici = KullaniciDogrula(kullaniciAdi, sifre);
 
@@ -88,6 +92,13 @@ namespace KutuphaneProjesi
 				this.Hide(); // Form2'yi gizle
 				Form1 mainForm = new Form1(); // Form1'i aç
 				mainForm.Show(); // Form1'i göster
+
+
+				
+
+
+
+
 			}
 			else
 			{
@@ -109,6 +120,7 @@ namespace KutuphaneProjesi
 			{
 				KayitPanel.Visible = false;
 			}
+			
 		}
 
 		private void KayitOlOnay_Click(object sender, EventArgs e)
@@ -126,10 +138,15 @@ namespace KutuphaneProjesi
 			
 		}
 
-		public string KullaniciAdiText
+		public string veriGonder(string kullaniciAdi)
 		{
-			get { return kullaniciAdiTextBox.Text; }
+			kullaniciAdi = kullaniciAdiTextBox.Text;
+			return kullaniciAdi;
 		}
+
+
+		
+		
 
 
 	}

@@ -9,25 +9,46 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace KutuphaneProjesi
 {
 	public partial class Form1 : Form
 	{
-
+		DataHelper dataHelper = new DataHelper();
 		public Form1()
 		{
 			InitializeComponent();
+			int radius = 25; // Yuvarlaklık derecesi
+			RoundedCorners(panel13, radius); // Metodu çağır
+			RoundedCorners(panel14, radius); // Metodu çağır
+
 		}
 
-		//Constractor
+		//Köşe Yuvarlatıcı
+		private void RoundedCorners(Control control, int radius)
+		{
+			// Yuvarlak köşeleri oluşturmak için GraphicsPath kullanılır
+			GraphicsPath path = new GraphicsPath();
+			path.AddArc(new Rectangle(0, 0, radius, radius), 180, 90); // Sol üst
+			path.AddArc(new Rectangle(control.Width - radius, 0, radius, radius), 270, 90); // Sağ üst
+			path.AddArc(new Rectangle(control.Width - radius, control.Height - radius, radius, radius), 0, 90); // Sağ alt
+			path.AddArc(new Rectangle(0, control.Height - radius, radius, radius), 90, 90); // Sol alt
+			path.CloseFigure();
+
+			// Panelin köşe bölgelerini yuvarlak yapar
+			control.Region = new Region(path);
+		}
+
+
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			Form2 form2 = new Form2();
 			KitapKiralaPencere.Visible = false;
 			SepetimPanel.Visible = false;
-			
-			label11.Text = form2.KullaniciAdiText;
+
+
+
 
 			//Fonksionlarımı formun load metoduna çağırdım
 			ButonlaraVeriEkle();
@@ -36,7 +57,7 @@ namespace KutuphaneProjesi
 		}
 
 		//login ekranı için yuvarlak köşe tasasrımı
-		
+
 
 
 
@@ -351,19 +372,7 @@ namespace KutuphaneProjesi
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 		//Sepete Ekleme Sistemi
-
 
 
 		private void SepeteEkleButonu_Click(object sender, EventArgs e)
@@ -595,9 +604,149 @@ namespace KutuphaneProjesi
 
 
 			// Kalangun'daki öğeleri kontrol et
-			
+
 		}
 
 		
+
+
+		private void GirisButon_Click_1(object sender, EventArgs e)
+		{
+			string kullaniciAdi = kullaniciAdiTextBox.Text.Trim();
+			string sifre = sifreTextBox.Text.Trim();
+
+			if (string.IsNullOrEmpty(kullaniciAdi) || string.IsNullOrEmpty(sifre))
+			{
+				MessageBox.Show("Kullanıcı adı ve şifre boş bırakılamaz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+
+
+
+
+			// Kullanıcıyı doğrulama işlemi
+			DataRow kullanici = KullaniciDogrula(kullaniciAdi, sifre);
+
+			if (kullanici != null)
+			{
+
+				MessageBox.Show($"Hoş geldiniz, {kullanici["ad"]}!", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				KapsayiciLogin.Visible = false;
+				label38.Text = kullaniciAdi;
+
+				// Veri Güncelleme Kısımları için çağırılacak kısım
+
+
+				try
+				{
+					string kullaniciAdi1 = label38.Text; // Kullanıcı adını TextBox'tan al
+
+					if (string.IsNullOrWhiteSpace(kullaniciAdi1))
+					{
+						MessageBox.Show("Lütfen bir kullanıcı adı girin.");
+						return;
+					}
+
+					// Kullanıcı bilgilerini getir
+					var userData = dataHelper.KullaniciBilgileriniGetir(kullaniciAdi1);
+
+					if (userData != null)
+					{
+						// TextBox'lara doldur
+						textBox1.Text = userData["ad"].ToString();
+						textBox2.Text = userData["username"].ToString();
+						textBox3.Text = userData["email"].ToString();
+						textBox4.Text = userData["sifre"].ToString();
+					}
+					else
+					{
+						MessageBox.Show("Kullanıcı bulunamadı.");
+					}
+				}
+				catch (Exception ex)
+				{
+					MessageBox.Show("Hata: " + ex.Message);
+				}
+
+
+			}
+			else
+			{
+				MessageBox.Show("Kullanıcı adı veya şifre hatalı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+
+
+			
+
+
+		}
+
+
+		//Form Girişi İçin ayarlar LOGİN ve SİGN in
+
+
+
+		private DataRow KullaniciDogrula(string kullaniciAdi, string sifre)
+		{
+			// Veritabanında kullanıcıyı kontrol et
+
+			string sorguKosulu = $"KullaniciAdi = '{kullaniciAdi}' AND Sifre = '{sifre}'"; // Bu, SQL enjeksiyonlarına yol açabilir. Parametre kullanmak daha güvenli.
+
+			// Veritabanından sorgu sonucu al
+			DataTable sonuc = dataHelper.loginKosul(kullaniciAdi, sifre); // Parametreli sorguyu kullanıyoruz
+
+			if (sonuc.Rows.Count > 0)
+			{
+				return sonuc.Rows[0]; // Kullanıcı bulunduysa, bilgileri döndür
+			}
+
+			return null; // Kullanıcı bulunamadı
+		}
+
+		
+
+		private void kayitOl_Click_1(object sender, EventArgs e)
+		{
+			if (KayitPanel.Visible == false)
+			{
+				KayitPanel.Visible = true;
+			}
+		}
+
+		private void GirisYapKO_Click_1(object sender, EventArgs e)
+		{
+			if (KayitPanel.Visible == true)
+			{
+				KayitPanel.Visible = false;
+			}
+		}
+
+
+		private void KayitOlOnay_Click_1(object sender, EventArgs e)
+		{
+			// Formdaki veri alanlarından alınan verileri değişkenlere atayın
+			string isim = textBox7.Text;
+			string kullaniciAdi = textBox8.Text;
+			string email = textBox6.Text;
+			string sifre = textBox5.Text;
+
+			// Veri giriş metodunu çağırın
+
+			dataHelper.KayitOl(isim, kullaniciAdi, email, sifre);
+		}
+
+		private void VeriGuncelle_Click(object sender, EventArgs e)
+		{
+			// Kullanıcının girdiği değerleri alıyoruz
+			string yeniAd = textBox1.Text;
+			string yeniKullaniciAdi = textBox2.Text;
+			string yeniEmail = textBox3.Text;
+			string yeniSifre = textBox4.Text;
+
+			// Kullanıcı adı üzerinden güncelleme yapıyoruz
+			dataHelper.VeriGuncelle(yeniAd, yeniEmail, yeniSifre, yeniKullaniciAdi);
+		}
+
 	}
 }

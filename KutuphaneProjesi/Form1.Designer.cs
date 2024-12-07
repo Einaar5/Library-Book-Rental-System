@@ -35,6 +35,7 @@ namespace KutuphaneProjesi
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.label38 = new System.Windows.Forms.Label();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.label24 = new System.Windows.Forms.Label();
 			this.Sil = new System.Windows.Forms.Button();
@@ -162,6 +163,44 @@ namespace KutuphaneProjesi
 			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
+			this.KapsayiciLogin = new System.Windows.Forms.Panel();
+			this.KayitPanel = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.panel13 = new System.Windows.Forms.Panel();
+			this.label39 = new System.Windows.Forms.Label();
+			this.label40 = new System.Windows.Forms.Label();
+			this.GirisYapKO = new System.Windows.Forms.Button();
+			this.KayitOlOnay = new System.Windows.Forms.Button();
+			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.sifreKayitOl = new System.Windows.Forms.Label();
+			this.EmailKayitOl = new System.Windows.Forms.Label();
+			this.KullaniciAdiKayitOl = new System.Windows.Forms.Label();
+			this.İsimKayitOl = new System.Windows.Forms.Label();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
+			this.panel14 = new System.Windows.Forms.Panel();
+			this.kayitOl = new System.Windows.Forms.Button();
+			this.label41 = new System.Windows.Forms.Label();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.label42 = new System.Windows.Forms.Label();
+			this.label43 = new System.Windows.Forms.Label();
+			this.label44 = new System.Windows.Forms.Label();
+			this.GirisButon = new System.Windows.Forms.Button();
+			this.sifreTextBox = new System.Windows.Forms.TextBox();
+			this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
+			this.VeriGuncelle = new System.Windows.Forms.Button();
+			this.label45 = new System.Windows.Forms.Label();
+			this.label46 = new System.Windows.Forms.Label();
+			this.label47 = new System.Windows.Forms.Label();
+			this.label48 = new System.Windows.Forms.Label();
+			this.label49 = new System.Windows.Forms.Label();
+			this.label50 = new System.Windows.Forms.Label();
+			this.label51 = new System.Windows.Forms.Label();
+			this.label52 = new System.Windows.Forms.Label();
+			this.label53 = new System.Windows.Forms.Label();
+			this.label54 = new System.Windows.Forms.Label();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -180,6 +219,12 @@ namespace KutuphaneProjesi
 			this.panel7.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.panel8.SuspendLayout();
+			this.KapsayiciLogin.SuspendLayout();
+			this.KayitPanel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.panel13.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.panel14.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
@@ -193,6 +238,8 @@ namespace KutuphaneProjesi
 			// 
 			this.panel2.BackColor = System.Drawing.Color.Purple;
 			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel2.Controls.Add(this.label45);
+			this.panel2.Controls.Add(this.label38);
 			this.panel2.Controls.Add(this.panel10);
 			this.panel2.Controls.Add(this.label11);
 			this.panel2.Controls.Add(this.Sepetim);
@@ -204,6 +251,12 @@ namespace KutuphaneProjesi
 			this.panel2.Controls.Add(this.Anasayfa);
 			resources.ApplyResources(this.panel2, "panel2");
 			this.panel2.Name = "panel2";
+			// 
+			// label38
+			// 
+			resources.ApplyResources(this.label38, "label38");
+			this.label38.ForeColor = System.Drawing.Color.White;
+			this.label38.Name = "label38";
 			// 
 			// panel10
 			// 
@@ -334,6 +387,15 @@ namespace KutuphaneProjesi
 			this.panel4.Controls.Add(this.label6);
 			this.panel4.Controls.Add(this.label4);
 			this.panel4.Controls.Add(this.label5);
+			this.panel4.Controls.Add(this.label54);
+			this.panel4.Controls.Add(this.label53);
+			this.panel4.Controls.Add(this.label52);
+			this.panel4.Controls.Add(this.label51);
+			this.panel4.Controls.Add(this.label50);
+			this.panel4.Controls.Add(this.label49);
+			this.panel4.Controls.Add(this.label48);
+			this.panel4.Controls.Add(this.label47);
+			this.panel4.Controls.Add(this.label46);
 			resources.ApplyResources(this.panel4, "panel4");
 			this.panel4.Name = "panel4";
 			// 
@@ -356,6 +418,7 @@ namespace KutuphaneProjesi
 			// tabPage13
 			// 
 			this.tabPage13.BackColor = System.Drawing.Color.Purple;
+			this.tabPage13.Controls.Add(this.VeriGuncelle);
 			this.tabPage13.Controls.Add(this.textBox4);
 			this.tabPage13.Controls.Add(this.textBox3);
 			this.tabPage13.Controls.Add(this.textBox2);
@@ -1152,11 +1215,270 @@ namespace KutuphaneProjesi
 			this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.label5.Name = "label5";
 			// 
+			// KapsayiciLogin
+			// 
+			this.KapsayiciLogin.BackColor = System.Drawing.Color.Purple;
+			this.KapsayiciLogin.Controls.Add(this.KayitPanel);
+			this.KapsayiciLogin.Controls.Add(this.panel14);
+			this.KapsayiciLogin.Controls.Add(this.pictureBox2);
+			resources.ApplyResources(this.KapsayiciLogin, "KapsayiciLogin");
+			this.KapsayiciLogin.Name = "KapsayiciLogin";
+			// 
+			// KayitPanel
+			// 
+			this.KayitPanel.BackColor = System.Drawing.Color.Purple;
+			this.KayitPanel.Controls.Add(this.pictureBox1);
+			this.KayitPanel.Controls.Add(this.panel13);
+			resources.ApplyResources(this.KayitPanel, "KayitPanel");
+			this.KayitPanel.Name = "KayitPanel";
+			// 
+			// pictureBox1
+			// 
+			resources.ApplyResources(this.pictureBox1, "pictureBox1");
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.TabStop = false;
+			// 
+			// panel13
+			// 
+			this.panel13.BackColor = System.Drawing.Color.White;
+			this.panel13.Controls.Add(this.label39);
+			this.panel13.Controls.Add(this.label40);
+			this.panel13.Controls.Add(this.GirisYapKO);
+			this.panel13.Controls.Add(this.KayitOlOnay);
+			this.panel13.Controls.Add(this.textBox5);
+			this.panel13.Controls.Add(this.textBox6);
+			this.panel13.Controls.Add(this.textBox7);
+			this.panel13.Controls.Add(this.textBox8);
+			this.panel13.Controls.Add(this.sifreKayitOl);
+			this.panel13.Controls.Add(this.EmailKayitOl);
+			this.panel13.Controls.Add(this.KullaniciAdiKayitOl);
+			this.panel13.Controls.Add(this.İsimKayitOl);
+			resources.ApplyResources(this.panel13, "panel13");
+			this.panel13.Name = "panel13";
+			// 
+			// label39
+			// 
+			resources.ApplyResources(this.label39, "label39");
+			this.label39.ForeColor = System.Drawing.Color.Black;
+			this.label39.Name = "label39";
+			// 
+			// label40
+			// 
+			resources.ApplyResources(this.label40, "label40");
+			this.label40.ForeColor = System.Drawing.Color.Black;
+			this.label40.Name = "label40";
+			// 
+			// GirisYapKO
+			// 
+			this.GirisYapKO.BackColor = System.Drawing.Color.White;
+			resources.ApplyResources(this.GirisYapKO, "GirisYapKO");
+			this.GirisYapKO.ForeColor = System.Drawing.Color.Purple;
+			this.GirisYapKO.Name = "GirisYapKO";
+			this.GirisYapKO.UseVisualStyleBackColor = false;
+			this.GirisYapKO.Click += new System.EventHandler(this.GirisYapKO_Click_1);
+			// 
+			// KayitOlOnay
+			// 
+			this.KayitOlOnay.BackColor = System.Drawing.Color.Purple;
+			resources.ApplyResources(this.KayitOlOnay, "KayitOlOnay");
+			this.KayitOlOnay.ForeColor = System.Drawing.Color.White;
+			this.KayitOlOnay.Name = "KayitOlOnay";
+			this.KayitOlOnay.UseVisualStyleBackColor = false;
+			this.KayitOlOnay.Click += new System.EventHandler(this.KayitOlOnay_Click_1);
+			// 
+			// textBox5
+			// 
+			resources.ApplyResources(this.textBox5, "textBox5");
+			this.textBox5.Name = "textBox5";
+			// 
+			// textBox6
+			// 
+			resources.ApplyResources(this.textBox6, "textBox6");
+			this.textBox6.Name = "textBox6";
+			// 
+			// textBox7
+			// 
+			resources.ApplyResources(this.textBox7, "textBox7");
+			this.textBox7.Name = "textBox7";
+			// 
+			// textBox8
+			// 
+			resources.ApplyResources(this.textBox8, "textBox8");
+			this.textBox8.Name = "textBox8";
+			// 
+			// sifreKayitOl
+			// 
+			resources.ApplyResources(this.sifreKayitOl, "sifreKayitOl");
+			this.sifreKayitOl.ForeColor = System.Drawing.Color.Black;
+			this.sifreKayitOl.Name = "sifreKayitOl";
+			// 
+			// EmailKayitOl
+			// 
+			resources.ApplyResources(this.EmailKayitOl, "EmailKayitOl");
+			this.EmailKayitOl.ForeColor = System.Drawing.Color.Black;
+			this.EmailKayitOl.Name = "EmailKayitOl";
+			// 
+			// KullaniciAdiKayitOl
+			// 
+			resources.ApplyResources(this.KullaniciAdiKayitOl, "KullaniciAdiKayitOl");
+			this.KullaniciAdiKayitOl.ForeColor = System.Drawing.Color.Black;
+			this.KullaniciAdiKayitOl.Name = "KullaniciAdiKayitOl";
+			// 
+			// İsimKayitOl
+			// 
+			resources.ApplyResources(this.İsimKayitOl, "İsimKayitOl");
+			this.İsimKayitOl.BackColor = System.Drawing.Color.White;
+			this.İsimKayitOl.ForeColor = System.Drawing.Color.Black;
+			this.İsimKayitOl.Name = "İsimKayitOl";
+			// 
+			// pictureBox2
+			// 
+			resources.ApplyResources(this.pictureBox2, "pictureBox2");
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.TabStop = false;
+			// 
+			// panel14
+			// 
+			this.panel14.BackColor = System.Drawing.Color.White;
+			this.panel14.Controls.Add(this.kayitOl);
+			this.panel14.Controls.Add(this.label41);
+			this.panel14.Controls.Add(this.linkLabel1);
+			this.panel14.Controls.Add(this.label42);
+			this.panel14.Controls.Add(this.label43);
+			this.panel14.Controls.Add(this.label44);
+			this.panel14.Controls.Add(this.GirisButon);
+			this.panel14.Controls.Add(this.sifreTextBox);
+			this.panel14.Controls.Add(this.kullaniciAdiTextBox);
+			resources.ApplyResources(this.panel14, "panel14");
+			this.panel14.Name = "panel14";
+			// 
+			// kayitOl
+			// 
+			this.kayitOl.BackColor = System.Drawing.Color.Purple;
+			resources.ApplyResources(this.kayitOl, "kayitOl");
+			this.kayitOl.ForeColor = System.Drawing.Color.White;
+			this.kayitOl.Name = "kayitOl";
+			this.kayitOl.UseVisualStyleBackColor = false;
+			this.kayitOl.Click += new System.EventHandler(this.kayitOl_Click_1);
+			// 
+			// label41
+			// 
+			resources.ApplyResources(this.label41, "label41");
+			this.label41.Name = "label41";
+			// 
+			// linkLabel1
+			// 
+			resources.ApplyResources(this.linkLabel1, "linkLabel1");
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.TabStop = true;
+			// 
+			// label42
+			// 
+			resources.ApplyResources(this.label42, "label42");
+			this.label42.Name = "label42";
+			// 
+			// label43
+			// 
+			resources.ApplyResources(this.label43, "label43");
+			this.label43.Name = "label43";
+			// 
+			// label44
+			// 
+			resources.ApplyResources(this.label44, "label44");
+			this.label44.Name = "label44";
+			// 
+			// GirisButon
+			// 
+			this.GirisButon.BackColor = System.Drawing.Color.Purple;
+			resources.ApplyResources(this.GirisButon, "GirisButon");
+			this.GirisButon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+			this.GirisButon.Name = "GirisButon";
+			this.GirisButon.UseVisualStyleBackColor = false;
+			this.GirisButon.Click += new System.EventHandler(this.GirisButon_Click_1);
+			// 
+			// sifreTextBox
+			// 
+			resources.ApplyResources(this.sifreTextBox, "sifreTextBox");
+			this.sifreTextBox.Name = "sifreTextBox";
+			// 
+			// kullaniciAdiTextBox
+			// 
+			resources.ApplyResources(this.kullaniciAdiTextBox, "kullaniciAdiTextBox");
+			this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
+			// 
+			// VeriGuncelle
+			// 
+			resources.ApplyResources(this.VeriGuncelle, "VeriGuncelle");
+			this.VeriGuncelle.Name = "VeriGuncelle";
+			this.VeriGuncelle.UseVisualStyleBackColor = true;
+			this.VeriGuncelle.Click += new System.EventHandler(this.VeriGuncelle_Click);
+			// 
+			// label45
+			// 
+			resources.ApplyResources(this.label45, "label45");
+			this.label45.ForeColor = System.Drawing.Color.White;
+			this.label45.Name = "label45";
+			// 
+			// label46
+			// 
+			resources.ApplyResources(this.label46, "label46");
+			this.label46.ForeColor = System.Drawing.Color.White;
+			this.label46.Name = "label46";
+			// 
+			// label47
+			// 
+			resources.ApplyResources(this.label47, "label47");
+			this.label47.ForeColor = System.Drawing.Color.White;
+			this.label47.Name = "label47";
+			// 
+			// label48
+			// 
+			resources.ApplyResources(this.label48, "label48");
+			this.label48.ForeColor = System.Drawing.Color.White;
+			this.label48.Name = "label48";
+			// 
+			// label49
+			// 
+			resources.ApplyResources(this.label49, "label49");
+			this.label49.ForeColor = System.Drawing.Color.White;
+			this.label49.Name = "label49";
+			// 
+			// label50
+			// 
+			resources.ApplyResources(this.label50, "label50");
+			this.label50.ForeColor = System.Drawing.Color.White;
+			this.label50.Name = "label50";
+			// 
+			// label51
+			// 
+			resources.ApplyResources(this.label51, "label51");
+			this.label51.ForeColor = System.Drawing.Color.White;
+			this.label51.Name = "label51";
+			// 
+			// label52
+			// 
+			resources.ApplyResources(this.label52, "label52");
+			this.label52.ForeColor = System.Drawing.Color.White;
+			this.label52.Name = "label52";
+			// 
+			// label53
+			// 
+			resources.ApplyResources(this.label53, "label53");
+			this.label53.ForeColor = System.Drawing.Color.White;
+			this.label53.Name = "label53";
+			// 
+			// label54
+			// 
+			resources.ApplyResources(this.label54, "label54");
+			this.label54.ForeColor = System.Drawing.Color.White;
+			this.label54.Name = "label54";
+			// 
 			// Form1
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.DimGray;
+			this.Controls.Add(this.KapsayiciLogin);
 			this.Controls.Add(this.panel4);
 			this.Controls.Add(this.panel3);
 			this.Controls.Add(this.panel2);
@@ -1194,6 +1516,14 @@ namespace KutuphaneProjesi
 			this.panel6.PerformLayout();
 			this.panel8.ResumeLayout(false);
 			this.panel8.PerformLayout();
+			this.KapsayiciLogin.ResumeLayout(false);
+			this.KayitPanel.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.panel13.ResumeLayout(false);
+			this.panel13.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			this.panel14.ResumeLayout(false);
+			this.panel14.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -1329,6 +1659,45 @@ namespace KutuphaneProjesi
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label37;
+		private Label label38;
+		private Panel KapsayiciLogin;
+		private Panel KayitPanel;
+		private PictureBox pictureBox1;
+		private Panel panel13;
+		private Label label39;
+		private Label label40;
+		private Button GirisYapKO;
+		private Button KayitOlOnay;
+		private TextBox textBox5;
+		private TextBox textBox6;
+		private TextBox textBox7;
+		private TextBox textBox8;
+		private Label sifreKayitOl;
+		private Label EmailKayitOl;
+		private Label KullaniciAdiKayitOl;
+		private Label İsimKayitOl;
+		private PictureBox pictureBox2;
+		private Panel panel14;
+		private Button kayitOl;
+		private Label label41;
+		private LinkLabel linkLabel1;
+		private Label label42;
+		private Label label43;
+		private Label label44;
+		private Button GirisButon;
+		private TextBox sifreTextBox;
+		private TextBox kullaniciAdiTextBox;
+		private Button VeriGuncelle;
+		private Label label45;
+		private Label label47;
+		private Label label46;
+		private Label label49;
+		private Label label48;
+		private Label label52;
+		private Label label51;
+		private Label label50;
+		private Label label54;
+		private Label label53;
 	}
 }
 
