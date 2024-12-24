@@ -35,6 +35,7 @@ namespace KutuphaneProjesi
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.label45 = new System.Windows.Forms.Label();
 			this.label38 = new System.Windows.Forms.Label();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.label24 = new System.Windows.Forms.Label();
@@ -55,6 +56,8 @@ namespace KutuphaneProjesi
 			this.Hesabim = new System.Windows.Forms.Panel();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage13 = new System.Windows.Forms.TabPage();
+			this.label55 = new System.Windows.Forms.Label();
+			this.VeriGuncelle = new System.Windows.Forms.Button();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.textBox2 = new System.Windows.Forms.TextBox();
@@ -157,16 +160,37 @@ namespace KutuphaneProjesi
 			this.label14 = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.panel9 = new System.Windows.Forms.Panel();
 			this.SepetFiyat = new System.Windows.Forms.ListBox();
 			this.Sepetİsim = new System.Windows.Forms.ListBox();
+			this.panel9 = new System.Windows.Forms.Panel();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
+			this.label54 = new System.Windows.Forms.Label();
+			this.label53 = new System.Windows.Forms.Label();
+			this.label52 = new System.Windows.Forms.Label();
+			this.label51 = new System.Windows.Forms.Label();
+			this.label50 = new System.Windows.Forms.Label();
+			this.label49 = new System.Windows.Forms.Label();
+			this.label48 = new System.Windows.Forms.Label();
+			this.label47 = new System.Windows.Forms.Label();
+			this.label46 = new System.Windows.Forms.Label();
 			this.KapsayiciLogin = new System.Windows.Forms.Panel();
+			this.panel14 = new System.Windows.Forms.Panel();
+			this.label56 = new System.Windows.Forms.Label();
+			this.kayitOl = new System.Windows.Forms.Button();
+			this.label41 = new System.Windows.Forms.Label();
+			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+			this.label42 = new System.Windows.Forms.Label();
+			this.label43 = new System.Windows.Forms.Label();
+			this.label44 = new System.Windows.Forms.Label();
+			this.GirisButon = new System.Windows.Forms.Button();
+			this.sifreTextBox = new System.Windows.Forms.TextBox();
+			this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
 			this.KayitPanel = new System.Windows.Forms.Panel();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel13 = new System.Windows.Forms.Panel();
+			this.label57 = new System.Windows.Forms.Label();
+			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
 			this.label39 = new System.Windows.Forms.Label();
 			this.label40 = new System.Windows.Forms.Label();
 			this.GirisYapKO = new System.Windows.Forms.Button();
@@ -179,32 +203,6 @@ namespace KutuphaneProjesi
 			this.EmailKayitOl = new System.Windows.Forms.Label();
 			this.KullaniciAdiKayitOl = new System.Windows.Forms.Label();
 			this.İsimKayitOl = new System.Windows.Forms.Label();
-			this.panel14 = new System.Windows.Forms.Panel();
-			this.kayitOl = new System.Windows.Forms.Button();
-			this.label41 = new System.Windows.Forms.Label();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.label42 = new System.Windows.Forms.Label();
-			this.label43 = new System.Windows.Forms.Label();
-			this.label44 = new System.Windows.Forms.Label();
-			this.GirisButon = new System.Windows.Forms.Button();
-			this.sifreTextBox = new System.Windows.Forms.TextBox();
-			this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
-			this.VeriGuncelle = new System.Windows.Forms.Button();
-			this.label45 = new System.Windows.Forms.Label();
-			this.label46 = new System.Windows.Forms.Label();
-			this.label47 = new System.Windows.Forms.Label();
-			this.label48 = new System.Windows.Forms.Label();
-			this.label49 = new System.Windows.Forms.Label();
-			this.label50 = new System.Windows.Forms.Label();
-			this.label51 = new System.Windows.Forms.Label();
-			this.label52 = new System.Windows.Forms.Label();
-			this.label53 = new System.Windows.Forms.Label();
-			this.label54 = new System.Windows.Forms.Label();
-			this.label55 = new System.Windows.Forms.Label();
-			this.pictureBox2 = new System.Windows.Forms.PictureBox();
-			this.label56 = new System.Windows.Forms.Label();
-			this.label57 = new System.Windows.Forms.Label();
-			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
 			this.panel2.SuspendLayout();
 			this.panel10.SuspendLayout();
 			this.panel4.SuspendLayout();
@@ -224,23 +222,21 @@ namespace KutuphaneProjesi
 			this.panel6.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.KapsayiciLogin.SuspendLayout();
-			this.KayitPanel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.panel13.SuspendLayout();
 			this.panel14.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+			this.KayitPanel.SuspendLayout();
+			this.panel13.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel1.BackColor = System.Drawing.Color.Gold;
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			resources.ApplyResources(this.panel1, "panel1");
 			this.panel1.Name = "panel1";
 			// 
 			// panel2
 			// 
-			this.panel2.BackColor = System.Drawing.Color.Purple;
+			this.panel2.BackColor = System.Drawing.Color.Black;
 			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.panel2.Controls.Add(this.label45);
 			this.panel2.Controls.Add(this.label38);
@@ -255,6 +251,12 @@ namespace KutuphaneProjesi
 			this.panel2.Controls.Add(this.Anasayfa);
 			resources.ApplyResources(this.panel2, "panel2");
 			this.panel2.Name = "panel2";
+			// 
+			// label45
+			// 
+			resources.ApplyResources(this.label45, "label45");
+			this.label45.ForeColor = System.Drawing.Color.White;
+			this.label45.Name = "label45";
 			// 
 			// label38
 			// 
@@ -289,7 +291,7 @@ namespace KutuphaneProjesi
 			// 
 			// SepetListesiFiyat
 			// 
-			this.SepetListesiFiyat.BackColor = System.Drawing.Color.Purple;
+			this.SepetListesiFiyat.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.SepetListesiFiyat, "SepetListesiFiyat");
 			this.SepetListesiFiyat.ForeColor = System.Drawing.Color.White;
 			this.SepetListesiFiyat.FormattingEnabled = true;
@@ -305,7 +307,7 @@ namespace KutuphaneProjesi
 			// 
 			// SepetListesi
 			// 
-			this.SepetListesi.BackColor = System.Drawing.Color.Purple;
+			this.SepetListesi.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.SepetListesi, "SepetListesi");
 			this.SepetListesi.ForeColor = System.Drawing.Color.White;
 			this.SepetListesi.FormattingEnabled = true;
@@ -376,14 +378,14 @@ namespace KutuphaneProjesi
 			// 
 			// panel3
 			// 
-			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.panel3.BackColor = System.Drawing.Color.Gold;
 			this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			resources.ApplyResources(this.panel3, "panel3");
 			this.panel3.Name = "panel3";
 			// 
 			// panel4
 			// 
-			this.panel4.BackColor = System.Drawing.Color.Purple;
+			this.panel4.BackColor = System.Drawing.Color.Black;
 			this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.panel4.Controls.Add(this.Hesabim);
 			this.panel4.Controls.Add(this.KitapKiralaPencere);
@@ -405,6 +407,7 @@ namespace KutuphaneProjesi
 			// 
 			// Hesabim
 			// 
+			this.Hesabim.BackColor = System.Drawing.Color.Black;
 			this.Hesabim.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.Hesabim.Controls.Add(this.tabControl1);
 			this.Hesabim.Controls.Add(this.panel11);
@@ -421,7 +424,7 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage13
 			// 
-			this.tabPage13.BackColor = System.Drawing.Color.Purple;
+			this.tabPage13.BackColor = System.Drawing.Color.Black;
 			this.tabPage13.Controls.Add(this.label55);
 			this.tabPage13.Controls.Add(this.VeriGuncelle);
 			this.tabPage13.Controls.Add(this.textBox4);
@@ -434,6 +437,21 @@ namespace KutuphaneProjesi
 			this.tabPage13.Controls.Add(this.label34);
 			resources.ApplyResources(this.tabPage13, "tabPage13");
 			this.tabPage13.Name = "tabPage13";
+			// 
+			// label55
+			// 
+			resources.ApplyResources(this.label55, "label55");
+			this.label55.ForeColor = System.Drawing.Color.White;
+			this.label55.Name = "label55";
+			// 
+			// VeriGuncelle
+			// 
+			this.VeriGuncelle.BackColor = System.Drawing.Color.Gold;
+			resources.ApplyResources(this.VeriGuncelle, "VeriGuncelle");
+			this.VeriGuncelle.ForeColor = System.Drawing.Color.Black;
+			this.VeriGuncelle.Name = "VeriGuncelle";
+			this.VeriGuncelle.UseVisualStyleBackColor = false;
+			this.VeriGuncelle.Click += new System.EventHandler(this.VeriGuncelle_Click);
 			// 
 			// textBox4
 			// 
@@ -481,7 +499,7 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage14
 			// 
-			this.tabPage14.BackColor = System.Drawing.Color.Purple;
+			this.tabPage14.BackColor = System.Drawing.Color.Black;
 			this.tabPage14.Controls.Add(this.Kalangun);
 			this.tabPage14.Controls.Add(this.kiralamaZamani);
 			this.tabPage14.Controls.Add(this.label31);
@@ -491,34 +509,34 @@ namespace KutuphaneProjesi
 			// 
 			// Kalangun
 			// 
-			this.Kalangun.BackColor = System.Drawing.Color.Purple;
+			this.Kalangun.BackColor = System.Drawing.Color.Black;
 			this.Kalangun.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.Kalangun, "Kalangun");
-			this.Kalangun.ForeColor = System.Drawing.Color.White;
+			this.Kalangun.ForeColor = System.Drawing.Color.Gold;
 			this.Kalangun.FormattingEnabled = true;
 			this.Kalangun.Name = "Kalangun";
 			// 
 			// kiralamaZamani
 			// 
-			this.kiralamaZamani.BackColor = System.Drawing.Color.Purple;
+			this.kiralamaZamani.BackColor = System.Drawing.Color.Black;
 			this.kiralamaZamani.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.kiralamaZamani, "kiralamaZamani");
-			this.kiralamaZamani.ForeColor = System.Drawing.Color.White;
+			this.kiralamaZamani.ForeColor = System.Drawing.Color.Gold;
 			this.kiralamaZamani.FormattingEnabled = true;
 			this.kiralamaZamani.Name = "kiralamaZamani";
 			// 
 			// label31
 			// 
 			resources.ApplyResources(this.label31, "label31");
-			this.label31.ForeColor = System.Drawing.Color.White;
+			this.label31.ForeColor = System.Drawing.Color.Gold;
 			this.label31.Name = "label31";
 			// 
 			// HesabimListbox
 			// 
-			this.HesabimListbox.BackColor = System.Drawing.Color.Purple;
+			this.HesabimListbox.BackColor = System.Drawing.Color.Black;
 			this.HesabimListbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.HesabimListbox, "HesabimListbox");
-			this.HesabimListbox.ForeColor = System.Drawing.Color.White;
+			this.HesabimListbox.ForeColor = System.Drawing.Color.Gold;
 			this.HesabimListbox.FormattingEnabled = true;
 			this.HesabimListbox.Name = "HesabimListbox";
 			// 
@@ -559,7 +577,7 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.BackColor = System.Drawing.Color.Purple;
+			this.tabPage1.BackColor = System.Drawing.Color.Black;
 			this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tabPage1.Controls.Add(this.tabControl2);
 			this.tabPage1.Controls.Add(this.panel5);
@@ -579,7 +597,7 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage8
 			// 
-			this.tabPage8.BackColor = System.Drawing.Color.Purple;
+			this.tabPage8.BackColor = System.Drawing.Color.Black;
 			this.tabPage8.Controls.Add(this.label22);
 			this.tabPage8.Controls.Add(this.label21);
 			this.tabPage8.Controls.Add(this.label20);
@@ -825,7 +843,7 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage9
 			// 
-			this.tabPage9.BackColor = System.Drawing.Color.Purple;
+			this.tabPage9.BackColor = System.Drawing.Color.Black;
 			this.tabPage9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.tabPage9.Controls.Add(this.label30);
 			this.tabPage9.Controls.Add(this.label29);
@@ -995,55 +1013,55 @@ namespace KutuphaneProjesi
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.BackColor = System.Drawing.Color.Purple;
+			this.tabPage2.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage2, "tabPage2");
 			this.tabPage2.Name = "tabPage2";
 			// 
 			// tabPage3
 			// 
-			this.tabPage3.BackColor = System.Drawing.Color.Purple;
+			this.tabPage3.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage3, "tabPage3");
 			this.tabPage3.Name = "tabPage3";
 			// 
 			// tabPage4
 			// 
-			this.tabPage4.BackColor = System.Drawing.Color.Purple;
+			this.tabPage4.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage4, "tabPage4");
 			this.tabPage4.Name = "tabPage4";
 			// 
 			// tabPage5
 			// 
-			this.tabPage5.BackColor = System.Drawing.Color.Purple;
+			this.tabPage5.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage5, "tabPage5");
 			this.tabPage5.Name = "tabPage5";
 			// 
 			// tabPage6
 			// 
-			this.tabPage6.BackColor = System.Drawing.Color.Purple;
+			this.tabPage6.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage6, "tabPage6");
 			this.tabPage6.Name = "tabPage6";
 			// 
 			// tabPage7
 			// 
-			this.tabPage7.BackColor = System.Drawing.Color.Purple;
+			this.tabPage7.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage7, "tabPage7");
 			this.tabPage7.Name = "tabPage7";
 			// 
 			// tabPage10
 			// 
-			this.tabPage10.BackColor = System.Drawing.Color.Purple;
+			this.tabPage10.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage10, "tabPage10");
 			this.tabPage10.Name = "tabPage10";
 			// 
 			// tabPage11
 			// 
-			this.tabPage11.BackColor = System.Drawing.Color.Purple;
+			this.tabPage11.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage11, "tabPage11");
 			this.tabPage11.Name = "tabPage11";
 			// 
 			// tabPage12
 			// 
-			this.tabPage12.BackColor = System.Drawing.Color.Purple;
+			this.tabPage12.BackColor = System.Drawing.Color.Black;
 			resources.ApplyResources(this.tabPage12, "tabPage12");
 			this.tabPage12.Name = "tabPage12";
 			// 
@@ -1142,7 +1160,7 @@ namespace KutuphaneProjesi
 			// 
 			// panel8
 			// 
-			this.panel8.BackColor = System.Drawing.Color.Purple;
+			this.panel8.BackColor = System.Drawing.Color.Black;
 			this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.panel8.Controls.Add(this.SepetiTemizle);
 			this.panel8.Controls.Add(this.label14);
@@ -1179,29 +1197,29 @@ namespace KutuphaneProjesi
 			this.label13.ForeColor = System.Drawing.Color.White;
 			this.label13.Name = "label13";
 			// 
-			// panel9
-			// 
-			this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			resources.ApplyResources(this.panel9, "panel9");
-			this.panel9.Name = "panel9";
-			// 
 			// SepetFiyat
 			// 
-			this.SepetFiyat.BackColor = System.Drawing.Color.Purple;
+			this.SepetFiyat.BackColor = System.Drawing.Color.Black;
 			this.SepetFiyat.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.SepetFiyat, "SepetFiyat");
-			this.SepetFiyat.ForeColor = System.Drawing.Color.White;
+			this.SepetFiyat.ForeColor = System.Drawing.Color.Gold;
 			this.SepetFiyat.FormattingEnabled = true;
 			this.SepetFiyat.Name = "SepetFiyat";
 			// 
 			// Sepetİsim
 			// 
-			this.Sepetİsim.BackColor = System.Drawing.Color.Purple;
+			this.Sepetİsim.BackColor = System.Drawing.Color.Black;
 			this.Sepetİsim.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			resources.ApplyResources(this.Sepetİsim, "Sepetİsim");
-			this.Sepetİsim.ForeColor = System.Drawing.Color.White;
+			this.Sepetİsim.ForeColor = System.Drawing.Color.Gold;
 			this.Sepetİsim.FormattingEnabled = true;
 			this.Sepetİsim.Name = "Sepetİsim";
+			// 
+			// panel9
+			// 
+			this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			resources.ApplyResources(this.panel9, "panel9");
+			this.panel9.Name = "panel9";
 			// 
 			// label6
 			// 
@@ -1221,27 +1239,148 @@ namespace KutuphaneProjesi
 			this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.label5.Name = "label5";
 			// 
+			// label54
+			// 
+			resources.ApplyResources(this.label54, "label54");
+			this.label54.ForeColor = System.Drawing.Color.White;
+			this.label54.Name = "label54";
+			// 
+			// label53
+			// 
+			resources.ApplyResources(this.label53, "label53");
+			this.label53.ForeColor = System.Drawing.Color.White;
+			this.label53.Name = "label53";
+			// 
+			// label52
+			// 
+			resources.ApplyResources(this.label52, "label52");
+			this.label52.ForeColor = System.Drawing.Color.White;
+			this.label52.Name = "label52";
+			// 
+			// label51
+			// 
+			resources.ApplyResources(this.label51, "label51");
+			this.label51.ForeColor = System.Drawing.Color.White;
+			this.label51.Name = "label51";
+			// 
+			// label50
+			// 
+			resources.ApplyResources(this.label50, "label50");
+			this.label50.ForeColor = System.Drawing.Color.White;
+			this.label50.Name = "label50";
+			// 
+			// label49
+			// 
+			resources.ApplyResources(this.label49, "label49");
+			this.label49.ForeColor = System.Drawing.Color.White;
+			this.label49.Name = "label49";
+			// 
+			// label48
+			// 
+			resources.ApplyResources(this.label48, "label48");
+			this.label48.ForeColor = System.Drawing.Color.White;
+			this.label48.Name = "label48";
+			// 
+			// label47
+			// 
+			resources.ApplyResources(this.label47, "label47");
+			this.label47.ForeColor = System.Drawing.Color.White;
+			this.label47.Name = "label47";
+			// 
+			// label46
+			// 
+			resources.ApplyResources(this.label46, "label46");
+			this.label46.ForeColor = System.Drawing.Color.White;
+			this.label46.Name = "label46";
+			// 
 			// KapsayiciLogin
 			// 
-			this.KapsayiciLogin.BackColor = System.Drawing.Color.Purple;
-			this.KapsayiciLogin.Controls.Add(this.pictureBox2);
+			this.KapsayiciLogin.BackColor = System.Drawing.Color.Black;
 			this.KapsayiciLogin.Controls.Add(this.panel14);
 			resources.ApplyResources(this.KapsayiciLogin, "KapsayiciLogin");
 			this.KapsayiciLogin.Name = "KapsayiciLogin";
 			// 
+			// panel14
+			// 
+			this.panel14.BackColor = System.Drawing.Color.White;
+			this.panel14.Controls.Add(this.label56);
+			this.panel14.Controls.Add(this.kayitOl);
+			this.panel14.Controls.Add(this.label41);
+			this.panel14.Controls.Add(this.linkLabel1);
+			this.panel14.Controls.Add(this.label42);
+			this.panel14.Controls.Add(this.label43);
+			this.panel14.Controls.Add(this.label44);
+			this.panel14.Controls.Add(this.GirisButon);
+			this.panel14.Controls.Add(this.sifreTextBox);
+			this.panel14.Controls.Add(this.kullaniciAdiTextBox);
+			resources.ApplyResources(this.panel14, "panel14");
+			this.panel14.Name = "panel14";
+			// 
+			// label56
+			// 
+			resources.ApplyResources(this.label56, "label56");
+			this.label56.Name = "label56";
+			// 
+			// kayitOl
+			// 
+			this.kayitOl.BackColor = System.Drawing.Color.Gold;
+			resources.ApplyResources(this.kayitOl, "kayitOl");
+			this.kayitOl.ForeColor = System.Drawing.Color.Black;
+			this.kayitOl.Name = "kayitOl";
+			this.kayitOl.UseVisualStyleBackColor = false;
+			this.kayitOl.Click += new System.EventHandler(this.kayitOl_Click_1);
+			// 
+			// label41
+			// 
+			resources.ApplyResources(this.label41, "label41");
+			this.label41.Name = "label41";
+			// 
+			// linkLabel1
+			// 
+			resources.ApplyResources(this.linkLabel1, "linkLabel1");
+			this.linkLabel1.Name = "linkLabel1";
+			this.linkLabel1.TabStop = true;
+			// 
+			// label42
+			// 
+			resources.ApplyResources(this.label42, "label42");
+			this.label42.Name = "label42";
+			// 
+			// label43
+			// 
+			resources.ApplyResources(this.label43, "label43");
+			this.label43.Name = "label43";
+			// 
+			// label44
+			// 
+			resources.ApplyResources(this.label44, "label44");
+			this.label44.Name = "label44";
+			// 
+			// GirisButon
+			// 
+			this.GirisButon.BackColor = System.Drawing.Color.Gold;
+			resources.ApplyResources(this.GirisButon, "GirisButon");
+			this.GirisButon.ForeColor = System.Drawing.Color.Black;
+			this.GirisButon.Name = "GirisButon";
+			this.GirisButon.UseVisualStyleBackColor = false;
+			this.GirisButon.Click += new System.EventHandler(this.GirisButon_Click_1);
+			// 
+			// sifreTextBox
+			// 
+			resources.ApplyResources(this.sifreTextBox, "sifreTextBox");
+			this.sifreTextBox.Name = "sifreTextBox";
+			// 
+			// kullaniciAdiTextBox
+			// 
+			resources.ApplyResources(this.kullaniciAdiTextBox, "kullaniciAdiTextBox");
+			this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
+			// 
 			// KayitPanel
 			// 
-			this.KayitPanel.BackColor = System.Drawing.Color.Purple;
-			this.KayitPanel.Controls.Add(this.pictureBox1);
+			this.KayitPanel.BackColor = System.Drawing.Color.Black;
 			this.KayitPanel.Controls.Add(this.panel13);
 			resources.ApplyResources(this.KayitPanel, "KayitPanel");
 			this.KayitPanel.Name = "KayitPanel";
-			// 
-			// pictureBox1
-			// 
-			resources.ApplyResources(this.pictureBox1, "pictureBox1");
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.TabStop = false;
 			// 
 			// panel13
 			// 
@@ -1263,6 +1402,17 @@ namespace KutuphaneProjesi
 			resources.ApplyResources(this.panel13, "panel13");
 			this.panel13.Name = "panel13";
 			// 
+			// label57
+			// 
+			resources.ApplyResources(this.label57, "label57");
+			this.label57.Name = "label57";
+			// 
+			// linkLabel2
+			// 
+			resources.ApplyResources(this.linkLabel2, "linkLabel2");
+			this.linkLabel2.Name = "linkLabel2";
+			this.linkLabel2.TabStop = true;
+			// 
 			// label39
 			// 
 			resources.ApplyResources(this.label39, "label39");
@@ -1279,16 +1429,16 @@ namespace KutuphaneProjesi
 			// 
 			this.GirisYapKO.BackColor = System.Drawing.Color.White;
 			resources.ApplyResources(this.GirisYapKO, "GirisYapKO");
-			this.GirisYapKO.ForeColor = System.Drawing.Color.Purple;
+			this.GirisYapKO.ForeColor = System.Drawing.Color.Black;
 			this.GirisYapKO.Name = "GirisYapKO";
 			this.GirisYapKO.UseVisualStyleBackColor = false;
 			this.GirisYapKO.Click += new System.EventHandler(this.GirisYapKO_Click_1);
 			// 
 			// KayitOlOnay
 			// 
-			this.KayitOlOnay.BackColor = System.Drawing.Color.Purple;
+			this.KayitOlOnay.BackColor = System.Drawing.Color.Gold;
 			resources.ApplyResources(this.KayitOlOnay, "KayitOlOnay");
-			this.KayitOlOnay.ForeColor = System.Drawing.Color.White;
+			this.KayitOlOnay.ForeColor = System.Drawing.Color.Black;
 			this.KayitOlOnay.Name = "KayitOlOnay";
 			this.KayitOlOnay.UseVisualStyleBackColor = false;
 			this.KayitOlOnay.Click += new System.EventHandler(this.KayitOlOnay_Click_1);
@@ -1338,178 +1488,11 @@ namespace KutuphaneProjesi
 			this.İsimKayitOl.ForeColor = System.Drawing.Color.Black;
 			this.İsimKayitOl.Name = "İsimKayitOl";
 			// 
-			// panel14
-			// 
-			this.panel14.BackColor = System.Drawing.Color.White;
-			this.panel14.Controls.Add(this.label56);
-			this.panel14.Controls.Add(this.kayitOl);
-			this.panel14.Controls.Add(this.label41);
-			this.panel14.Controls.Add(this.linkLabel1);
-			this.panel14.Controls.Add(this.label42);
-			this.panel14.Controls.Add(this.label43);
-			this.panel14.Controls.Add(this.label44);
-			this.panel14.Controls.Add(this.GirisButon);
-			this.panel14.Controls.Add(this.sifreTextBox);
-			this.panel14.Controls.Add(this.kullaniciAdiTextBox);
-			resources.ApplyResources(this.panel14, "panel14");
-			this.panel14.Name = "panel14";
-			// 
-			// kayitOl
-			// 
-			this.kayitOl.BackColor = System.Drawing.Color.Purple;
-			resources.ApplyResources(this.kayitOl, "kayitOl");
-			this.kayitOl.ForeColor = System.Drawing.Color.White;
-			this.kayitOl.Name = "kayitOl";
-			this.kayitOl.UseVisualStyleBackColor = false;
-			this.kayitOl.Click += new System.EventHandler(this.kayitOl_Click_1);
-			// 
-			// label41
-			// 
-			resources.ApplyResources(this.label41, "label41");
-			this.label41.Name = "label41";
-			// 
-			// linkLabel1
-			// 
-			resources.ApplyResources(this.linkLabel1, "linkLabel1");
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.TabStop = true;
-			// 
-			// label42
-			// 
-			resources.ApplyResources(this.label42, "label42");
-			this.label42.Name = "label42";
-			// 
-			// label43
-			// 
-			resources.ApplyResources(this.label43, "label43");
-			this.label43.Name = "label43";
-			// 
-			// label44
-			// 
-			resources.ApplyResources(this.label44, "label44");
-			this.label44.Name = "label44";
-			// 
-			// GirisButon
-			// 
-			this.GirisButon.BackColor = System.Drawing.Color.Purple;
-			resources.ApplyResources(this.GirisButon, "GirisButon");
-			this.GirisButon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-			this.GirisButon.Name = "GirisButon";
-			this.GirisButon.UseVisualStyleBackColor = false;
-			this.GirisButon.Click += new System.EventHandler(this.GirisButon_Click_1);
-			// 
-			// sifreTextBox
-			// 
-			resources.ApplyResources(this.sifreTextBox, "sifreTextBox");
-			this.sifreTextBox.Name = "sifreTextBox";
-			// 
-			// kullaniciAdiTextBox
-			// 
-			resources.ApplyResources(this.kullaniciAdiTextBox, "kullaniciAdiTextBox");
-			this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
-			// 
-			// VeriGuncelle
-			// 
-			this.VeriGuncelle.BackColor = System.Drawing.Color.Purple;
-			resources.ApplyResources(this.VeriGuncelle, "VeriGuncelle");
-			this.VeriGuncelle.ForeColor = System.Drawing.Color.White;
-			this.VeriGuncelle.Name = "VeriGuncelle";
-			this.VeriGuncelle.UseVisualStyleBackColor = false;
-			this.VeriGuncelle.Click += new System.EventHandler(this.VeriGuncelle_Click);
-			// 
-			// label45
-			// 
-			resources.ApplyResources(this.label45, "label45");
-			this.label45.ForeColor = System.Drawing.Color.White;
-			this.label45.Name = "label45";
-			// 
-			// label46
-			// 
-			resources.ApplyResources(this.label46, "label46");
-			this.label46.ForeColor = System.Drawing.Color.White;
-			this.label46.Name = "label46";
-			// 
-			// label47
-			// 
-			resources.ApplyResources(this.label47, "label47");
-			this.label47.ForeColor = System.Drawing.Color.White;
-			this.label47.Name = "label47";
-			// 
-			// label48
-			// 
-			resources.ApplyResources(this.label48, "label48");
-			this.label48.ForeColor = System.Drawing.Color.White;
-			this.label48.Name = "label48";
-			// 
-			// label49
-			// 
-			resources.ApplyResources(this.label49, "label49");
-			this.label49.ForeColor = System.Drawing.Color.White;
-			this.label49.Name = "label49";
-			// 
-			// label50
-			// 
-			resources.ApplyResources(this.label50, "label50");
-			this.label50.ForeColor = System.Drawing.Color.White;
-			this.label50.Name = "label50";
-			// 
-			// label51
-			// 
-			resources.ApplyResources(this.label51, "label51");
-			this.label51.ForeColor = System.Drawing.Color.White;
-			this.label51.Name = "label51";
-			// 
-			// label52
-			// 
-			resources.ApplyResources(this.label52, "label52");
-			this.label52.ForeColor = System.Drawing.Color.White;
-			this.label52.Name = "label52";
-			// 
-			// label53
-			// 
-			resources.ApplyResources(this.label53, "label53");
-			this.label53.ForeColor = System.Drawing.Color.White;
-			this.label53.Name = "label53";
-			// 
-			// label54
-			// 
-			resources.ApplyResources(this.label54, "label54");
-			this.label54.ForeColor = System.Drawing.Color.White;
-			this.label54.Name = "label54";
-			// 
-			// label55
-			// 
-			resources.ApplyResources(this.label55, "label55");
-			this.label55.ForeColor = System.Drawing.Color.White;
-			this.label55.Name = "label55";
-			// 
-			// pictureBox2
-			// 
-			resources.ApplyResources(this.pictureBox2, "pictureBox2");
-			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.TabStop = false;
-			// 
-			// label56
-			// 
-			resources.ApplyResources(this.label56, "label56");
-			this.label56.Name = "label56";
-			// 
-			// label57
-			// 
-			resources.ApplyResources(this.label57, "label57");
-			this.label57.Name = "label57";
-			// 
-			// linkLabel2
-			// 
-			resources.ApplyResources(this.linkLabel2, "linkLabel2");
-			this.linkLabel2.Name = "linkLabel2";
-			this.linkLabel2.TabStop = true;
-			// 
 			// Form1
 			// 
 			resources.ApplyResources(this, "$this");
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.DimGray;
+			this.BackColor = System.Drawing.Color.Black;
 			this.Controls.Add(this.KayitPanel);
 			this.Controls.Add(this.KapsayiciLogin);
 			this.Controls.Add(this.panel4);
@@ -1550,13 +1533,11 @@ namespace KutuphaneProjesi
 			this.panel8.ResumeLayout(false);
 			this.panel8.PerformLayout();
 			this.KapsayiciLogin.ResumeLayout(false);
-			this.KayitPanel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.panel13.ResumeLayout(false);
-			this.panel13.PerformLayout();
 			this.panel14.ResumeLayout(false);
 			this.panel14.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+			this.KayitPanel.ResumeLayout(false);
+			this.panel13.ResumeLayout(false);
+			this.panel13.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -1695,7 +1676,6 @@ namespace KutuphaneProjesi
 		private Label label38;
 		private Panel KapsayiciLogin;
 		private Panel KayitPanel;
-		private PictureBox pictureBox1;
 		private Panel panel13;
 		private Label label39;
 		private Label label40;
@@ -1731,7 +1711,6 @@ namespace KutuphaneProjesi
 		private Label label54;
 		private Label label53;
 		private Label label55;
-		private PictureBox pictureBox2;
 		private Label label56;
 		private Label label57;
 		private LinkLabel linkLabel2;

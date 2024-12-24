@@ -82,7 +82,19 @@ namespace KutuphaneProjesi
 		//Çıkış
 		private void button5_Click(object sender, EventArgs e)
 		{
-			MessageBox.Show("Hesaptan Çıkmak İstiyor Musunuz ?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			DialogResult result = MessageBox.Show("Hesaptan Çıkmak İstiyor Musunuz ?", "Çıkış", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+			if (result == DialogResult.OK)
+			{
+				KapsayiciLogin.Visible = true;
+				SepetListesi.Items.Clear();
+				SepetListesiFiyat.Items.Clear();
+				panel10.Visible = false;
+				kiralamaZamani.Items.Clear();
+				HesabimListbox.Items.Clear();
+				Kalangun.Items.Clear();
+			}
+
 
 		}
 
@@ -460,7 +472,7 @@ namespace KutuphaneProjesi
 			}
 
 			// Toplam fiyatı ve KDV'yi hesapla
-			double kdvOrani = 0.05; // %5 KDV
+			double kdvOrani = 0.005; // %5 KDV
 			double kdvTutari = toplamFiyat * kdvOrani;
 			double toplamTutar = toplamFiyat + kdvTutari;
 
