@@ -66,7 +66,10 @@ namespace KutuphaneProjesi
 			SepetimPanel.Visible = false;
 
 
-
+			// Arka plan rengi
+			Brush bgBrush = new SolidBrush(ColorTranslator.FromHtml("#080a1a"));
+			// Yazı rengi
+			Brush textBrush = new SolidBrush(Color.White);
 
 			//Fonksionlarımı formun load metoduna çağırdım
 			ButonlaraVeriEkle();
@@ -147,7 +150,7 @@ namespace KutuphaneProjesi
 
 
 		//Kitap Butonları----------------------------------------------------------------------------------------------------------------------------------------
-
+		// Burada butonlara basılınca ne olacağını yönettim
 
 		private void Kitap1_Click(object sender, EventArgs e)
 		{
@@ -515,48 +518,25 @@ namespace KutuphaneProjesi
 			DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 			// Mevcut butonlarınızı sırayla atayın
-			Kitapismi1.Text = kitaplar.Rows[0]["kitap_ad"].ToString();
-			Kitapismi2.Text = kitaplar.Rows[1]["kitap_ad"].ToString();
-			Kitapismi3.Text = kitaplar.Rows[2]["kitap_ad"].ToString();
-			Kitapismi4.Text = kitaplar.Rows[3]["kitap_ad"].ToString();
-			Kitapismi5.Text = kitaplar.Rows[4]["kitap_ad"].ToString();
-			Kitapismi6.Text = kitaplar.Rows[5]["kitap_ad"].ToString();
-			Kitapismi7.Text = kitaplar.Rows[6]["kitap_ad"].ToString();
-			Kitapismi8.Text = kitaplar.Rows[7]["kitap_ad"].ToString();
-			Kitapismi9.Text = kitaplar.Rows[8]["kitap_ad"].ToString();
-			Kitapismi10.Text = kitaplar.Rows[9]["kitap_ad"].ToString();
-			Kitapismi11.Text = kitaplar.Rows[10]["kitap_ad"].ToString();
-			Kitapismi12.Text = kitaplar.Rows[11]["kitap_ad"].ToString();
-			Kitapismi13.Text = kitaplar.Rows[12]["kitap_ad"].ToString();
-			Kitapismi14.Text = kitaplar.Rows[13]["kitap_ad"].ToString();
-			Kitapismi15.Text = kitaplar.Rows[14]["kitap_ad"].ToString();
-			Kitapismi16.Text = kitaplar.Rows[15]["kitap_ad"].ToString();
-			Kitapismi17.Text = kitaplar.Rows[16]["kitap_ad"].ToString();
-			Kitapismi18.Text = kitaplar.Rows[17]["kitap_ad"].ToString();
-			Kitapismi19.Text = kitaplar.Rows[18]["kitap_ad"].ToString();
-			Kitapismi20.Text = kitaplar.Rows[19]["kitap_ad"].ToString();
-			Kitapismi21.Text = kitaplar.Rows[20]["kitap_ad"].ToString();
-			Kitapismi22.Text = kitaplar.Rows[21]["kitap_ad"].ToString();
-			Kitapismi23.Text = kitaplar.Rows[22]["kitap_ad"].ToString();
-			Kitapismi24.Text = kitaplar.Rows[23]["kitap_ad"].ToString();
-			Kitapismi25.Text = kitaplar.Rows[24]["kitap_ad"].ToString();
-			Kitapismi26.Text = kitaplar.Rows[25]["kitap_ad"].ToString();
-			Kitapismi27.Text = kitaplar.Rows[26]["kitap_ad"].ToString();
-			Kitapismi28.Text = kitaplar.Rows[27]["kitap_ad"].ToString();
-			Kitapismi29.Text = kitaplar.Rows[28]["kitap_ad"].ToString();
-			Kitapismi30.Text = kitaplar.Rows[29]["kitap_ad"].ToString();
-			Kitapismi31.Text = kitaplar.Rows[30]["kitap_ad"].ToString();
-			Kitapismi32.Text = kitaplar.Rows[31]["kitap_ad"].ToString();
-			Kitapismi33.Text = kitaplar.Rows[32]["kitap_ad"].ToString();
-			Kitapismi34.Text = kitaplar.Rows[33]["kitap_ad"].ToString();
-			Kitapismi35.Text = kitaplar.Rows[34]["kitap_ad"].ToString();
-			Kitapismi36.Text = kitaplar.Rows[35]["kitap_ad"].ToString();
-			Kitapismi37.Text = kitaplar.Rows[36]["kitap_ad"].ToString();
-			Kitapismi38.Text = kitaplar.Rows[37]["kitap_ad"].ToString();
-			Kitapismi39.Text = kitaplar.Rows[38]["kitap_ad"].ToString();
-			Kitapismi40.Text = kitaplar.Rows[39]["kitap_ad"].ToString();
-			Kitapismi41.Text = kitaplar.Rows[40]["kitap_ad"].ToString();
-			Kitapismi42.Text = kitaplar.Rows[41]["kitap_ad"].ToString();
+			for (int i = 0; i < kitaplar.Rows.Count; i++)
+			{
+				// Kitap fiyatını doldur
+				var fiyatKontrolAdi = $"Kitap{i + 1}Fiyat";
+				var fiyatKontrol = this.Controls.Find(fiyatKontrolAdi, true).FirstOrDefault();
+				if (fiyatKontrol != null && fiyatKontrol is System.Windows.Forms.Label fiyatLabel)
+				{
+					fiyatLabel.Text = kitaplar.Rows[i]["kitap_fiyat"].ToString();
+				}
+
+				// Kitap ismini doldur
+				var isimKontrolAdi = $"Kitapismi{i + 1}";
+				var isimKontrol = this.Controls.Find(isimKontrolAdi, true).FirstOrDefault();
+				if (isimKontrol != null && isimKontrol is System.Windows.Forms.Label isimLabel)
+				{
+					isimLabel.Text = kitaplar.Rows[i]["kitap_ad"].ToString();
+				}
+			}
+
 
 		}
 
@@ -571,48 +551,16 @@ namespace KutuphaneProjesi
 				DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 				// Mevcut butonlarınızı sırayla atayın
-				Kitap1Fiyat.Text = kitaplar.Rows[0]["kitap_fiyat"].ToString();
-				Kitap2Fiyat.Text = kitaplar.Rows[1]["kitap_fiyat"].ToString();
-				Kitap3Fiyat.Text = kitaplar.Rows[2]["kitap_fiyat"].ToString();
-				Kitap4Fiyat.Text = kitaplar.Rows[3]["kitap_fiyat"].ToString();
-				Kitap5Fiyat.Text = kitaplar.Rows[4]["kitap_fiyat"].ToString();
-				Kitap6Fiyat.Text = kitaplar.Rows[5]["kitap_fiyat"].ToString();
-				Kitap7Fiyat.Text = kitaplar.Rows[6]["kitap_fiyat"].ToString();
-				Kitap8Fiyat.Text = kitaplar.Rows[7]["kitap_fiyat"].ToString();
-				Kitap9Fiyat.Text = kitaplar.Rows[8]["kitap_fiyat"].ToString();
-				Kitap10Fiyat.Text = kitaplar.Rows[9]["kitap_fiyat"].ToString();
-				Kitap11Fiyat.Text = kitaplar.Rows[10]["kitap_fiyat"].ToString();
-				Kitap12Fiyat.Text = kitaplar.Rows[11]["kitap_fiyat"].ToString();
-				Kitap13Fiyat.Text = kitaplar.Rows[12]["kitap_fiyat"].ToString();
-				Kitap14Fiyat.Text = kitaplar.Rows[13]["kitap_fiyat"].ToString();
-				Kitap15Fiyat.Text = kitaplar.Rows[14]["kitap_fiyat"].ToString();
-				Kitap16Fiyat.Text = kitaplar.Rows[15]["kitap_fiyat"].ToString();
-				Kitap17Fiyat.Text = kitaplar.Rows[16]["kitap_fiyat"].ToString();
-				Kitap18Fiyat.Text = kitaplar.Rows[17]["kitap_fiyat"].ToString();
-				Kitap19Fiyat.Text = kitaplar.Rows[18]["kitap_fiyat"].ToString();
-				Kitap20Fiyat.Text = kitaplar.Rows[19]["kitap_fiyat"].ToString();
-				Kitap21Fiyat.Text = kitaplar.Rows[20]["kitap_fiyat"].ToString();
-				Kitap22Fiyat.Text = kitaplar.Rows[21]["kitap_fiyat"].ToString();
-				Kitap23Fiyat.Text = kitaplar.Rows[22]["kitap_fiyat"].ToString();
-				Kitap24Fiyat.Text = kitaplar.Rows[23]["kitap_fiyat"].ToString();
-				Kitap25Fiyat.Text = kitaplar.Rows[24]["kitap_fiyat"].ToString();
-				Kitap26Fiyat.Text = kitaplar.Rows[25]["kitap_fiyat"].ToString();
-				Kitap27Fiyat.Text = kitaplar.Rows[26]["kitap_fiyat"].ToString();
-				Kitap28Fiyat.Text = kitaplar.Rows[27]["kitap_fiyat"].ToString();
-				Kitap29Fiyat.Text = kitaplar.Rows[28]["kitap_fiyat"].ToString();
-				Kitap30Fiyat.Text = kitaplar.Rows[29]["kitap_fiyat"].ToString();
-				Kitap31Fiyat.Text = kitaplar.Rows[30]["kitap_fiyat"].ToString();
-				Kitap32Fiyat.Text = kitaplar.Rows[31]["kitap_fiyat"].ToString();
-				Kitap33Fiyat.Text = kitaplar.Rows[32]["kitap_fiyat"].ToString();
-				Kitap34Fiyat.Text = kitaplar.Rows[33]["kitap_fiyat"].ToString();
-				Kitap35Fiyat.Text = kitaplar.Rows[34]["kitap_fiyat"].ToString();
-				Kitap36Fiyat.Text = kitaplar.Rows[35]["kitap_fiyat"].ToString();
-				Kitap37Fiyat.Text = kitaplar.Rows[36]["kitap_fiyat"].ToString();
-				Kitap38Fiyat.Text = kitaplar.Rows[37]["kitap_fiyat"].ToString();
-				Kitap39Fiyat.Text = kitaplar.Rows[38]["kitap_fiyat"].ToString();
-				Kitap40Fiyat.Text = kitaplar.Rows[39]["kitap_fiyat"].ToString();
-				Kitap41Fiyat.Text = kitaplar.Rows[40]["kitap_fiyat"].ToString();
-				Kitap42Fiyat.Text = kitaplar.Rows[41]["kitap_fiyat"].ToString();
+				for (int i = 0; i < kitaplar.Rows.Count; i++)
+				{
+					var kontrolAdi = $"Kitap{i + 1}Fiyat";
+					var kontrol = this.Controls.Find(kontrolAdi, true).FirstOrDefault();
+					if (kontrol != null && kontrol is System.Windows.Forms.Label label)
+					{
+						label.Text = kitaplar.Rows[i]["kitap_fiyat"].ToString();
+					}
+				}
+
 
 
 			}
@@ -634,91 +582,15 @@ namespace KutuphaneProjesi
 				DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 				// Her bir kitap için arka plan resmini ayarla
-				Kitap1.BackgroundImage = Image.FromFile(kitaplar.Rows[0]["kitap_gorsel"].ToString());
-				Kitap1.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap2.BackgroundImage = Image.FromFile(kitaplar.Rows[1]["kitap_gorsel"].ToString());
-				Kitap2.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap3.BackgroundImage = Image.FromFile(kitaplar.Rows[2]["kitap_gorsel"].ToString());
-				Kitap3.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap4.BackgroundImage = Image.FromFile(kitaplar.Rows[3]["kitap_gorsel"].ToString());
-				Kitap4.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap5.BackgroundImage = Image.FromFile(kitaplar.Rows[4]["kitap_gorsel"].ToString());
-				Kitap5.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap6.BackgroundImage = Image.FromFile(kitaplar.Rows[5]["kitap_gorsel"].ToString());
-				Kitap6.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap7.BackgroundImage = Image.FromFile(kitaplar.Rows[6]["kitap_gorsel"].ToString());
-				Kitap7.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap8.BackgroundImage = Image.FromFile(kitaplar.Rows[7]["kitap_gorsel"].ToString());
-				Kitap8.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap9.BackgroundImage = Image.FromFile(kitaplar.Rows[8]["kitap_gorsel"].ToString());
-				Kitap9.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap10.BackgroundImage = Image.FromFile(kitaplar.Rows[9]["kitap_gorsel"].ToString());
-				Kitap10.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap11.BackgroundImage = Image.FromFile(kitaplar.Rows[10]["kitap_gorsel"].ToString());
-				Kitap11.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap12.BackgroundImage = Image.FromFile(kitaplar.Rows[11]["kitap_gorsel"].ToString());
-				Kitap12.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap13.BackgroundImage = Image.FromFile(kitaplar.Rows[12]["kitap_gorsel"].ToString());
-				Kitap13.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap14.BackgroundImage = Image.FromFile(kitaplar.Rows[13]["kitap_gorsel"].ToString());
-				Kitap14.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap15.BackgroundImage = Image.FromFile(kitaplar.Rows[14]["kitap_gorsel"].ToString());
-				Kitap15.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap16.BackgroundImage = Image.FromFile(kitaplar.Rows[15]["kitap_gorsel"].ToString());
-				Kitap16.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap17.BackgroundImage = Image.FromFile(kitaplar.Rows[16]["kitap_gorsel"].ToString());
-				Kitap17.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap18.BackgroundImage = Image.FromFile(kitaplar.Rows[17]["kitap_gorsel"].ToString());
-				Kitap18.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap19.BackgroundImage = Image.FromFile(kitaplar.Rows[18]["kitap_gorsel"].ToString());
-				Kitap19.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap20.BackgroundImage = Image.FromFile(kitaplar.Rows[19]["kitap_gorsel"].ToString());
-				Kitap20.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap21.BackgroundImage = Image.FromFile(kitaplar.Rows[20]["kitap_gorsel"].ToString());
-				Kitap21.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap22.BackgroundImage = Image.FromFile(kitaplar.Rows[21]["kitap_gorsel"].ToString());
-				Kitap22.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap23.BackgroundImage = Image.FromFile(kitaplar.Rows[22]["kitap_gorsel"].ToString());
-				Kitap23.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap24.BackgroundImage = Image.FromFile(kitaplar.Rows[23]["kitap_gorsel"].ToString());
-				Kitap24.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap25.BackgroundImage = Image.FromFile(kitaplar.Rows[24]["kitap_gorsel"].ToString());
-				Kitap25.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap26.BackgroundImage = Image.FromFile(kitaplar.Rows[25]["kitap_gorsel"].ToString());
-				Kitap26.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap27.BackgroundImage = Image.FromFile(kitaplar.Rows[26]["kitap_gorsel"].ToString());
-				Kitap27.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap28.BackgroundImage = Image.FromFile(kitaplar.Rows[27]["kitap_gorsel"].ToString());
-				Kitap28.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap29.BackgroundImage = Image.FromFile(kitaplar.Rows[28]["kitap_gorsel"].ToString());
-				Kitap29.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap30.BackgroundImage = Image.FromFile(kitaplar.Rows[29]["kitap_gorsel"].ToString());
-				Kitap30.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap31.BackgroundImage = Image.FromFile(kitaplar.Rows[30]["kitap_gorsel"].ToString());
-				Kitap31.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap32.BackgroundImage = Image.FromFile(kitaplar.Rows[31]["kitap_gorsel"].ToString());
-				Kitap32.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap33.BackgroundImage = Image.FromFile(kitaplar.Rows[32]["kitap_gorsel"].ToString());
-				Kitap33.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap34.BackgroundImage = Image.FromFile(kitaplar.Rows[33]["kitap_gorsel"].ToString());
-				Kitap34.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap35.BackgroundImage = Image.FromFile(kitaplar.Rows[34]["kitap_gorsel"].ToString());
-				Kitap35.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap36.BackgroundImage = Image.FromFile(kitaplar.Rows[35]["kitap_gorsel"].ToString());
-				Kitap36.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap37.BackgroundImage = Image.FromFile(kitaplar.Rows[36]["kitap_gorsel"].ToString());
-				Kitap37.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap38.BackgroundImage = Image.FromFile(kitaplar.Rows[37]["kitap_gorsel"].ToString());
-				Kitap38.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap39.BackgroundImage = Image.FromFile(kitaplar.Rows[38]["kitap_gorsel"].ToString());
-				Kitap39.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap40.BackgroundImage = Image.FromFile(kitaplar.Rows[39]["kitap_gorsel"].ToString());
-				Kitap40.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap41.BackgroundImage = Image.FromFile(kitaplar.Rows[40]["kitap_gorsel"].ToString());
-				Kitap41.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap42.BackgroundImage = Image.FromFile(kitaplar.Rows[41]["kitap_gorsel"].ToString());
-				Kitap42.BackgroundImageLayout = ImageLayout.Stretch;
-
+				for (int i = 0; i < kitaplar.Rows.Count; i++)
+				{
+					var kitapControl = this.Controls.Find($"Kitap{i + 1}", true).FirstOrDefault();
+					if (kitapControl != null && kitapControl is Control kitap)
+					{
+						kitap.BackgroundImage = Image.FromFile(kitaplar.Rows[i]["kitap_gorsel"].ToString());
+						kitap.BackgroundImageLayout = ImageLayout.Stretch;
+					}
+				}
 
 			}
 			catch (Exception ex)
