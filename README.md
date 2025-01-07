@@ -1,4 +1,6 @@
 📚 Library Book Rental System
+
+
 Bu proje, kullanıcıların kitapları kolayca sepete ekleyip kiralayabileceği bir Kitap Kiralama Sistemidir. Varsayılan kiralama süresi 3 hafta olarak belirlenmiştir ve gerektiğinde bu süre ayarlanabilir. Proje, ADO.NET kullanılarak geliştirilmiş olup veritabanı işlemleri için özel bir DataHelper kütüphanesi kullanmaktadır.
 
 ✨ Özellikler
