@@ -16,7 +16,7 @@ namespace KutuphaneProjesi
 		
 
 		// Bağlantı cümlesi (Server bilgileri, Veritabanı adı ve güvenlik)
-		private string baglantiAnahtari = @"Data Source=DESKTOP-57FVTS7\SQLEXPRESS;Initial Catalog=kutuphaneProjesi;Integrated Security=True;TrustServerCertificate=True";
+		private string baglantiAnahtari = @"YOUR SQL NAME;Initial Catalog=kutuphaneProjesi;Integrated Security=True;TrustServerCertificate=True";
 
 
 
