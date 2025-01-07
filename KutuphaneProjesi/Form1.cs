@@ -66,7 +66,10 @@ namespace KutuphaneProjesi
 			SepetimPanel.Visible = false;
 
 
-
+			// Arka plan rengi
+			Brush bgBrush = new SolidBrush(ColorTranslator.FromHtml("#080a1a"));
+			// Yazı rengi
+			Brush textBrush = new SolidBrush(Color.White);
 
 			//Fonksionlarımı formun load metoduna çağırdım
 			ButonlaraVeriEkle();
@@ -147,7 +150,7 @@ namespace KutuphaneProjesi
 
 
 		//Kitap Butonları----------------------------------------------------------------------------------------------------------------------------------------
-
+		// Burada butonlara basılınca ne olacağını yönettim
 
 		private void Kitap1_Click(object sender, EventArgs e)
 		{
@@ -398,6 +401,7 @@ namespace KutuphaneProjesi
 			}
 		}
 
+
 		//Kitap Click End-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -514,19 +518,26 @@ namespace KutuphaneProjesi
 			DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 			// Mevcut butonlarınızı sırayla atayın
-			Kitapismi1.Text = kitaplar.Rows[0]["kitap_ad"].ToString();
-			Kitapismi2.Text = kitaplar.Rows[1]["kitap_ad"].ToString();
-			Kitapismi3.Text = kitaplar.Rows[2]["kitap_ad"].ToString();
-			Kitapismi4.Text = kitaplar.Rows[3]["kitap_ad"].ToString();
-			Kitapismi5.Text = kitaplar.Rows[4]["kitap_ad"].ToString();
-			Kitapismi6.Text = kitaplar.Rows[5]["kitap_ad"].ToString();
-			Kitapismi7.Text = kitaplar.Rows[6]["kitap_ad"].ToString();
-			Kitapismi8.Text = kitaplar.Rows[7]["kitap_ad"].ToString();
-			Kitapismi9.Text = kitaplar.Rows[8]["kitap_ad"].ToString();
-			Kitapismi10.Text = kitaplar.Rows[9]["kitap_ad"].ToString();
-			Kitapismi11.Text = kitaplar.Rows[10]["kitap_ad"].ToString();
-			Kitapismi12.Text = kitaplar.Rows[11]["kitap_ad"].ToString();
-			Kitapismi13.Text = kitaplar.Rows[12]["kitap_ad"].ToString();
+			for (int i = 0; i < kitaplar.Rows.Count; i++)
+			{
+				// Kitap fiyatını doldur
+				var fiyatKontrolAdi = $"Kitap{i + 1}Fiyat";
+				var fiyatKontrol = this.Controls.Find(fiyatKontrolAdi, true).FirstOrDefault();
+				if (fiyatKontrol != null && fiyatKontrol is System.Windows.Forms.Label fiyatLabel)
+				{
+					fiyatLabel.Text = kitaplar.Rows[i]["kitap_fiyat"].ToString();
+				}
+
+				// Kitap ismini doldur
+				var isimKontrolAdi = $"Kitapismi{i + 1}";
+				var isimKontrol = this.Controls.Find(isimKontrolAdi, true).FirstOrDefault();
+				if (isimKontrol != null && isimKontrol is System.Windows.Forms.Label isimLabel)
+				{
+					isimLabel.Text = kitaplar.Rows[i]["kitap_ad"].ToString();
+				}
+			}
+
+
 		}
 
 
@@ -540,19 +551,17 @@ namespace KutuphaneProjesi
 				DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 				// Mevcut butonlarınızı sırayla atayın
-				Kitap1Fiyat.Text = kitaplar.Rows[0]["kitap_fiyat"].ToString();
-				Kitap2Fiyat.Text = kitaplar.Rows[1]["kitap_fiyat"].ToString();
-				Kitap3Fiyat.Text = kitaplar.Rows[2]["kitap_fiyat"].ToString();
-				Kitap4Fiyat.Text = kitaplar.Rows[3]["kitap_fiyat"].ToString();
-				Kitap5Fiyat.Text = kitaplar.Rows[4]["kitap_fiyat"].ToString();
-				Kitap6Fiyat.Text = kitaplar.Rows[5]["kitap_fiyat"].ToString();
-				Kitap7Fiyat.Text = kitaplar.Rows[6]["kitap_fiyat"].ToString();
-				Kitap8Fiyat.Text = kitaplar.Rows[7]["kitap_fiyat"].ToString();
-				Kitap9Fiyat.Text = kitaplar.Rows[8]["kitap_fiyat"].ToString();
-				Kitap10Fiyat.Text = kitaplar.Rows[9]["kitap_fiyat"].ToString();
-				Kitap11Fiyat.Text = kitaplar.Rows[10]["kitap_fiyat"].ToString();
-				Kitap12Fiyat.Text = kitaplar.Rows[11]["kitap_fiyat"].ToString();
-				Kitap13Fiyat.Text = kitaplar.Rows[12]["kitap_fiyat"].ToString();
+				for (int i = 0; i < kitaplar.Rows.Count; i++)
+				{
+					var kontrolAdi = $"Kitap{i + 1}Fiyat";
+					var kontrol = this.Controls.Find(kontrolAdi, true).FirstOrDefault();
+					if (kontrol != null && kontrol is System.Windows.Forms.Label label)
+					{
+						label.Text = kitaplar.Rows[i]["kitap_fiyat"].ToString();
+					}
+				}
+
+
 
 			}
 			catch (Exception ex)
@@ -573,32 +582,15 @@ namespace KutuphaneProjesi
 				DataTable kitaplar = dataHelper.VeriGoruntule("kitaplarStok"); // Tablo adını düzenleyin
 
 				// Her bir kitap için arka plan resmini ayarla
-				Kitap1.BackgroundImage = Image.FromFile(kitaplar.Rows[0]["kitap_gorsel"].ToString());
-				Kitap1.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap2.BackgroundImage = Image.FromFile(kitaplar.Rows[1]["kitap_gorsel"].ToString());
-				Kitap2.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap3.BackgroundImage = Image.FromFile(kitaplar.Rows[2]["kitap_gorsel"].ToString());
-				Kitap3.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap4.BackgroundImage = Image.FromFile(kitaplar.Rows[3]["kitap_gorsel"].ToString());
-				Kitap4.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap5.BackgroundImage = Image.FromFile(kitaplar.Rows[4]["kitap_gorsel"].ToString());
-				Kitap5.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap6.BackgroundImage = Image.FromFile(kitaplar.Rows[5]["kitap_gorsel"].ToString());
-				Kitap6.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap7.BackgroundImage = Image.FromFile(kitaplar.Rows[6]["kitap_gorsel"].ToString());
-				Kitap7.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap8.BackgroundImage = Image.FromFile(kitaplar.Rows[7]["kitap_gorsel"].ToString());
-				Kitap8.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap9.BackgroundImage = Image.FromFile(kitaplar.Rows[8]["kitap_gorsel"].ToString());
-				Kitap9.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap10.BackgroundImage = Image.FromFile(kitaplar.Rows[9]["kitap_gorsel"].ToString());
-				Kitap10.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap11.BackgroundImage = Image.FromFile(kitaplar.Rows[10]["kitap_gorsel"].ToString());
-				Kitap11.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap12.BackgroundImage = Image.FromFile(kitaplar.Rows[11]["kitap_gorsel"].ToString());
-				Kitap12.BackgroundImageLayout = ImageLayout.Stretch;
-				Kitap13.BackgroundImage = Image.FromFile(kitaplar.Rows[12]["kitap_gorsel"].ToString());
-				Kitap13.BackgroundImageLayout = ImageLayout.Stretch;
+				for (int i = 0; i < kitaplar.Rows.Count; i++)
+				{
+					var kitapControl = this.Controls.Find($"Kitap{i + 1}", true).FirstOrDefault();
+					if (kitapControl != null && kitapControl is Control kitap)
+					{
+						kitap.BackgroundImage = Image.FromFile(kitaplar.Rows[i]["kitap_gorsel"].ToString());
+						kitap.BackgroundImageLayout = ImageLayout.Stretch;
+					}
+				}
 
 			}
 			catch (Exception ex)
@@ -768,7 +760,15 @@ namespace KutuphaneProjesi
 
 			// Veri giriş metodunu çağırın
 
-			dataHelper.KayitOl(isim, kullaniciAdi, email, sifre);
+			if(textBox7.Text != "" && textBox8.Text != "" && textBox6.Text != "" && textBox5.Text != "")
+			{
+				dataHelper.KayitOl(isim, kullaniciAdi, email, sifre);
+			}
+			else
+			{
+				MessageBox.Show("Alanları Doldurun");
+			}
+				
 		}
 
 		private void VeriGuncelle_Click(object sender, EventArgs e)
@@ -789,6 +789,501 @@ namespace KutuphaneProjesi
 			// Veri giriş metodunu çağırın
 			dataHelper.VeriGuncelle(isim, email, sifre, kullaniciAdi,kosul);
 		}
+
+		private void Kitap14_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi14.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi14.Text);
+				SepetListesiFiyat.Items.Add(Kitap14Fiyat.Text);
+			}
+		}
+
+		private void Kitap15_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi15.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi15.Text);
+				SepetListesiFiyat.Items.Add(Kitap15Fiyat.Text);
+			}
+		}
+
+		private void Kitap16_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi16.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi16.Text);
+				SepetListesiFiyat.Items.Add(Kitap16Fiyat.Text);
+			}
+		}
+
+		private void Kitap17_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi17.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi17.Text);
+				SepetListesiFiyat.Items.Add(Kitap17Fiyat.Text);
+			}
+		}
+
+		private void Kitap18_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi18.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi18.Text);
+				SepetListesiFiyat.Items.Add(Kitap18Fiyat.Text);
+			}
+		}
+
+		private void Kitap19_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi19.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi19.Text);
+				SepetListesiFiyat.Items.Add(Kitap19Fiyat.Text);
+			}
+		}
+
+		private void Kitap20_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi20.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi20.Text);
+				SepetListesiFiyat.Items.Add(Kitap20Fiyat.Text);
+			}
+		}
+
+		private void Kitap21_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi21.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi21.Text);
+				SepetListesiFiyat.Items.Add(Kitap21Fiyat.Text);
+			}
+		}
+
+		private void Kitap22_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi22.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi22.Text);
+				SepetListesiFiyat.Items.Add(Kitap22Fiyat.Text);
+			}
+		}
+
+		private void Kitap23_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi23.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi23.Text);
+				SepetListesiFiyat.Items.Add(Kitap23Fiyat.Text);
+			}
+		}
+
+		private void Kitap24_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi24.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi24.Text);
+				SepetListesiFiyat.Items.Add(Kitap24Fiyat.Text);
+			}
+		}
+
+		private void Kitap25_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi25.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi25.Text);
+				SepetListesiFiyat.Items.Add(Kitap25Fiyat.Text);
+			}
+		}
+
+		private void Kitap26_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi26.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi26.Text);
+				SepetListesiFiyat.Items.Add(Kitap26Fiyat.Text);
+			}
+		}
+
+		private void Kitap27_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi27.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi27.Text);
+				SepetListesiFiyat.Items.Add(Kitap27Fiyat.Text);
+			}
+		}
+
+		private void Kitap28_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi28.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi28.Text);
+				SepetListesiFiyat.Items.Add(Kitap28Fiyat.Text);
+			}
+		}
+
+		private void Kitap29_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi29.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi29.Text);
+				SepetListesiFiyat.Items.Add(Kitap29Fiyat.Text);
+			}
+		}
+
+		private void Kitap30_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi30.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi30.Text);
+				SepetListesiFiyat.Items.Add(Kitap30Fiyat.Text);
+			}
+		}
+
+		private void Kitap31_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi31.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi31.Text);
+				SepetListesiFiyat.Items.Add(Kitap31Fiyat.Text);
+			}
+		}
+
+		private void Kitap32_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi32.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi32.Text);
+				SepetListesiFiyat.Items.Add(Kitap32Fiyat.Text);
+			}
+		}
+
+		private void Kitap33_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi33.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi33.Text);
+				SepetListesiFiyat.Items.Add(Kitap33Fiyat.Text);
+			}
+		}
+
+		private void Kitap34_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi34.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi34.Text);
+				SepetListesiFiyat.Items.Add(Kitap34Fiyat.Text);
+			}
+		}
+
+		private void Kitap35_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi35.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi35.Text);
+				SepetListesiFiyat.Items.Add(Kitap35Fiyat.Text);
+			}
+		}
+
+		private void Kitap36_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi36.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi36.Text);
+				SepetListesiFiyat.Items.Add(Kitap36Fiyat.Text);
+			}
+		}
+
+		private void Kitap37_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi37.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi37.Text);
+				SepetListesiFiyat.Items.Add(Kitap37Fiyat.Text);
+			}
+		}
+
+		private void Kitap38_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi38.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi38.Text);
+				SepetListesiFiyat.Items.Add(Kitap38Fiyat.Text);
+			}
+		}
+
+		private void Kitap39_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi39.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi39.Text);
+				SepetListesiFiyat.Items.Add(Kitap39Fiyat.Text);
+			}
+		}
+
+		private void Kitap40_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi40.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi40.Text);
+				SepetListesiFiyat.Items.Add(Kitap40Fiyat.Text);
+			}
+		}
+
+		private void Kitap41_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi41.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi41.Text);
+				SepetListesiFiyat.Items.Add(Kitap41Fiyat.Text);
+			}
+		}
+
+		private void Kitap42_Click_1(object sender, EventArgs e)
+		{
+			if (SepetListesi.Items.Contains(Kitapismi42.Text))
+			{
+				MessageBox.Show("Aynı Üründen Sadece 1 Tane Alabilirsiniz!");
+			}
+			else
+			{
+				if (panel10.Visible == false)
+				{
+					panel10.Visible = true;
+				}
+				SepetListesi.Items.Add(Kitapismi42.Text);
+				SepetListesiFiyat.Items.Add(Kitap42Fiyat.Text);
+			}
+		}
+
+		// Bu şekilde devam edebilirsiniz, her kitap için buton tıklama işlemi aynı yapıda.
 
 	}
 }

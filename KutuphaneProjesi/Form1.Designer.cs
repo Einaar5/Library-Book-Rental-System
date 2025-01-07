@@ -134,14 +134,136 @@ namespace KutuphaneProjesi
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.label3 = new System.Windows.Forms.Label();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.panel12 = new System.Windows.Forms.Panel();
+			this.label87 = new System.Windows.Forms.Label();
+			this.label65 = new System.Windows.Forms.Label();
+			this.label64 = new System.Windows.Forms.Label();
+			this.label63 = new System.Windows.Forms.Label();
+			this.label62 = new System.Windows.Forms.Label();
+			this.label61 = new System.Windows.Forms.Label();
+			this.label60 = new System.Windows.Forms.Label();
+			this.label59 = new System.Windows.Forms.Label();
+			this.label58 = new System.Windows.Forms.Label();
+			this.Kitap21Fiyat = new System.Windows.Forms.Label();
+			this.Kitap20Fiyat = new System.Windows.Forms.Label();
+			this.Kitap19Fiyat = new System.Windows.Forms.Label();
+			this.Kitap18Fiyat = new System.Windows.Forms.Label();
+			this.Kitap17Fiyat = new System.Windows.Forms.Label();
+			this.Kitap16Fiyat = new System.Windows.Forms.Label();
+			this.Kitap15Fiyat = new System.Windows.Forms.Label();
+			this.Kitap14Fiyat = new System.Windows.Forms.Label();
+			this.Kitapismi21 = new System.Windows.Forms.Label();
+			this.Kitapismi20 = new System.Windows.Forms.Label();
+			this.Kitapismi19 = new System.Windows.Forms.Label();
+			this.Kitapismi18 = new System.Windows.Forms.Label();
+			this.Kitapismi17 = new System.Windows.Forms.Label();
+			this.Kitapismi16 = new System.Windows.Forms.Label();
+			this.Kitapismi15 = new System.Windows.Forms.Label();
+			this.Kitapismi14 = new System.Windows.Forms.Label();
+			this.Kitap21 = new System.Windows.Forms.Button();
+			this.Kitap20 = new System.Windows.Forms.Button();
+			this.Kitap19 = new System.Windows.Forms.Button();
+			this.Kitap18 = new System.Windows.Forms.Button();
+			this.Kitap17 = new System.Windows.Forms.Button();
+			this.Kitap16 = new System.Windows.Forms.Button();
+			this.Kitap15 = new System.Windows.Forms.Button();
+			this.Kitap14 = new System.Windows.Forms.Button();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.panel15 = new System.Windows.Forms.Panel();
+			this.label88 = new System.Windows.Forms.Label();
+			this.label73 = new System.Windows.Forms.Label();
+			this.label72 = new System.Windows.Forms.Label();
+			this.label71 = new System.Windows.Forms.Label();
+			this.label70 = new System.Windows.Forms.Label();
+			this.label69 = new System.Windows.Forms.Label();
+			this.label68 = new System.Windows.Forms.Label();
+			this.label67 = new System.Windows.Forms.Label();
+			this.label66 = new System.Windows.Forms.Label();
+			this.Kitap29Fiyat = new System.Windows.Forms.Label();
+			this.Kitap28Fiyat = new System.Windows.Forms.Label();
+			this.Kitap27Fiyat = new System.Windows.Forms.Label();
+			this.Kitap26Fiyat = new System.Windows.Forms.Label();
+			this.Kitap25Fiyat = new System.Windows.Forms.Label();
+			this.Kitap24Fiyat = new System.Windows.Forms.Label();
+			this.Kitap23Fiyat = new System.Windows.Forms.Label();
+			this.Kitap22Fiyat = new System.Windows.Forms.Label();
+			this.Kitapismi29 = new System.Windows.Forms.Label();
+			this.Kitapismi28 = new System.Windows.Forms.Label();
+			this.Kitapismi27 = new System.Windows.Forms.Label();
+			this.Kitapismi26 = new System.Windows.Forms.Label();
+			this.Kitapismi25 = new System.Windows.Forms.Label();
+			this.Kitapismi24 = new System.Windows.Forms.Label();
+			this.Kitapismi23 = new System.Windows.Forms.Label();
+			this.Kitapismi22 = new System.Windows.Forms.Label();
+			this.Kitap29 = new System.Windows.Forms.Button();
+			this.Kitap28 = new System.Windows.Forms.Button();
+			this.Kitap27 = new System.Windows.Forms.Button();
+			this.Kitap26 = new System.Windows.Forms.Button();
+			this.Kitap25 = new System.Windows.Forms.Button();
+			this.Kitap24 = new System.Windows.Forms.Button();
+			this.Kitap23 = new System.Windows.Forms.Button();
+			this.Kitap22 = new System.Windows.Forms.Button();
 			this.tabPage4 = new System.Windows.Forms.TabPage();
-			this.tabPage5 = new System.Windows.Forms.TabPage();
+			this.panel16 = new System.Windows.Forms.Panel();
+			this.label89 = new System.Windows.Forms.Label();
+			this.label77 = new System.Windows.Forms.Label();
+			this.label76 = new System.Windows.Forms.Label();
+			this.label75 = new System.Windows.Forms.Label();
+			this.label74 = new System.Windows.Forms.Label();
+			this.Kitap33Fiyat = new System.Windows.Forms.Label();
+			this.Kitap32Fiyat = new System.Windows.Forms.Label();
+			this.Kitap31Fiyat = new System.Windows.Forms.Label();
+			this.Kitap30Fiyat = new System.Windows.Forms.Label();
+			this.Kitapismi33 = new System.Windows.Forms.Label();
+			this.Kitapismi32 = new System.Windows.Forms.Label();
+			this.Kitapismi31 = new System.Windows.Forms.Label();
+			this.Kitapismi30 = new System.Windows.Forms.Label();
+			this.Kitap33 = new System.Windows.Forms.Button();
+			this.Kitap32 = new System.Windows.Forms.Button();
+			this.Kitap31 = new System.Windows.Forms.Button();
+			this.Kitap30 = new System.Windows.Forms.Button();
 			this.tabPage6 = new System.Windows.Forms.TabPage();
+			this.panel17 = new System.Windows.Forms.Panel();
+			this.label90 = new System.Windows.Forms.Label();
+			this.label82 = new System.Windows.Forms.Label();
+			this.label81 = new System.Windows.Forms.Label();
+			this.label80 = new System.Windows.Forms.Label();
+			this.label79 = new System.Windows.Forms.Label();
+			this.label78 = new System.Windows.Forms.Label();
+			this.Kitap38Fiyat = new System.Windows.Forms.Label();
+			this.Kitap37Fiyat = new System.Windows.Forms.Label();
+			this.Kitap36Fiyat = new System.Windows.Forms.Label();
+			this.Kitap35Fiyat = new System.Windows.Forms.Label();
+			this.Kitap34Fiyat = new System.Windows.Forms.Label();
+			this.Kitapismi38 = new System.Windows.Forms.Label();
+			this.Kitapismi37 = new System.Windows.Forms.Label();
+			this.Kitapismi36 = new System.Windows.Forms.Label();
+			this.Kitapismi35 = new System.Windows.Forms.Label();
+			this.Kitapismi34 = new System.Windows.Forms.Label();
+			this.Kitap38 = new System.Windows.Forms.Button();
+			this.Kitap37 = new System.Windows.Forms.Button();
+			this.Kitap36 = new System.Windows.Forms.Button();
+			this.Kitap35 = new System.Windows.Forms.Button();
+			this.Kitap34 = new System.Windows.Forms.Button();
 			this.tabPage7 = new System.Windows.Forms.TabPage();
-			this.tabPage10 = new System.Windows.Forms.TabPage();
-			this.tabPage11 = new System.Windows.Forms.TabPage();
-			this.tabPage12 = new System.Windows.Forms.TabPage();
+			this.panel18 = new System.Windows.Forms.Panel();
+			this.label91 = new System.Windows.Forms.Label();
+			this.label86 = new System.Windows.Forms.Label();
+			this.label85 = new System.Windows.Forms.Label();
+			this.label84 = new System.Windows.Forms.Label();
+			this.label83 = new System.Windows.Forms.Label();
+			this.Kitap42Fiyat = new System.Windows.Forms.Label();
+			this.Kitap41Fiyat = new System.Windows.Forms.Label();
+			this.Kitap40Fiyat = new System.Windows.Forms.Label();
+			this.Kitap39Fiyat = new System.Windows.Forms.Label();
+			this.Kitapismi42 = new System.Windows.Forms.Label();
+			this.Kitapismi41 = new System.Windows.Forms.Label();
+			this.Kitapismi40 = new System.Windows.Forms.Label();
+			this.Kitapismi39 = new System.Windows.Forms.Label();
+			this.Kitap42 = new System.Windows.Forms.Button();
+			this.Kitap41 = new System.Windows.Forms.Button();
+			this.Kitap40 = new System.Windows.Forms.Button();
+			this.Kitap39 = new System.Windows.Forms.Button();
 			this.SepetimPanel = new System.Windows.Forms.Panel();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.label23 = new System.Windows.Forms.Label();
@@ -176,6 +298,10 @@ namespace KutuphaneProjesi
 			this.label47 = new System.Windows.Forms.Label();
 			this.label46 = new System.Windows.Forms.Label();
 			this.KapsayiciLogin = new System.Windows.Forms.Panel();
+			this.panel20 = new System.Windows.Forms.Panel();
+			this.label95 = new System.Windows.Forms.Label();
+			this.label96 = new System.Windows.Forms.Label();
+			this.label97 = new System.Windows.Forms.Label();
 			this.panel14 = new System.Windows.Forms.Panel();
 			this.label56 = new System.Windows.Forms.Label();
 			this.kayitOl = new System.Windows.Forms.Button();
@@ -188,6 +314,10 @@ namespace KutuphaneProjesi
 			this.sifreTextBox = new System.Windows.Forms.TextBox();
 			this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
 			this.KayitPanel = new System.Windows.Forms.Panel();
+			this.panel19 = new System.Windows.Forms.Panel();
+			this.label94 = new System.Windows.Forms.Label();
+			this.label92 = new System.Windows.Forms.Label();
+			this.label93 = new System.Windows.Forms.Label();
 			this.panel13 = new System.Windows.Forms.Panel();
 			this.label57 = new System.Windows.Forms.Label();
 			this.linkLabel2 = new System.Windows.Forms.LinkLabel();
@@ -217,13 +347,25 @@ namespace KutuphaneProjesi
 			this.tabPage8.SuspendLayout();
 			this.tabPage9.SuspendLayout();
 			this.panel5.SuspendLayout();
+			this.tabPage2.SuspendLayout();
+			this.panel12.SuspendLayout();
+			this.tabPage3.SuspendLayout();
+			this.panel15.SuspendLayout();
+			this.tabPage4.SuspendLayout();
+			this.panel16.SuspendLayout();
+			this.tabPage6.SuspendLayout();
+			this.panel17.SuspendLayout();
+			this.tabPage7.SuspendLayout();
+			this.panel18.SuspendLayout();
 			this.SepetimPanel.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.panel6.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.KapsayiciLogin.SuspendLayout();
+			this.panel20.SuspendLayout();
 			this.panel14.SuspendLayout();
 			this.KayitPanel.SuspendLayout();
+			this.panel19.SuspendLayout();
 			this.panel13.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -564,12 +706,8 @@ namespace KutuphaneProjesi
 			this.KitapKiralaPencere.Controls.Add(this.tabPage2);
 			this.KitapKiralaPencere.Controls.Add(this.tabPage3);
 			this.KitapKiralaPencere.Controls.Add(this.tabPage4);
-			this.KitapKiralaPencere.Controls.Add(this.tabPage5);
 			this.KitapKiralaPencere.Controls.Add(this.tabPage6);
 			this.KitapKiralaPencere.Controls.Add(this.tabPage7);
-			this.KitapKiralaPencere.Controls.Add(this.tabPage10);
-			this.KitapKiralaPencere.Controls.Add(this.tabPage11);
-			this.KitapKiralaPencere.Controls.Add(this.tabPage12);
 			resources.ApplyResources(this.KitapKiralaPencere, "KitapKiralaPencere");
 			this.KitapKiralaPencere.Name = "KitapKiralaPencere";
 			this.KitapKiralaPencere.SelectedIndex = 0;
@@ -1014,56 +1152,972 @@ namespace KutuphaneProjesi
 			// tabPage2
 			// 
 			this.tabPage2.BackColor = System.Drawing.Color.Black;
+			this.tabPage2.Controls.Add(this.panel12);
+			this.tabPage2.Controls.Add(this.label65);
+			this.tabPage2.Controls.Add(this.label64);
+			this.tabPage2.Controls.Add(this.label63);
+			this.tabPage2.Controls.Add(this.label62);
+			this.tabPage2.Controls.Add(this.label61);
+			this.tabPage2.Controls.Add(this.label60);
+			this.tabPage2.Controls.Add(this.label59);
+			this.tabPage2.Controls.Add(this.label58);
+			this.tabPage2.Controls.Add(this.Kitap21Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap20Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap19Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap18Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap17Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap16Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap15Fiyat);
+			this.tabPage2.Controls.Add(this.Kitap14Fiyat);
+			this.tabPage2.Controls.Add(this.Kitapismi21);
+			this.tabPage2.Controls.Add(this.Kitapismi20);
+			this.tabPage2.Controls.Add(this.Kitapismi19);
+			this.tabPage2.Controls.Add(this.Kitapismi18);
+			this.tabPage2.Controls.Add(this.Kitapismi17);
+			this.tabPage2.Controls.Add(this.Kitapismi16);
+			this.tabPage2.Controls.Add(this.Kitapismi15);
+			this.tabPage2.Controls.Add(this.Kitapismi14);
+			this.tabPage2.Controls.Add(this.Kitap21);
+			this.tabPage2.Controls.Add(this.Kitap20);
+			this.tabPage2.Controls.Add(this.Kitap19);
+			this.tabPage2.Controls.Add(this.Kitap18);
+			this.tabPage2.Controls.Add(this.Kitap17);
+			this.tabPage2.Controls.Add(this.Kitap16);
+			this.tabPage2.Controls.Add(this.Kitap15);
+			this.tabPage2.Controls.Add(this.Kitap14);
 			resources.ApplyResources(this.tabPage2, "tabPage2");
 			this.tabPage2.Name = "tabPage2";
+			// 
+			// panel12
+			// 
+			this.panel12.BackColor = System.Drawing.Color.Gold;
+			this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel12.Controls.Add(this.label87);
+			resources.ApplyResources(this.panel12, "panel12");
+			this.panel12.Name = "panel12";
+			// 
+			// label87
+			// 
+			resources.ApplyResources(this.label87, "label87");
+			this.label87.Name = "label87";
+			// 
+			// label65
+			// 
+			resources.ApplyResources(this.label65, "label65");
+			this.label65.ForeColor = System.Drawing.Color.White;
+			this.label65.Name = "label65";
+			// 
+			// label64
+			// 
+			resources.ApplyResources(this.label64, "label64");
+			this.label64.ForeColor = System.Drawing.Color.White;
+			this.label64.Name = "label64";
+			// 
+			// label63
+			// 
+			resources.ApplyResources(this.label63, "label63");
+			this.label63.ForeColor = System.Drawing.Color.White;
+			this.label63.Name = "label63";
+			// 
+			// label62
+			// 
+			resources.ApplyResources(this.label62, "label62");
+			this.label62.ForeColor = System.Drawing.Color.White;
+			this.label62.Name = "label62";
+			// 
+			// label61
+			// 
+			resources.ApplyResources(this.label61, "label61");
+			this.label61.ForeColor = System.Drawing.Color.White;
+			this.label61.Name = "label61";
+			// 
+			// label60
+			// 
+			resources.ApplyResources(this.label60, "label60");
+			this.label60.ForeColor = System.Drawing.Color.White;
+			this.label60.Name = "label60";
+			// 
+			// label59
+			// 
+			resources.ApplyResources(this.label59, "label59");
+			this.label59.ForeColor = System.Drawing.Color.White;
+			this.label59.Name = "label59";
+			// 
+			// label58
+			// 
+			resources.ApplyResources(this.label58, "label58");
+			this.label58.ForeColor = System.Drawing.Color.White;
+			this.label58.Name = "label58";
+			// 
+			// Kitap21Fiyat
+			// 
+			resources.ApplyResources(this.Kitap21Fiyat, "Kitap21Fiyat");
+			this.Kitap21Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap21Fiyat.Name = "Kitap21Fiyat";
+			// 
+			// Kitap20Fiyat
+			// 
+			resources.ApplyResources(this.Kitap20Fiyat, "Kitap20Fiyat");
+			this.Kitap20Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap20Fiyat.Name = "Kitap20Fiyat";
+			// 
+			// Kitap19Fiyat
+			// 
+			resources.ApplyResources(this.Kitap19Fiyat, "Kitap19Fiyat");
+			this.Kitap19Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap19Fiyat.Name = "Kitap19Fiyat";
+			// 
+			// Kitap18Fiyat
+			// 
+			resources.ApplyResources(this.Kitap18Fiyat, "Kitap18Fiyat");
+			this.Kitap18Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap18Fiyat.Name = "Kitap18Fiyat";
+			// 
+			// Kitap17Fiyat
+			// 
+			resources.ApplyResources(this.Kitap17Fiyat, "Kitap17Fiyat");
+			this.Kitap17Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap17Fiyat.Name = "Kitap17Fiyat";
+			// 
+			// Kitap16Fiyat
+			// 
+			resources.ApplyResources(this.Kitap16Fiyat, "Kitap16Fiyat");
+			this.Kitap16Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap16Fiyat.Name = "Kitap16Fiyat";
+			// 
+			// Kitap15Fiyat
+			// 
+			resources.ApplyResources(this.Kitap15Fiyat, "Kitap15Fiyat");
+			this.Kitap15Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap15Fiyat.Name = "Kitap15Fiyat";
+			// 
+			// Kitap14Fiyat
+			// 
+			resources.ApplyResources(this.Kitap14Fiyat, "Kitap14Fiyat");
+			this.Kitap14Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap14Fiyat.Name = "Kitap14Fiyat";
+			// 
+			// Kitapismi21
+			// 
+			resources.ApplyResources(this.Kitapismi21, "Kitapismi21");
+			this.Kitapismi21.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi21.Name = "Kitapismi21";
+			// 
+			// Kitapismi20
+			// 
+			resources.ApplyResources(this.Kitapismi20, "Kitapismi20");
+			this.Kitapismi20.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi20.Name = "Kitapismi20";
+			// 
+			// Kitapismi19
+			// 
+			resources.ApplyResources(this.Kitapismi19, "Kitapismi19");
+			this.Kitapismi19.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi19.Name = "Kitapismi19";
+			// 
+			// Kitapismi18
+			// 
+			resources.ApplyResources(this.Kitapismi18, "Kitapismi18");
+			this.Kitapismi18.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi18.Name = "Kitapismi18";
+			// 
+			// Kitapismi17
+			// 
+			resources.ApplyResources(this.Kitapismi17, "Kitapismi17");
+			this.Kitapismi17.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi17.Name = "Kitapismi17";
+			// 
+			// Kitapismi16
+			// 
+			resources.ApplyResources(this.Kitapismi16, "Kitapismi16");
+			this.Kitapismi16.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi16.Name = "Kitapismi16";
+			// 
+			// Kitapismi15
+			// 
+			resources.ApplyResources(this.Kitapismi15, "Kitapismi15");
+			this.Kitapismi15.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi15.Name = "Kitapismi15";
+			// 
+			// Kitapismi14
+			// 
+			resources.ApplyResources(this.Kitapismi14, "Kitapismi14");
+			this.Kitapismi14.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi14.Name = "Kitapismi14";
+			// 
+			// Kitap21
+			// 
+			resources.ApplyResources(this.Kitap21, "Kitap21");
+			this.Kitap21.ForeColor = System.Drawing.Color.Transparent;
+			this.Kitap21.Name = "Kitap21";
+			this.Kitap21.UseVisualStyleBackColor = true;
+			this.Kitap21.Click += new System.EventHandler(this.Kitap21_Click_1);
+			// 
+			// Kitap20
+			// 
+			this.Kitap20.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap20, "Kitap20");
+			this.Kitap20.Name = "Kitap20";
+			this.Kitap20.UseVisualStyleBackColor = true;
+			this.Kitap20.Click += new System.EventHandler(this.Kitap20_Click_1);
+			// 
+			// Kitap19
+			// 
+			this.Kitap19.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap19, "Kitap19");
+			this.Kitap19.Name = "Kitap19";
+			this.Kitap19.UseVisualStyleBackColor = true;
+			this.Kitap19.Click += new System.EventHandler(this.Kitap19_Click_1);
+			// 
+			// Kitap18
+			// 
+			this.Kitap18.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap18, "Kitap18");
+			this.Kitap18.Name = "Kitap18";
+			this.Kitap18.UseVisualStyleBackColor = true;
+			this.Kitap18.Click += new System.EventHandler(this.Kitap18_Click_1);
+			// 
+			// Kitap17
+			// 
+			this.Kitap17.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap17, "Kitap17");
+			this.Kitap17.Name = "Kitap17";
+			this.Kitap17.UseVisualStyleBackColor = true;
+			this.Kitap17.Click += new System.EventHandler(this.Kitap17_Click_1);
+			// 
+			// Kitap16
+			// 
+			this.Kitap16.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap16, "Kitap16");
+			this.Kitap16.Name = "Kitap16";
+			this.Kitap16.UseVisualStyleBackColor = true;
+			this.Kitap16.Click += new System.EventHandler(this.Kitap16_Click_1);
+			// 
+			// Kitap15
+			// 
+			this.Kitap15.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap15, "Kitap15");
+			this.Kitap15.Name = "Kitap15";
+			this.Kitap15.UseVisualStyleBackColor = true;
+			this.Kitap15.Click += new System.EventHandler(this.Kitap15_Click_1);
+			// 
+			// Kitap14
+			// 
+			this.Kitap14.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap14, "Kitap14");
+			this.Kitap14.Name = "Kitap14";
+			this.Kitap14.UseVisualStyleBackColor = true;
+			this.Kitap14.Click += new System.EventHandler(this.Kitap14_Click_1);
 			// 
 			// tabPage3
 			// 
 			this.tabPage3.BackColor = System.Drawing.Color.Black;
+			this.tabPage3.Controls.Add(this.panel15);
+			this.tabPage3.Controls.Add(this.label73);
+			this.tabPage3.Controls.Add(this.label72);
+			this.tabPage3.Controls.Add(this.label71);
+			this.tabPage3.Controls.Add(this.label70);
+			this.tabPage3.Controls.Add(this.label69);
+			this.tabPage3.Controls.Add(this.label68);
+			this.tabPage3.Controls.Add(this.label67);
+			this.tabPage3.Controls.Add(this.label66);
+			this.tabPage3.Controls.Add(this.Kitap29Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap28Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap27Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap26Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap25Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap24Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap23Fiyat);
+			this.tabPage3.Controls.Add(this.Kitap22Fiyat);
+			this.tabPage3.Controls.Add(this.Kitapismi29);
+			this.tabPage3.Controls.Add(this.Kitapismi28);
+			this.tabPage3.Controls.Add(this.Kitapismi27);
+			this.tabPage3.Controls.Add(this.Kitapismi26);
+			this.tabPage3.Controls.Add(this.Kitapismi25);
+			this.tabPage3.Controls.Add(this.Kitapismi24);
+			this.tabPage3.Controls.Add(this.Kitapismi23);
+			this.tabPage3.Controls.Add(this.Kitapismi22);
+			this.tabPage3.Controls.Add(this.Kitap29);
+			this.tabPage3.Controls.Add(this.Kitap28);
+			this.tabPage3.Controls.Add(this.Kitap27);
+			this.tabPage3.Controls.Add(this.Kitap26);
+			this.tabPage3.Controls.Add(this.Kitap25);
+			this.tabPage3.Controls.Add(this.Kitap24);
+			this.tabPage3.Controls.Add(this.Kitap23);
+			this.tabPage3.Controls.Add(this.Kitap22);
 			resources.ApplyResources(this.tabPage3, "tabPage3");
 			this.tabPage3.Name = "tabPage3";
+			// 
+			// panel15
+			// 
+			this.panel15.BackColor = System.Drawing.Color.Gold;
+			this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel15.Controls.Add(this.label88);
+			resources.ApplyResources(this.panel15, "panel15");
+			this.panel15.Name = "panel15";
+			// 
+			// label88
+			// 
+			resources.ApplyResources(this.label88, "label88");
+			this.label88.Name = "label88";
+			// 
+			// label73
+			// 
+			resources.ApplyResources(this.label73, "label73");
+			this.label73.ForeColor = System.Drawing.Color.White;
+			this.label73.Name = "label73";
+			// 
+			// label72
+			// 
+			resources.ApplyResources(this.label72, "label72");
+			this.label72.ForeColor = System.Drawing.Color.White;
+			this.label72.Name = "label72";
+			// 
+			// label71
+			// 
+			resources.ApplyResources(this.label71, "label71");
+			this.label71.ForeColor = System.Drawing.Color.White;
+			this.label71.Name = "label71";
+			// 
+			// label70
+			// 
+			resources.ApplyResources(this.label70, "label70");
+			this.label70.ForeColor = System.Drawing.Color.White;
+			this.label70.Name = "label70";
+			// 
+			// label69
+			// 
+			resources.ApplyResources(this.label69, "label69");
+			this.label69.ForeColor = System.Drawing.Color.White;
+			this.label69.Name = "label69";
+			// 
+			// label68
+			// 
+			resources.ApplyResources(this.label68, "label68");
+			this.label68.ForeColor = System.Drawing.Color.White;
+			this.label68.Name = "label68";
+			// 
+			// label67
+			// 
+			resources.ApplyResources(this.label67, "label67");
+			this.label67.ForeColor = System.Drawing.Color.White;
+			this.label67.Name = "label67";
+			// 
+			// label66
+			// 
+			resources.ApplyResources(this.label66, "label66");
+			this.label66.ForeColor = System.Drawing.Color.White;
+			this.label66.Name = "label66";
+			// 
+			// Kitap29Fiyat
+			// 
+			resources.ApplyResources(this.Kitap29Fiyat, "Kitap29Fiyat");
+			this.Kitap29Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap29Fiyat.Name = "Kitap29Fiyat";
+			// 
+			// Kitap28Fiyat
+			// 
+			resources.ApplyResources(this.Kitap28Fiyat, "Kitap28Fiyat");
+			this.Kitap28Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap28Fiyat.Name = "Kitap28Fiyat";
+			// 
+			// Kitap27Fiyat
+			// 
+			resources.ApplyResources(this.Kitap27Fiyat, "Kitap27Fiyat");
+			this.Kitap27Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap27Fiyat.Name = "Kitap27Fiyat";
+			// 
+			// Kitap26Fiyat
+			// 
+			resources.ApplyResources(this.Kitap26Fiyat, "Kitap26Fiyat");
+			this.Kitap26Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap26Fiyat.Name = "Kitap26Fiyat";
+			// 
+			// Kitap25Fiyat
+			// 
+			resources.ApplyResources(this.Kitap25Fiyat, "Kitap25Fiyat");
+			this.Kitap25Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap25Fiyat.Name = "Kitap25Fiyat";
+			// 
+			// Kitap24Fiyat
+			// 
+			resources.ApplyResources(this.Kitap24Fiyat, "Kitap24Fiyat");
+			this.Kitap24Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap24Fiyat.Name = "Kitap24Fiyat";
+			// 
+			// Kitap23Fiyat
+			// 
+			resources.ApplyResources(this.Kitap23Fiyat, "Kitap23Fiyat");
+			this.Kitap23Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap23Fiyat.Name = "Kitap23Fiyat";
+			// 
+			// Kitap22Fiyat
+			// 
+			resources.ApplyResources(this.Kitap22Fiyat, "Kitap22Fiyat");
+			this.Kitap22Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap22Fiyat.Name = "Kitap22Fiyat";
+			// 
+			// Kitapismi29
+			// 
+			resources.ApplyResources(this.Kitapismi29, "Kitapismi29");
+			this.Kitapismi29.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi29.Name = "Kitapismi29";
+			// 
+			// Kitapismi28
+			// 
+			resources.ApplyResources(this.Kitapismi28, "Kitapismi28");
+			this.Kitapismi28.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi28.Name = "Kitapismi28";
+			// 
+			// Kitapismi27
+			// 
+			resources.ApplyResources(this.Kitapismi27, "Kitapismi27");
+			this.Kitapismi27.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi27.Name = "Kitapismi27";
+			// 
+			// Kitapismi26
+			// 
+			resources.ApplyResources(this.Kitapismi26, "Kitapismi26");
+			this.Kitapismi26.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi26.Name = "Kitapismi26";
+			// 
+			// Kitapismi25
+			// 
+			resources.ApplyResources(this.Kitapismi25, "Kitapismi25");
+			this.Kitapismi25.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi25.Name = "Kitapismi25";
+			// 
+			// Kitapismi24
+			// 
+			resources.ApplyResources(this.Kitapismi24, "Kitapismi24");
+			this.Kitapismi24.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi24.Name = "Kitapismi24";
+			// 
+			// Kitapismi23
+			// 
+			resources.ApplyResources(this.Kitapismi23, "Kitapismi23");
+			this.Kitapismi23.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi23.Name = "Kitapismi23";
+			// 
+			// Kitapismi22
+			// 
+			resources.ApplyResources(this.Kitapismi22, "Kitapismi22");
+			this.Kitapismi22.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi22.Name = "Kitapismi22";
+			// 
+			// Kitap29
+			// 
+			resources.ApplyResources(this.Kitap29, "Kitap29");
+			this.Kitap29.ForeColor = System.Drawing.Color.Transparent;
+			this.Kitap29.Name = "Kitap29";
+			this.Kitap29.UseVisualStyleBackColor = true;
+			this.Kitap29.Click += new System.EventHandler(this.Kitap29_Click_1);
+			// 
+			// Kitap28
+			// 
+			this.Kitap28.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap28, "Kitap28");
+			this.Kitap28.Name = "Kitap28";
+			this.Kitap28.UseVisualStyleBackColor = true;
+			this.Kitap28.Click += new System.EventHandler(this.Kitap28_Click_1);
+			// 
+			// Kitap27
+			// 
+			this.Kitap27.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap27, "Kitap27");
+			this.Kitap27.Name = "Kitap27";
+			this.Kitap27.UseVisualStyleBackColor = true;
+			this.Kitap27.Click += new System.EventHandler(this.Kitap27_Click_1);
+			// 
+			// Kitap26
+			// 
+			this.Kitap26.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap26, "Kitap26");
+			this.Kitap26.Name = "Kitap26";
+			this.Kitap26.UseVisualStyleBackColor = true;
+			this.Kitap26.Click += new System.EventHandler(this.Kitap26_Click_1);
+			// 
+			// Kitap25
+			// 
+			this.Kitap25.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap25, "Kitap25");
+			this.Kitap25.Name = "Kitap25";
+			this.Kitap25.UseVisualStyleBackColor = true;
+			this.Kitap25.Click += new System.EventHandler(this.Kitap25_Click_1);
+			// 
+			// Kitap24
+			// 
+			this.Kitap24.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap24, "Kitap24");
+			this.Kitap24.Name = "Kitap24";
+			this.Kitap24.UseVisualStyleBackColor = true;
+			this.Kitap24.Click += new System.EventHandler(this.Kitap24_Click_1);
+			// 
+			// Kitap23
+			// 
+			this.Kitap23.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap23, "Kitap23");
+			this.Kitap23.Name = "Kitap23";
+			this.Kitap23.UseVisualStyleBackColor = true;
+			this.Kitap23.Click += new System.EventHandler(this.Kitap23_Click_1);
+			// 
+			// Kitap22
+			// 
+			this.Kitap22.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap22, "Kitap22");
+			this.Kitap22.Name = "Kitap22";
+			this.Kitap22.UseVisualStyleBackColor = true;
+			this.Kitap22.Click += new System.EventHandler(this.Kitap22_Click_1);
 			// 
 			// tabPage4
 			// 
 			this.tabPage4.BackColor = System.Drawing.Color.Black;
+			this.tabPage4.Controls.Add(this.panel16);
+			this.tabPage4.Controls.Add(this.label77);
+			this.tabPage4.Controls.Add(this.label76);
+			this.tabPage4.Controls.Add(this.label75);
+			this.tabPage4.Controls.Add(this.label74);
+			this.tabPage4.Controls.Add(this.Kitap33Fiyat);
+			this.tabPage4.Controls.Add(this.Kitap32Fiyat);
+			this.tabPage4.Controls.Add(this.Kitap31Fiyat);
+			this.tabPage4.Controls.Add(this.Kitap30Fiyat);
+			this.tabPage4.Controls.Add(this.Kitapismi33);
+			this.tabPage4.Controls.Add(this.Kitapismi32);
+			this.tabPage4.Controls.Add(this.Kitapismi31);
+			this.tabPage4.Controls.Add(this.Kitapismi30);
+			this.tabPage4.Controls.Add(this.Kitap33);
+			this.tabPage4.Controls.Add(this.Kitap32);
+			this.tabPage4.Controls.Add(this.Kitap31);
+			this.tabPage4.Controls.Add(this.Kitap30);
 			resources.ApplyResources(this.tabPage4, "tabPage4");
 			this.tabPage4.Name = "tabPage4";
 			// 
-			// tabPage5
+			// panel16
 			// 
-			this.tabPage5.BackColor = System.Drawing.Color.Black;
-			resources.ApplyResources(this.tabPage5, "tabPage5");
-			this.tabPage5.Name = "tabPage5";
+			this.panel16.BackColor = System.Drawing.Color.Gold;
+			this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel16.Controls.Add(this.label89);
+			resources.ApplyResources(this.panel16, "panel16");
+			this.panel16.Name = "panel16";
+			// 
+			// label89
+			// 
+			resources.ApplyResources(this.label89, "label89");
+			this.label89.Name = "label89";
+			// 
+			// label77
+			// 
+			resources.ApplyResources(this.label77, "label77");
+			this.label77.ForeColor = System.Drawing.Color.White;
+			this.label77.Name = "label77";
+			// 
+			// label76
+			// 
+			resources.ApplyResources(this.label76, "label76");
+			this.label76.ForeColor = System.Drawing.Color.White;
+			this.label76.Name = "label76";
+			// 
+			// label75
+			// 
+			resources.ApplyResources(this.label75, "label75");
+			this.label75.ForeColor = System.Drawing.Color.White;
+			this.label75.Name = "label75";
+			// 
+			// label74
+			// 
+			resources.ApplyResources(this.label74, "label74");
+			this.label74.ForeColor = System.Drawing.Color.White;
+			this.label74.Name = "label74";
+			// 
+			// Kitap33Fiyat
+			// 
+			resources.ApplyResources(this.Kitap33Fiyat, "Kitap33Fiyat");
+			this.Kitap33Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap33Fiyat.Name = "Kitap33Fiyat";
+			// 
+			// Kitap32Fiyat
+			// 
+			resources.ApplyResources(this.Kitap32Fiyat, "Kitap32Fiyat");
+			this.Kitap32Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap32Fiyat.Name = "Kitap32Fiyat";
+			// 
+			// Kitap31Fiyat
+			// 
+			resources.ApplyResources(this.Kitap31Fiyat, "Kitap31Fiyat");
+			this.Kitap31Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap31Fiyat.Name = "Kitap31Fiyat";
+			// 
+			// Kitap30Fiyat
+			// 
+			resources.ApplyResources(this.Kitap30Fiyat, "Kitap30Fiyat");
+			this.Kitap30Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap30Fiyat.Name = "Kitap30Fiyat";
+			// 
+			// Kitapismi33
+			// 
+			resources.ApplyResources(this.Kitapismi33, "Kitapismi33");
+			this.Kitapismi33.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi33.Name = "Kitapismi33";
+			// 
+			// Kitapismi32
+			// 
+			resources.ApplyResources(this.Kitapismi32, "Kitapismi32");
+			this.Kitapismi32.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi32.Name = "Kitapismi32";
+			// 
+			// Kitapismi31
+			// 
+			resources.ApplyResources(this.Kitapismi31, "Kitapismi31");
+			this.Kitapismi31.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi31.Name = "Kitapismi31";
+			// 
+			// Kitapismi30
+			// 
+			resources.ApplyResources(this.Kitapismi30, "Kitapismi30");
+			this.Kitapismi30.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi30.Name = "Kitapismi30";
+			// 
+			// Kitap33
+			// 
+			this.Kitap33.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap33, "Kitap33");
+			this.Kitap33.Name = "Kitap33";
+			this.Kitap33.UseVisualStyleBackColor = true;
+			this.Kitap33.Click += new System.EventHandler(this.Kitap33_Click_1);
+			// 
+			// Kitap32
+			// 
+			this.Kitap32.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap32, "Kitap32");
+			this.Kitap32.Name = "Kitap32";
+			this.Kitap32.UseVisualStyleBackColor = true;
+			this.Kitap32.Click += new System.EventHandler(this.Kitap32_Click_1);
+			// 
+			// Kitap31
+			// 
+			this.Kitap31.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap31, "Kitap31");
+			this.Kitap31.Name = "Kitap31";
+			this.Kitap31.UseVisualStyleBackColor = true;
+			this.Kitap31.Click += new System.EventHandler(this.Kitap31_Click_1);
+			// 
+			// Kitap30
+			// 
+			this.Kitap30.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap30, "Kitap30");
+			this.Kitap30.Name = "Kitap30";
+			this.Kitap30.UseVisualStyleBackColor = true;
+			this.Kitap30.Click += new System.EventHandler(this.Kitap30_Click_1);
 			// 
 			// tabPage6
 			// 
 			this.tabPage6.BackColor = System.Drawing.Color.Black;
+			this.tabPage6.Controls.Add(this.panel17);
+			this.tabPage6.Controls.Add(this.label82);
+			this.tabPage6.Controls.Add(this.label81);
+			this.tabPage6.Controls.Add(this.label80);
+			this.tabPage6.Controls.Add(this.label79);
+			this.tabPage6.Controls.Add(this.label78);
+			this.tabPage6.Controls.Add(this.Kitap38Fiyat);
+			this.tabPage6.Controls.Add(this.Kitap37Fiyat);
+			this.tabPage6.Controls.Add(this.Kitap36Fiyat);
+			this.tabPage6.Controls.Add(this.Kitap35Fiyat);
+			this.tabPage6.Controls.Add(this.Kitap34Fiyat);
+			this.tabPage6.Controls.Add(this.Kitapismi38);
+			this.tabPage6.Controls.Add(this.Kitapismi37);
+			this.tabPage6.Controls.Add(this.Kitapismi36);
+			this.tabPage6.Controls.Add(this.Kitapismi35);
+			this.tabPage6.Controls.Add(this.Kitapismi34);
+			this.tabPage6.Controls.Add(this.Kitap38);
+			this.tabPage6.Controls.Add(this.Kitap37);
+			this.tabPage6.Controls.Add(this.Kitap36);
+			this.tabPage6.Controls.Add(this.Kitap35);
+			this.tabPage6.Controls.Add(this.Kitap34);
 			resources.ApplyResources(this.tabPage6, "tabPage6");
 			this.tabPage6.Name = "tabPage6";
+			// 
+			// panel17
+			// 
+			this.panel17.BackColor = System.Drawing.Color.Gold;
+			this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel17.Controls.Add(this.label90);
+			resources.ApplyResources(this.panel17, "panel17");
+			this.panel17.Name = "panel17";
+			// 
+			// label90
+			// 
+			resources.ApplyResources(this.label90, "label90");
+			this.label90.Name = "label90";
+			// 
+			// label82
+			// 
+			resources.ApplyResources(this.label82, "label82");
+			this.label82.ForeColor = System.Drawing.Color.White;
+			this.label82.Name = "label82";
+			// 
+			// label81
+			// 
+			resources.ApplyResources(this.label81, "label81");
+			this.label81.ForeColor = System.Drawing.Color.White;
+			this.label81.Name = "label81";
+			// 
+			// label80
+			// 
+			resources.ApplyResources(this.label80, "label80");
+			this.label80.ForeColor = System.Drawing.Color.White;
+			this.label80.Name = "label80";
+			// 
+			// label79
+			// 
+			resources.ApplyResources(this.label79, "label79");
+			this.label79.ForeColor = System.Drawing.Color.White;
+			this.label79.Name = "label79";
+			// 
+			// label78
+			// 
+			resources.ApplyResources(this.label78, "label78");
+			this.label78.ForeColor = System.Drawing.Color.White;
+			this.label78.Name = "label78";
+			// 
+			// Kitap38Fiyat
+			// 
+			resources.ApplyResources(this.Kitap38Fiyat, "Kitap38Fiyat");
+			this.Kitap38Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap38Fiyat.Name = "Kitap38Fiyat";
+			// 
+			// Kitap37Fiyat
+			// 
+			resources.ApplyResources(this.Kitap37Fiyat, "Kitap37Fiyat");
+			this.Kitap37Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap37Fiyat.Name = "Kitap37Fiyat";
+			// 
+			// Kitap36Fiyat
+			// 
+			resources.ApplyResources(this.Kitap36Fiyat, "Kitap36Fiyat");
+			this.Kitap36Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap36Fiyat.Name = "Kitap36Fiyat";
+			// 
+			// Kitap35Fiyat
+			// 
+			resources.ApplyResources(this.Kitap35Fiyat, "Kitap35Fiyat");
+			this.Kitap35Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap35Fiyat.Name = "Kitap35Fiyat";
+			// 
+			// Kitap34Fiyat
+			// 
+			resources.ApplyResources(this.Kitap34Fiyat, "Kitap34Fiyat");
+			this.Kitap34Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap34Fiyat.Name = "Kitap34Fiyat";
+			// 
+			// Kitapismi38
+			// 
+			resources.ApplyResources(this.Kitapismi38, "Kitapismi38");
+			this.Kitapismi38.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi38.Name = "Kitapismi38";
+			// 
+			// Kitapismi37
+			// 
+			resources.ApplyResources(this.Kitapismi37, "Kitapismi37");
+			this.Kitapismi37.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi37.Name = "Kitapismi37";
+			// 
+			// Kitapismi36
+			// 
+			resources.ApplyResources(this.Kitapismi36, "Kitapismi36");
+			this.Kitapismi36.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi36.Name = "Kitapismi36";
+			// 
+			// Kitapismi35
+			// 
+			resources.ApplyResources(this.Kitapismi35, "Kitapismi35");
+			this.Kitapismi35.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi35.Name = "Kitapismi35";
+			// 
+			// Kitapismi34
+			// 
+			resources.ApplyResources(this.Kitapismi34, "Kitapismi34");
+			this.Kitapismi34.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi34.Name = "Kitapismi34";
+			// 
+			// Kitap38
+			// 
+			this.Kitap38.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap38, "Kitap38");
+			this.Kitap38.Name = "Kitap38";
+			this.Kitap38.UseVisualStyleBackColor = true;
+			this.Kitap38.Click += new System.EventHandler(this.Kitap38_Click_1);
+			// 
+			// Kitap37
+			// 
+			this.Kitap37.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap37, "Kitap37");
+			this.Kitap37.Name = "Kitap37";
+			this.Kitap37.UseVisualStyleBackColor = true;
+			this.Kitap37.Click += new System.EventHandler(this.Kitap37_Click_1);
+			// 
+			// Kitap36
+			// 
+			this.Kitap36.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap36, "Kitap36");
+			this.Kitap36.Name = "Kitap36";
+			this.Kitap36.UseVisualStyleBackColor = true;
+			this.Kitap36.Click += new System.EventHandler(this.Kitap36_Click_1);
+			// 
+			// Kitap35
+			// 
+			this.Kitap35.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap35, "Kitap35");
+			this.Kitap35.Name = "Kitap35";
+			this.Kitap35.UseVisualStyleBackColor = true;
+			this.Kitap35.Click += new System.EventHandler(this.Kitap35_Click_1);
+			// 
+			// Kitap34
+			// 
+			this.Kitap34.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap34, "Kitap34");
+			this.Kitap34.Name = "Kitap34";
+			this.Kitap34.UseVisualStyleBackColor = true;
+			this.Kitap34.Click += new System.EventHandler(this.Kitap34_Click_1);
 			// 
 			// tabPage7
 			// 
 			this.tabPage7.BackColor = System.Drawing.Color.Black;
+			this.tabPage7.Controls.Add(this.panel18);
+			this.tabPage7.Controls.Add(this.label86);
+			this.tabPage7.Controls.Add(this.label85);
+			this.tabPage7.Controls.Add(this.label84);
+			this.tabPage7.Controls.Add(this.label83);
+			this.tabPage7.Controls.Add(this.Kitap42Fiyat);
+			this.tabPage7.Controls.Add(this.Kitap41Fiyat);
+			this.tabPage7.Controls.Add(this.Kitap40Fiyat);
+			this.tabPage7.Controls.Add(this.Kitap39Fiyat);
+			this.tabPage7.Controls.Add(this.Kitapismi42);
+			this.tabPage7.Controls.Add(this.Kitapismi41);
+			this.tabPage7.Controls.Add(this.Kitapismi40);
+			this.tabPage7.Controls.Add(this.Kitapismi39);
+			this.tabPage7.Controls.Add(this.Kitap42);
+			this.tabPage7.Controls.Add(this.Kitap41);
+			this.tabPage7.Controls.Add(this.Kitap40);
+			this.tabPage7.Controls.Add(this.Kitap39);
 			resources.ApplyResources(this.tabPage7, "tabPage7");
 			this.tabPage7.Name = "tabPage7";
 			// 
-			// tabPage10
+			// panel18
 			// 
-			this.tabPage10.BackColor = System.Drawing.Color.Black;
-			resources.ApplyResources(this.tabPage10, "tabPage10");
-			this.tabPage10.Name = "tabPage10";
+			this.panel18.BackColor = System.Drawing.Color.Gold;
+			this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.panel18.Controls.Add(this.label91);
+			resources.ApplyResources(this.panel18, "panel18");
+			this.panel18.Name = "panel18";
 			// 
-			// tabPage11
+			// label91
 			// 
-			this.tabPage11.BackColor = System.Drawing.Color.Black;
-			resources.ApplyResources(this.tabPage11, "tabPage11");
-			this.tabPage11.Name = "tabPage11";
+			resources.ApplyResources(this.label91, "label91");
+			this.label91.Name = "label91";
 			// 
-			// tabPage12
+			// label86
 			// 
-			this.tabPage12.BackColor = System.Drawing.Color.Black;
-			resources.ApplyResources(this.tabPage12, "tabPage12");
-			this.tabPage12.Name = "tabPage12";
+			resources.ApplyResources(this.label86, "label86");
+			this.label86.ForeColor = System.Drawing.Color.White;
+			this.label86.Name = "label86";
+			// 
+			// label85
+			// 
+			resources.ApplyResources(this.label85, "label85");
+			this.label85.ForeColor = System.Drawing.Color.White;
+			this.label85.Name = "label85";
+			// 
+			// label84
+			// 
+			resources.ApplyResources(this.label84, "label84");
+			this.label84.ForeColor = System.Drawing.Color.White;
+			this.label84.Name = "label84";
+			// 
+			// label83
+			// 
+			resources.ApplyResources(this.label83, "label83");
+			this.label83.ForeColor = System.Drawing.Color.White;
+			this.label83.Name = "label83";
+			// 
+			// Kitap42Fiyat
+			// 
+			resources.ApplyResources(this.Kitap42Fiyat, "Kitap42Fiyat");
+			this.Kitap42Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap42Fiyat.Name = "Kitap42Fiyat";
+			// 
+			// Kitap41Fiyat
+			// 
+			resources.ApplyResources(this.Kitap41Fiyat, "Kitap41Fiyat");
+			this.Kitap41Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap41Fiyat.Name = "Kitap41Fiyat";
+			// 
+			// Kitap40Fiyat
+			// 
+			resources.ApplyResources(this.Kitap40Fiyat, "Kitap40Fiyat");
+			this.Kitap40Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap40Fiyat.Name = "Kitap40Fiyat";
+			// 
+			// Kitap39Fiyat
+			// 
+			resources.ApplyResources(this.Kitap39Fiyat, "Kitap39Fiyat");
+			this.Kitap39Fiyat.ForeColor = System.Drawing.Color.White;
+			this.Kitap39Fiyat.Name = "Kitap39Fiyat";
+			// 
+			// Kitapismi42
+			// 
+			resources.ApplyResources(this.Kitapismi42, "Kitapismi42");
+			this.Kitapismi42.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi42.Name = "Kitapismi42";
+			// 
+			// Kitapismi41
+			// 
+			resources.ApplyResources(this.Kitapismi41, "Kitapismi41");
+			this.Kitapismi41.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi41.Name = "Kitapismi41";
+			// 
+			// Kitapismi40
+			// 
+			resources.ApplyResources(this.Kitapismi40, "Kitapismi40");
+			this.Kitapismi40.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi40.Name = "Kitapismi40";
+			// 
+			// Kitapismi39
+			// 
+			resources.ApplyResources(this.Kitapismi39, "Kitapismi39");
+			this.Kitapismi39.ForeColor = System.Drawing.Color.White;
+			this.Kitapismi39.Name = "Kitapismi39";
+			// 
+			// Kitap42
+			// 
+			this.Kitap42.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap42, "Kitap42");
+			this.Kitap42.Name = "Kitap42";
+			this.Kitap42.UseVisualStyleBackColor = true;
+			this.Kitap42.Click += new System.EventHandler(this.Kitap42_Click_1);
+			// 
+			// Kitap41
+			// 
+			this.Kitap41.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap41, "Kitap41");
+			this.Kitap41.Name = "Kitap41";
+			this.Kitap41.UseVisualStyleBackColor = true;
+			this.Kitap41.Click += new System.EventHandler(this.Kitap41_Click_1);
+			// 
+			// Kitap40
+			// 
+			this.Kitap40.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap40, "Kitap40");
+			this.Kitap40.Name = "Kitap40";
+			this.Kitap40.UseVisualStyleBackColor = true;
+			this.Kitap40.Click += new System.EventHandler(this.Kitap40_Click_1);
+			// 
+			// Kitap39
+			// 
+			this.Kitap39.ForeColor = System.Drawing.Color.Transparent;
+			resources.ApplyResources(this.Kitap39, "Kitap39");
+			this.Kitap39.Name = "Kitap39";
+			this.Kitap39.UseVisualStyleBackColor = true;
+			this.Kitap39.Click += new System.EventHandler(this.Kitap39_Click_1);
 			// 
 			// SepetimPanel
 			// 
@@ -1296,9 +2350,36 @@ namespace KutuphaneProjesi
 			// KapsayiciLogin
 			// 
 			this.KapsayiciLogin.BackColor = System.Drawing.Color.Black;
+			this.KapsayiciLogin.Controls.Add(this.panel20);
 			this.KapsayiciLogin.Controls.Add(this.panel14);
 			resources.ApplyResources(this.KapsayiciLogin, "KapsayiciLogin");
 			this.KapsayiciLogin.Name = "KapsayiciLogin";
+			// 
+			// panel20
+			// 
+			this.panel20.Controls.Add(this.label95);
+			this.panel20.Controls.Add(this.label96);
+			this.panel20.Controls.Add(this.label97);
+			resources.ApplyResources(this.panel20, "panel20");
+			this.panel20.Name = "panel20";
+			// 
+			// label95
+			// 
+			resources.ApplyResources(this.label95, "label95");
+			this.label95.ForeColor = System.Drawing.Color.White;
+			this.label95.Name = "label95";
+			// 
+			// label96
+			// 
+			resources.ApplyResources(this.label96, "label96");
+			this.label96.ForeColor = System.Drawing.Color.Gold;
+			this.label96.Name = "label96";
+			// 
+			// label97
+			// 
+			resources.ApplyResources(this.label97, "label97");
+			this.label97.ForeColor = System.Drawing.Color.White;
+			this.label97.Name = "label97";
 			// 
 			// panel14
 			// 
@@ -1378,9 +2459,36 @@ namespace KutuphaneProjesi
 			// KayitPanel
 			// 
 			this.KayitPanel.BackColor = System.Drawing.Color.Black;
+			this.KayitPanel.Controls.Add(this.panel19);
 			this.KayitPanel.Controls.Add(this.panel13);
 			resources.ApplyResources(this.KayitPanel, "KayitPanel");
 			this.KayitPanel.Name = "KayitPanel";
+			// 
+			// panel19
+			// 
+			this.panel19.Controls.Add(this.label94);
+			this.panel19.Controls.Add(this.label92);
+			this.panel19.Controls.Add(this.label93);
+			resources.ApplyResources(this.panel19, "panel19");
+			this.panel19.Name = "panel19";
+			// 
+			// label94
+			// 
+			resources.ApplyResources(this.label94, "label94");
+			this.label94.ForeColor = System.Drawing.Color.White;
+			this.label94.Name = "label94";
+			// 
+			// label92
+			// 
+			resources.ApplyResources(this.label92, "label92");
+			this.label92.ForeColor = System.Drawing.Color.Gold;
+			this.label92.Name = "label92";
+			// 
+			// label93
+			// 
+			resources.ApplyResources(this.label93, "label93");
+			this.label93.ForeColor = System.Drawing.Color.White;
+			this.label93.Name = "label93";
 			// 
 			// panel13
 			// 
@@ -1525,6 +2633,26 @@ namespace KutuphaneProjesi
 			this.tabPage9.PerformLayout();
 			this.panel5.ResumeLayout(false);
 			this.panel5.PerformLayout();
+			this.tabPage2.ResumeLayout(false);
+			this.tabPage2.PerformLayout();
+			this.panel12.ResumeLayout(false);
+			this.panel12.PerformLayout();
+			this.tabPage3.ResumeLayout(false);
+			this.tabPage3.PerformLayout();
+			this.panel15.ResumeLayout(false);
+			this.panel15.PerformLayout();
+			this.tabPage4.ResumeLayout(false);
+			this.tabPage4.PerformLayout();
+			this.panel16.ResumeLayout(false);
+			this.panel16.PerformLayout();
+			this.tabPage6.ResumeLayout(false);
+			this.tabPage6.PerformLayout();
+			this.panel17.ResumeLayout(false);
+			this.panel17.PerformLayout();
+			this.tabPage7.ResumeLayout(false);
+			this.tabPage7.PerformLayout();
+			this.panel18.ResumeLayout(false);
+			this.panel18.PerformLayout();
 			this.SepetimPanel.ResumeLayout(false);
 			this.panel7.ResumeLayout(false);
 			this.panel7.PerformLayout();
@@ -1533,9 +2661,13 @@ namespace KutuphaneProjesi
 			this.panel8.ResumeLayout(false);
 			this.panel8.PerformLayout();
 			this.KapsayiciLogin.ResumeLayout(false);
+			this.panel20.ResumeLayout(false);
+			this.panel20.PerformLayout();
 			this.panel14.ResumeLayout(false);
 			this.panel14.PerformLayout();
 			this.KayitPanel.ResumeLayout(false);
+			this.panel19.ResumeLayout(false);
+			this.panel19.PerformLayout();
 			this.panel13.ResumeLayout(false);
 			this.panel13.PerformLayout();
 			this.ResumeLayout(false);
@@ -1559,7 +2691,6 @@ namespace KutuphaneProjesi
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel5;
@@ -1638,9 +2769,6 @@ namespace KutuphaneProjesi
 		private System.Windows.Forms.Label Kitapismi11;
 		private System.Windows.Forms.Label Kitapismi10;
 		private System.Windows.Forms.Label Kitapismi9;
-		private System.Windows.Forms.TabPage tabPage10;
-		private System.Windows.Forms.TabPage tabPage11;
-		private System.Windows.Forms.TabPage tabPage12;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Label label21;
 		private System.Windows.Forms.Label label20;
@@ -1714,6 +2842,140 @@ namespace KutuphaneProjesi
 		private Label label56;
 		private Label label57;
 		private LinkLabel linkLabel2;
+		private Button Kitap21;
+		private Button Kitap20;
+		private Button Kitap19;
+		private Button Kitap18;
+		private Button Kitap17;
+		private Button Kitap16;
+		private Button Kitap15;
+		private Button Kitap14;
+		private Button Kitap29;
+		private Button Kitap28;
+		private Button Kitap27;
+		private Button Kitap26;
+		private Button Kitap25;
+		private Button Kitap24;
+		private Button Kitap23;
+		private Button Kitap22;
+		private Button Kitap33;
+		private Button Kitap32;
+		private Button Kitap31;
+		private Button Kitap30;
+		private Button Kitap38;
+		private Button Kitap37;
+		private Button Kitap36;
+		private Button Kitap35;
+		private Button Kitap34;
+		private Button Kitap42;
+		private Button Kitap41;
+		private Button Kitap40;
+		private Button Kitap39;
+		private Label Kitapismi21;
+		private Label Kitapismi20;
+		private Label Kitapismi19;
+		private Label Kitapismi18;
+		private Label Kitapismi17;
+		private Label Kitapismi16;
+		private Label Kitapismi15;
+		private Label Kitapismi14;
+		private Label Kitapismi29;
+		private Label Kitapismi28;
+		private Label Kitapismi27;
+		private Label Kitapismi26;
+		private Label Kitapismi25;
+		private Label Kitapismi24;
+		private Label Kitapismi23;
+		private Label Kitapismi22;
+		private Label Kitapismi33;
+		private Label Kitapismi32;
+		private Label Kitapismi31;
+		private Label Kitapismi30;
+		private Label Kitapismi38;
+		private Label Kitapismi37;
+		private Label Kitapismi36;
+		private Label Kitapismi35;
+		private Label Kitapismi34;
+		private Label Kitapismi42;
+		private Label Kitapismi41;
+		private Label Kitapismi40;
+		private Label Kitapismi39;
+		private Label Kitap14Fiyat;
+		private Label Kitap21Fiyat;
+		private Label Kitap20Fiyat;
+		private Label Kitap19Fiyat;
+		private Label Kitap18Fiyat;
+		private Label Kitap17Fiyat;
+		private Label Kitap16Fiyat;
+		private Label Kitap15Fiyat;
+		private Label Kitap29Fiyat;
+		private Label Kitap28Fiyat;
+		private Label Kitap27Fiyat;
+		private Label Kitap26Fiyat;
+		private Label Kitap25Fiyat;
+		private Label Kitap24Fiyat;
+		private Label Kitap23Fiyat;
+		private Label Kitap22Fiyat;
+		private Label Kitap33Fiyat;
+		private Label Kitap32Fiyat;
+		private Label Kitap31Fiyat;
+		private Label Kitap30Fiyat;
+		private Label Kitap38Fiyat;
+		private Label Kitap37Fiyat;
+		private Label Kitap36Fiyat;
+		private Label Kitap35Fiyat;
+		private Label Kitap34Fiyat;
+		private Label Kitap42Fiyat;
+		private Label Kitap41Fiyat;
+		private Label Kitap40Fiyat;
+		private Label Kitap39Fiyat;
+		private Label label65;
+		private Label label64;
+		private Label label63;
+		private Label label62;
+		private Label label61;
+		private Label label60;
+		private Label label59;
+		private Label label58;
+		private Label label73;
+		private Label label72;
+		private Label label71;
+		private Label label70;
+		private Label label69;
+		private Label label68;
+		private Label label67;
+		private Label label66;
+		private Label label77;
+		private Label label76;
+		private Label label75;
+		private Label label74;
+		private Label label82;
+		private Label label81;
+		private Label label80;
+		private Label label79;
+		private Label label78;
+		private Label label86;
+		private Label label85;
+		private Label label84;
+		private Label label83;
+		private Panel panel12;
+		private Label label87;
+		private Panel panel15;
+		private Label label88;
+		private Panel panel16;
+		private Label label89;
+		private Panel panel17;
+		private Label label90;
+		private Panel panel18;
+		private Label label91;
+		private Panel panel19;
+		private Label label94;
+		private Label label92;
+		private Label label93;
+		private Panel panel20;
+		private Label label95;
+		private Label label96;
+		private Label label97;
 	}
 }
 
